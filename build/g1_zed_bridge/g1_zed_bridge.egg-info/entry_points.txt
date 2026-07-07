@@ -1,0 +1,3 @@
+[console_scripts]
+zed_stream_node = g1_zed_bridge.zed_stream_node:main
+

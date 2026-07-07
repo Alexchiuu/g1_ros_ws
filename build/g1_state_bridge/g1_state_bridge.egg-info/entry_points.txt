@@ -1,0 +1,5 @@
+[console_scripts]
+hand_controller_gui = g1_state_bridge.hand_controller_gui:main
+neck_controller_gui = g1_state_bridge.neck_controller_gui:main
+state_bridge_node = g1_state_bridge.state_bridge_node:main
+

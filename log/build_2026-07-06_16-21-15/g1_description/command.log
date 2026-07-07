@@ -1,0 +1,4 @@
+Invoking command in '/mnt/home/calex/g1_ros_ws/build/g1_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /mnt/home/calex/g1_ros_ws/build/g1_description -- -j20 -l20
+Invoked command in '/mnt/home/calex/g1_ros_ws/build/g1_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /mnt/home/calex/g1_ros_ws/build/g1_description -- -j20 -l20
+Invoking command in '/mnt/home/calex/g1_ros_ws/build/g1_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /mnt/home/calex/g1_ros_ws/build/g1_description
+Invoked command in '/mnt/home/calex/g1_ros_ws/build/g1_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /mnt/home/calex/g1_ros_ws/build/g1_description

@@ -1,0 +1,27 @@
+[0.624s] Invoking command in '/mnt/home/calex/g1_ros_ws/build/g1_zed_bridge': PYTHONPATH=/mnt/home/calex/g1_ros_ws/build/g1_zed_bridge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/mnt/home/calex/g1_ros_ws/install/g1_zed_bridge/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /mnt/home/calex/g1_ros_ws/build/g1_zed_bridge/build --no-deps symlink_data
+[0.744s] running develop
+[0.811s] running egg_info
+[0.812s] creating g1_zed_bridge.egg-info
+[0.812s] writing g1_zed_bridge.egg-info/PKG-INFO
+[0.814s] writing dependency_links to g1_zed_bridge.egg-info/dependency_links.txt
+[0.815s] writing entry points to g1_zed_bridge.egg-info/entry_points.txt
+[0.815s] writing requirements to g1_zed_bridge.egg-info/requires.txt
+[0.816s] writing top-level names to g1_zed_bridge.egg-info/top_level.txt
+[0.817s] writing manifest file 'g1_zed_bridge.egg-info/SOURCES.txt'
+[0.835s] reading manifest file 'g1_zed_bridge.egg-info/SOURCES.txt'
+[0.836s] writing manifest file 'g1_zed_bridge.egg-info/SOURCES.txt'
+[0.861s] running build_ext
+[0.864s] Creating /mnt/home/calex/g1_ros_ws/install/g1_zed_bridge/lib/python3.8/site-packages/site.py
+[0.874s] Creating /mnt/home/calex/g1_ros_ws/install/g1_zed_bridge/lib/python3.8/site-packages/g1-zed-bridge.egg-link (link to .)
+[0.875s] Installing zed_stream_node script to /mnt/home/calex/g1_ros_ws/install/g1_zed_bridge/lib/g1_zed_bridge
+[0.876s] 
+[0.877s] Installed /mnt/home/calex/g1_ros_ws/build/g1_zed_bridge
+[0.877s] running symlink_data
+[0.877s] creating /mnt/home/calex/g1_ros_ws/install/g1_zed_bridge/share/ament_index
+[0.877s] creating /mnt/home/calex/g1_ros_ws/install/g1_zed_bridge/share/ament_index/resource_index
+[0.878s] creating /mnt/home/calex/g1_ros_ws/install/g1_zed_bridge/share/ament_index/resource_index/packages
+[0.878s] symbolically linking /mnt/home/calex/g1_ros_ws/build/g1_zed_bridge/resource/g1_zed_bridge -> /mnt/home/calex/g1_ros_ws/install/g1_zed_bridge/share/ament_index/resource_index/packages
+[0.879s] symbolically linking /mnt/home/calex/g1_ros_ws/build/g1_zed_bridge/package.xml -> /mnt/home/calex/g1_ros_ws/install/g1_zed_bridge/share/g1_zed_bridge
+[0.879s] creating /mnt/home/calex/g1_ros_ws/install/g1_zed_bridge/share/g1_zed_bridge/launch
+[0.880s] symbolically linking /mnt/home/calex/g1_ros_ws/build/g1_zed_bridge/launch/zed_bridge.launch.py -> /mnt/home/calex/g1_ros_ws/install/g1_zed_bridge/share/g1_zed_bridge/launch
+[0.894s] Invoked command in '/mnt/home/calex/g1_ros_ws/build/g1_zed_bridge' returned '0': PYTHONPATH=/mnt/home/calex/g1_ros_ws/build/g1_zed_bridge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/mnt/home/calex/g1_ros_ws/install/g1_zed_bridge/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /mnt/home/calex/g1_ros_ws/build/g1_zed_bridge/build --no-deps symlink_data

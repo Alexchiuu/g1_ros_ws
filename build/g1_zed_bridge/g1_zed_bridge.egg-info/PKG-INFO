@@ -1,0 +1,10 @@
+Metadata-Version: 1.2
+Name: g1-zed-bridge
+Version: 0.1.0
+Summary: Decodes the G1 ZED Mini stream into ROS 2 Image/PointCloud2 topics
+Home-page: UNKNOWN
+Maintainer: Alex Chiu
+Maintainer-email: alexchiu0108@gmail.com
+License: Apache-2.0
+Description: UNKNOWN
+Platform: UNKNOWN

@@ -1,0 +1,22 @@
+running egg_info
+writing ../../build/g1_state_bridge/g1_state_bridge.egg-info/PKG-INFO
+writing dependency_links to ../../build/g1_state_bridge/g1_state_bridge.egg-info/dependency_links.txt
+writing entry points to ../../build/g1_state_bridge/g1_state_bridge.egg-info/entry_points.txt
+writing requirements to ../../build/g1_state_bridge/g1_state_bridge.egg-info/requires.txt
+writing top-level names to ../../build/g1_state_bridge/g1_state_bridge.egg-info/top_level.txt
+reading manifest file '../../build/g1_state_bridge/g1_state_bridge.egg-info/SOURCES.txt'
+writing manifest file '../../build/g1_state_bridge/g1_state_bridge.egg-info/SOURCES.txt'
+running build
+running build_py
+copying g1_state_bridge/state_bridge_node.py -> /mnt/home/calex/g1_ros_ws/build/g1_state_bridge/build/lib/g1_state_bridge
+running install
+running install_lib
+copying /mnt/home/calex/g1_ros_ws/build/g1_state_bridge/build/lib/g1_state_bridge/state_bridge_node.py -> /mnt/home/calex/g1_ros_ws/install/g1_state_bridge/lib/python3.8/site-packages/g1_state_bridge
+byte-compiling /mnt/home/calex/g1_ros_ws/install/g1_state_bridge/lib/python3.8/site-packages/g1_state_bridge/state_bridge_node.py to state_bridge_node.cpython-38.pyc
+running install_data
+running install_egg_info
+removing '/mnt/home/calex/g1_ros_ws/install/g1_state_bridge/lib/python3.8/site-packages/g1_state_bridge-0.1.0-py3.8.egg-info' (and everything under it)
+Copying ../../build/g1_state_bridge/g1_state_bridge.egg-info to /mnt/home/calex/g1_ros_ws/install/g1_state_bridge/lib/python3.8/site-packages/g1_state_bridge-0.1.0-py3.8.egg-info
+running install_scripts
+Installing state_bridge_node script to /mnt/home/calex/g1_ros_ws/install/g1_state_bridge/lib/g1_state_bridge
+writing list of installed files to '/mnt/home/calex/g1_ros_ws/build/g1_state_bridge/install.log'

@@ -1,0 +1,25 @@
+running develop
+running egg_info
+creating g1_zed_bridge.egg-info
+writing g1_zed_bridge.egg-info/PKG-INFO
+writing dependency_links to g1_zed_bridge.egg-info/dependency_links.txt
+writing entry points to g1_zed_bridge.egg-info/entry_points.txt
+writing requirements to g1_zed_bridge.egg-info/requires.txt
+writing top-level names to g1_zed_bridge.egg-info/top_level.txt
+writing manifest file 'g1_zed_bridge.egg-info/SOURCES.txt'
+reading manifest file 'g1_zed_bridge.egg-info/SOURCES.txt'
+writing manifest file 'g1_zed_bridge.egg-info/SOURCES.txt'
+running build_ext
+Creating /mnt/home/calex/g1_ros_ws/install/g1_zed_bridge/lib/python3.8/site-packages/site.py
+Creating /mnt/home/calex/g1_ros_ws/install/g1_zed_bridge/lib/python3.8/site-packages/g1-zed-bridge.egg-link (link to .)
+Installing zed_stream_node script to /mnt/home/calex/g1_ros_ws/install/g1_zed_bridge/lib/g1_zed_bridge
+
+Installed /mnt/home/calex/g1_ros_ws/build/g1_zed_bridge
+running symlink_data
+creating /mnt/home/calex/g1_ros_ws/install/g1_zed_bridge/share/ament_index
+creating /mnt/home/calex/g1_ros_ws/install/g1_zed_bridge/share/ament_index/resource_index
+creating /mnt/home/calex/g1_ros_ws/install/g1_zed_bridge/share/ament_index/resource_index/packages
+symbolically linking /mnt/home/calex/g1_ros_ws/build/g1_zed_bridge/resource/g1_zed_bridge -> /mnt/home/calex/g1_ros_ws/install/g1_zed_bridge/share/ament_index/resource_index/packages
+symbolically linking /mnt/home/calex/g1_ros_ws/build/g1_zed_bridge/package.xml -> /mnt/home/calex/g1_ros_ws/install/g1_zed_bridge/share/g1_zed_bridge
+creating /mnt/home/calex/g1_ros_ws/install/g1_zed_bridge/share/g1_zed_bridge/launch
+symbolically linking /mnt/home/calex/g1_ros_ws/build/g1_zed_bridge/launch/zed_bridge.launch.py -> /mnt/home/calex/g1_ros_ws/install/g1_zed_bridge/share/g1_zed_bridge/launch

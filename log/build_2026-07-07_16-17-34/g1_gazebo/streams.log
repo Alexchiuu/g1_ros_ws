@@ -1,0 +1,27 @@
+[0.034s] Invoking command in '/mnt/home/calex/g1_ros_ws/build/g1_gazebo': AMENT_PREFIX_PATH=/mnt/home/calex/g1_ros_ws/install/g1_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/mnt/home/calex/g1_ros_ws/install/g1_description:/opt/ros/foxy /usr/bin/cmake --build /mnt/home/calex/g1_ros_ws/build/g1_gazebo -- -j20 -l20
+[0.074s] Invoked command in '/mnt/home/calex/g1_ros_ws/build/g1_gazebo' returned '0': AMENT_PREFIX_PATH=/mnt/home/calex/g1_ros_ws/install/g1_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/mnt/home/calex/g1_ros_ws/install/g1_description:/opt/ros/foxy /usr/bin/cmake --build /mnt/home/calex/g1_ros_ws/build/g1_gazebo -- -j20 -l20
+[0.084s] Invoking command in '/mnt/home/calex/g1_ros_ws/build/g1_gazebo': AMENT_PREFIX_PATH=/mnt/home/calex/g1_ros_ws/install/g1_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/mnt/home/calex/g1_ros_ws/install/g1_description:/opt/ros/foxy /usr/bin/cmake --install /mnt/home/calex/g1_ros_ws/build/g1_gazebo
+[0.090s] -- Install configuration: ""
+[0.091s] -- Execute custom install script
+[0.093s] -- Up-to-date symlink: /mnt/home/calex/g1_ros_ws/install/g1_gazebo/share/g1_gazebo/launch/g1_gazebo.launch.py
+[0.097s] -- Up-to-date symlink: /mnt/home/calex/g1_ros_ws/install/g1_gazebo/share/g1_gazebo/config/g1_controllers.yaml
+[0.098s] -- Up-to-date symlink: /mnt/home/calex/g1_ros_ws/install/g1_gazebo/share/g1_gazebo/worlds/g1_world.world
+[0.100s] -- Up-to-date symlink: /mnt/home/calex/g1_ros_ws/install/g1_gazebo/share/g1_gazebo/rviz/sim.rviz
+[0.102s] -- Up-to-date symlink: /mnt/home/calex/g1_ros_ws/install/g1_gazebo/lib/g1_gazebo/pid_bridge.py
+[0.103s] -- Up-to-date symlink: /mnt/home/calex/g1_ros_ws/install/g1_gazebo/lib/g1_gazebo/base_tf_broadcaster.py
+[0.104s] -- Up-to-date symlink: /mnt/home/calex/g1_ros_ws/install/g1_gazebo/share/ament_index/resource_index/package_run_dependencies/g1_gazebo
+[0.105s] -- Up-to-date symlink: /mnt/home/calex/g1_ros_ws/install/g1_gazebo/share/ament_index/resource_index/parent_prefix_path/g1_gazebo
+[0.107s] -- Up-to-date symlink: /mnt/home/calex/g1_ros_ws/install/g1_gazebo/share/g1_gazebo/environment/ament_prefix_path.sh
+[0.108s] -- Up-to-date symlink: /mnt/home/calex/g1_ros_ws/install/g1_gazebo/share/g1_gazebo/environment/ament_prefix_path.dsv
+[0.109s] -- Up-to-date symlink: /mnt/home/calex/g1_ros_ws/install/g1_gazebo/share/g1_gazebo/environment/path.sh
+[0.112s] -- Up-to-date symlink: /mnt/home/calex/g1_ros_ws/install/g1_gazebo/share/g1_gazebo/environment/path.dsv
+[0.113s] -- Up-to-date symlink: /mnt/home/calex/g1_ros_ws/install/g1_gazebo/share/g1_gazebo/local_setup.bash
+[0.114s] -- Up-to-date symlink: /mnt/home/calex/g1_ros_ws/install/g1_gazebo/share/g1_gazebo/local_setup.sh
+[0.118s] -- Up-to-date symlink: /mnt/home/calex/g1_ros_ws/install/g1_gazebo/share/g1_gazebo/local_setup.zsh
+[0.119s] -- Up-to-date symlink: /mnt/home/calex/g1_ros_ws/install/g1_gazebo/share/g1_gazebo/local_setup.dsv
+[0.125s] -- Symlinking: /mnt/home/calex/g1_ros_ws/install/g1_gazebo/share/g1_gazebo/package.dsv
+[0.150s] -- Up-to-date symlink: /mnt/home/calex/g1_ros_ws/install/g1_gazebo/share/ament_index/resource_index/packages/g1_gazebo
+[0.154s] -- Up-to-date symlink: /mnt/home/calex/g1_ros_ws/install/g1_gazebo/share/g1_gazebo/cmake/g1_gazeboConfig.cmake
+[0.158s] -- Up-to-date symlink: /mnt/home/calex/g1_ros_ws/install/g1_gazebo/share/g1_gazebo/cmake/g1_gazeboConfig-version.cmake
+[0.160s] -- Up-to-date symlink: /mnt/home/calex/g1_ros_ws/install/g1_gazebo/share/g1_gazebo/package.xml
+[0.163s] Invoked command in '/mnt/home/calex/g1_ros_ws/build/g1_gazebo' returned '0': AMENT_PREFIX_PATH=/mnt/home/calex/g1_ros_ws/install/g1_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/mnt/home/calex/g1_ros_ws/install/g1_description:/opt/ros/foxy /usr/bin/cmake --install /mnt/home/calex/g1_ros_ws/build/g1_gazebo

@@ -1,0 +1,4240 @@
+
+---
+events:
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake-4.3/Modules/CMakeDetermineSystem.cmake:12 (find_program)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_UNAME"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "uname"
+    candidate_directories:
+      - "/opt/ros/foxy/bin/"
+      - "/opt/ros/foxy/sbin/"
+      - "/opt/ros/foxy/"
+      - "/mnt/home/calex/.local/bin/"
+      - "/opt/ros/foxy/bin/"
+      - "/usr/local/Modules/bin/"
+      - "/usr/local/cuda/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/usr/bin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+    searched_directories:
+      - "/opt/ros/foxy/bin/uname"
+      - "/opt/ros/foxy/sbin/uname"
+      - "/opt/ros/foxy/uname"
+      - "/mnt/home/calex/.local/bin/uname"
+      - "/opt/ros/foxy/bin/uname"
+      - "/usr/local/Modules/bin/uname"
+      - "/usr/local/cuda/bin/uname"
+      - "/usr/local/sbin/uname"
+      - "/usr/local/bin/uname"
+      - "/usr/sbin/uname"
+    found: "/usr/bin/uname"
+    search_context:
+      ENV{CMAKE_PREFIX_PATH}:
+        - "/opt/ros/foxy"
+      ENV{PATH}:
+        - "/mnt/home/calex/.local/bin"
+        - "/opt/ros/foxy/bin"
+        - "/usr/local/Modules/bin"
+        - "/usr/local/cuda/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+      CMAKE_INSTALL_PREFIX: "/mnt/home/calex/g1_ros_ws/install/g1_description"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-4.3/Modules/CMakeDetermineSystem.cmake:212 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The system is: Linux - 5.15.0-139-generic - x86_64
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake-4.3/Modules/CMakeUnixFindMake.cmake:5 (find_program)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_MAKE_PROGRAM"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "gmake"
+      - "make"
+      - "smake"
+    candidate_directories:
+      - "/opt/ros/foxy/bin/"
+      - "/opt/ros/foxy/sbin/"
+      - "/opt/ros/foxy/"
+      - "/mnt/home/calex/.local/bin/"
+      - "/opt/ros/foxy/bin/"
+      - "/usr/local/Modules/bin/"
+      - "/usr/local/cuda/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/usr/bin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+    searched_directories:
+      - "/opt/ros/foxy/bin/gmake"
+      - "/opt/ros/foxy/sbin/gmake"
+      - "/opt/ros/foxy/gmake"
+      - "/mnt/home/calex/.local/bin/gmake"
+      - "/opt/ros/foxy/bin/gmake"
+      - "/usr/local/Modules/bin/gmake"
+      - "/usr/local/cuda/bin/gmake"
+      - "/usr/local/sbin/gmake"
+      - "/usr/local/bin/gmake"
+      - "/usr/sbin/gmake"
+      - "/usr/bin/gmake"
+      - "/sbin/gmake"
+      - "/bin/gmake"
+      - "/usr/games/gmake"
+      - "/usr/local/games/gmake"
+      - "/snap/bin/gmake"
+      - "/opt/ros/foxy/bin/make"
+      - "/opt/ros/foxy/sbin/make"
+      - "/opt/ros/foxy/make"
+      - "/mnt/home/calex/.local/bin/make"
+      - "/opt/ros/foxy/bin/make"
+      - "/usr/local/Modules/bin/make"
+      - "/usr/local/cuda/bin/make"
+      - "/usr/local/sbin/make"
+      - "/usr/local/bin/make"
+      - "/usr/sbin/make"
+    found: "/usr/bin/make"
+    search_context:
+      ENV{CMAKE_PREFIX_PATH}:
+        - "/opt/ros/foxy"
+      ENV{PATH}:
+        - "/mnt/home/calex/.local/bin"
+        - "/opt/ros/foxy/bin"
+        - "/usr/local/Modules/bin"
+        - "/usr/local/cuda/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+      CMAKE_INSTALL_PREFIX: "/mnt/home/calex/g1_ros_ws/install/g1_description"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake-4.3/Modules/CMakeDetermineCompiler.cmake:73 (find_program)"
+      - "/usr/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:64 (_cmake_find_compiler)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_C_COMPILER"
+    description: "C compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "cc"
+      - "gcc"
+      - "cl"
+      - "bcc"
+      - "xlc"
+      - "icx"
+      - "clang"
+    candidate_directories:
+      - "/opt/ros/foxy/bin/"
+      - "/opt/ros/foxy/sbin/"
+      - "/opt/ros/foxy/"
+      - "/mnt/home/calex/.local/bin/"
+      - "/opt/ros/foxy/bin/"
+      - "/usr/local/Modules/bin/"
+      - "/usr/local/cuda/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/usr/bin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+    searched_directories:
+      - "/opt/ros/foxy/bin/cc"
+      - "/opt/ros/foxy/sbin/cc"
+      - "/opt/ros/foxy/cc"
+      - "/mnt/home/calex/.local/bin/cc"
+      - "/opt/ros/foxy/bin/cc"
+      - "/usr/local/Modules/bin/cc"
+      - "/usr/local/cuda/bin/cc"
+      - "/usr/local/sbin/cc"
+      - "/usr/local/bin/cc"
+      - "/usr/sbin/cc"
+    found: "/usr/bin/cc"
+    search_context:
+      ENV{CMAKE_PREFIX_PATH}:
+        - "/opt/ros/foxy"
+      ENV{PATH}:
+        - "/mnt/home/calex/.local/bin"
+        - "/opt/ros/foxy/bin"
+        - "/usr/local/Modules/bin"
+        - "/usr/local/cuda/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+      CMAKE_INSTALL_PREFIX: "/mnt/home/calex/g1_ros_ws/install/g1_description"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:468 (find_file)"
+      - "/usr/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:506 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "/usr/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "/usr/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCCompilerId.c.in"
+    candidate_directories:
+      - "/usr/share/cmake-4.3/Modules/"
+    found: "/usr/share/cmake-4.3/Modules/CMakeCCompilerId.c.in"
+    search_context:
+      ENV{CMAKE_PREFIX_PATH}:
+        - "/opt/ros/foxy"
+      ENV{PATH}:
+        - "/mnt/home/calex/.local/bin"
+        - "/opt/ros/foxy/bin"
+        - "/usr/local/Modules/bin"
+        - "/usr/local/cuda/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+      CMAKE_INSTALL_PREFIX: "/mnt/home/calex/g1_ros_ws/install/g1_description"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /usr/bin/cc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /mnt/home/calex/g1_ros_ws/build/g1_description/CMakeFiles/4.3.4/CompilerIdC/a.out
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/usr/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_AR"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "ar"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/mnt/home/calex/.local/bin/"
+      - "/opt/ros/foxy/bin/"
+      - "/usr/local/Modules/bin/"
+      - "/usr/local/cuda/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+    found: "/usr/bin/ar"
+    search_context:
+      ENV{CMAKE_PREFIX_PATH}:
+        - "/opt/ros/foxy"
+      ENV{PATH}:
+        - "/mnt/home/calex/.local/bin"
+        - "/opt/ros/foxy/bin"
+        - "/usr/local/Modules/bin"
+        - "/usr/local/cuda/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+      CMAKE_INSTALL_PREFIX: "/mnt/home/calex/g1_ros_ws/install/g1_description"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/usr/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_RANLIB"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "ranlib"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/mnt/home/calex/.local/bin/"
+      - "/opt/ros/foxy/bin/"
+      - "/usr/local/Modules/bin/"
+      - "/usr/local/cuda/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+    found: "/usr/bin/ranlib"
+    search_context:
+      ENV{CMAKE_PREFIX_PATH}:
+        - "/opt/ros/foxy"
+      ENV{PATH}:
+        - "/mnt/home/calex/.local/bin"
+        - "/opt/ros/foxy/bin"
+        - "/usr/local/Modules/bin"
+        - "/usr/local/cuda/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+      CMAKE_INSTALL_PREFIX: "/mnt/home/calex/g1_ros_ws/install/g1_description"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/usr/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_STRIP"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "strip"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/mnt/home/calex/.local/bin/"
+      - "/opt/ros/foxy/bin/"
+      - "/usr/local/Modules/bin/"
+      - "/usr/local/cuda/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+    found: "/usr/bin/strip"
+    search_context:
+      ENV{CMAKE_PREFIX_PATH}:
+        - "/opt/ros/foxy"
+      ENV{PATH}:
+        - "/mnt/home/calex/.local/bin"
+        - "/opt/ros/foxy/bin"
+        - "/usr/local/Modules/bin"
+        - "/usr/local/cuda/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+      CMAKE_INSTALL_PREFIX: "/mnt/home/calex/g1_ros_ws/install/g1_description"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/usr/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_LINKER"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "ld"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/mnt/home/calex/.local/bin/"
+      - "/opt/ros/foxy/bin/"
+      - "/usr/local/Modules/bin/"
+      - "/usr/local/cuda/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+    found: "/usr/bin/ld"
+    search_context:
+      ENV{CMAKE_PREFIX_PATH}:
+        - "/opt/ros/foxy"
+      ENV{PATH}:
+        - "/mnt/home/calex/.local/bin"
+        - "/opt/ros/foxy/bin"
+        - "/usr/local/Modules/bin"
+        - "/usr/local/cuda/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+      CMAKE_INSTALL_PREFIX: "/mnt/home/calex/g1_ros_ws/install/g1_description"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/usr/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_NM"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "nm"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/mnt/home/calex/.local/bin/"
+      - "/opt/ros/foxy/bin/"
+      - "/usr/local/Modules/bin/"
+      - "/usr/local/cuda/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+    found: "/usr/bin/nm"
+    search_context:
+      ENV{CMAKE_PREFIX_PATH}:
+        - "/opt/ros/foxy"
+      ENV{PATH}:
+        - "/mnt/home/calex/.local/bin"
+        - "/opt/ros/foxy/bin"
+        - "/usr/local/Modules/bin"
+        - "/usr/local/cuda/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+      CMAKE_INSTALL_PREFIX: "/mnt/home/calex/g1_ros_ws/install/g1_description"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/usr/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_OBJDUMP"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "objdump"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/mnt/home/calex/.local/bin/"
+      - "/opt/ros/foxy/bin/"
+      - "/usr/local/Modules/bin/"
+      - "/usr/local/cuda/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+    found: "/usr/bin/objdump"
+    search_context:
+      ENV{CMAKE_PREFIX_PATH}:
+        - "/opt/ros/foxy"
+      ENV{PATH}:
+        - "/mnt/home/calex/.local/bin"
+        - "/opt/ros/foxy/bin"
+        - "/usr/local/Modules/bin"
+        - "/usr/local/cuda/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+      CMAKE_INSTALL_PREFIX: "/mnt/home/calex/g1_ros_ws/install/g1_description"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/usr/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_OBJCOPY"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "objcopy"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/mnt/home/calex/.local/bin/"
+      - "/opt/ros/foxy/bin/"
+      - "/usr/local/Modules/bin/"
+      - "/usr/local/cuda/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+    found: "/usr/bin/objcopy"
+    search_context:
+      ENV{CMAKE_PREFIX_PATH}:
+        - "/opt/ros/foxy"
+      ENV{PATH}:
+        - "/mnt/home/calex/.local/bin"
+        - "/opt/ros/foxy/bin"
+        - "/usr/local/Modules/bin"
+        - "/usr/local/cuda/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+      CMAKE_INSTALL_PREFIX: "/mnt/home/calex/g1_ros_ws/install/g1_description"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/usr/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_READELF"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "readelf"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/mnt/home/calex/.local/bin/"
+      - "/opt/ros/foxy/bin/"
+      - "/usr/local/Modules/bin/"
+      - "/usr/local/cuda/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+    found: "/usr/bin/readelf"
+    search_context:
+      ENV{CMAKE_PREFIX_PATH}:
+        - "/opt/ros/foxy"
+      ENV{PATH}:
+        - "/mnt/home/calex/.local/bin"
+        - "/opt/ros/foxy/bin"
+        - "/usr/local/Modules/bin"
+        - "/usr/local/cuda/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+      CMAKE_INSTALL_PREFIX: "/mnt/home/calex/g1_ros_ws/install/g1_description"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/usr/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_DLLTOOL"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "dlltool"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/mnt/home/calex/.local/bin/"
+      - "/opt/ros/foxy/bin/"
+      - "/usr/local/Modules/bin/"
+      - "/usr/local/cuda/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+    searched_directories:
+      - "/usr/bin/dlltool"
+      - "/mnt/home/calex/.local/bin/dlltool"
+      - "/opt/ros/foxy/bin/dlltool"
+      - "/usr/local/Modules/bin/dlltool"
+      - "/usr/local/cuda/bin/dlltool"
+      - "/usr/local/sbin/dlltool"
+      - "/usr/local/bin/dlltool"
+      - "/usr/sbin/dlltool"
+      - "/sbin/dlltool"
+      - "/bin/dlltool"
+      - "/usr/games/dlltool"
+      - "/usr/local/games/dlltool"
+      - "/snap/bin/dlltool"
+    found: false
+    search_context:
+      ENV{CMAKE_PREFIX_PATH}:
+        - "/opt/ros/foxy"
+      ENV{PATH}:
+        - "/mnt/home/calex/.local/bin"
+        - "/opt/ros/foxy/bin"
+        - "/usr/local/Modules/bin"
+        - "/usr/local/cuda/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+      CMAKE_INSTALL_PREFIX: "/mnt/home/calex/g1_ros_ws/install/g1_description"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/usr/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_ADDR2LINE"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "addr2line"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/mnt/home/calex/.local/bin/"
+      - "/opt/ros/foxy/bin/"
+      - "/usr/local/Modules/bin/"
+      - "/usr/local/cuda/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+    found: "/usr/bin/addr2line"
+    search_context:
+      ENV{CMAKE_PREFIX_PATH}:
+        - "/opt/ros/foxy"
+      ENV{PATH}:
+        - "/mnt/home/calex/.local/bin"
+        - "/opt/ros/foxy/bin"
+        - "/usr/local/Modules/bin"
+        - "/usr/local/cuda/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+      CMAKE_INSTALL_PREFIX: "/mnt/home/calex/g1_ros_ws/install/g1_description"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/usr/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_TAPI"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "tapi"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/mnt/home/calex/.local/bin/"
+      - "/opt/ros/foxy/bin/"
+      - "/usr/local/Modules/bin/"
+      - "/usr/local/cuda/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+    searched_directories:
+      - "/usr/bin/tapi"
+      - "/mnt/home/calex/.local/bin/tapi"
+      - "/opt/ros/foxy/bin/tapi"
+      - "/usr/local/Modules/bin/tapi"
+      - "/usr/local/cuda/bin/tapi"
+      - "/usr/local/sbin/tapi"
+      - "/usr/local/bin/tapi"
+      - "/usr/sbin/tapi"
+      - "/sbin/tapi"
+      - "/bin/tapi"
+      - "/usr/games/tapi"
+      - "/usr/local/games/tapi"
+      - "/snap/bin/tapi"
+    found: false
+    search_context:
+      ENV{CMAKE_PREFIX_PATH}:
+        - "/opt/ros/foxy"
+      ENV{PATH}:
+        - "/mnt/home/calex/.local/bin"
+        - "/opt/ros/foxy/bin"
+        - "/usr/local/Modules/bin"
+        - "/usr/local/cuda/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+      CMAKE_INSTALL_PREFIX: "/mnt/home/calex/g1_ros_ws/install/g1_description"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake-4.3/Modules/Compiler/GNU-FindBinUtils.cmake:18 (find_program)"
+      - "/usr/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:201 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_C_COMPILER_AR"
+    description: "A wrapper around 'ar' adding the appropriate '--plugin' option for the GCC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "gcc-ar-9.4"
+      - "gcc-ar-9"
+      - "gcc-ar9"
+      - "gcc-ar"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/mnt/home/calex/.local/bin/"
+      - "/opt/ros/foxy/bin/"
+      - "/usr/local/Modules/bin/"
+      - "/usr/local/cuda/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+    searched_directories:
+      - "/usr/bin/gcc-ar-9.4"
+      - "/mnt/home/calex/.local/bin/gcc-ar-9.4"
+      - "/opt/ros/foxy/bin/gcc-ar-9.4"
+      - "/usr/local/Modules/bin/gcc-ar-9.4"
+      - "/usr/local/cuda/bin/gcc-ar-9.4"
+      - "/usr/local/sbin/gcc-ar-9.4"
+      - "/usr/local/bin/gcc-ar-9.4"
+      - "/usr/sbin/gcc-ar-9.4"
+      - "/sbin/gcc-ar-9.4"
+      - "/bin/gcc-ar-9.4"
+      - "/usr/games/gcc-ar-9.4"
+      - "/usr/local/games/gcc-ar-9.4"
+      - "/snap/bin/gcc-ar-9.4"
+    found: "/usr/bin/gcc-ar-9"
+    search_context:
+      ENV{CMAKE_PREFIX_PATH}:
+        - "/opt/ros/foxy"
+      ENV{PATH}:
+        - "/mnt/home/calex/.local/bin"
+        - "/opt/ros/foxy/bin"
+        - "/usr/local/Modules/bin"
+        - "/usr/local/cuda/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+      CMAKE_INSTALL_PREFIX: "/mnt/home/calex/g1_ros_ws/install/g1_description"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake-4.3/Modules/Compiler/GNU-FindBinUtils.cmake:30 (find_program)"
+      - "/usr/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:201 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_C_COMPILER_RANLIB"
+    description: "A wrapper around 'ranlib' adding the appropriate '--plugin' option for the GCC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "gcc-ranlib-9.4"
+      - "gcc-ranlib-9"
+      - "gcc-ranlib9"
+      - "gcc-ranlib"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/mnt/home/calex/.local/bin/"
+      - "/opt/ros/foxy/bin/"
+      - "/usr/local/Modules/bin/"
+      - "/usr/local/cuda/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+    searched_directories:
+      - "/usr/bin/gcc-ranlib-9.4"
+      - "/mnt/home/calex/.local/bin/gcc-ranlib-9.4"
+      - "/opt/ros/foxy/bin/gcc-ranlib-9.4"
+      - "/usr/local/Modules/bin/gcc-ranlib-9.4"
+      - "/usr/local/cuda/bin/gcc-ranlib-9.4"
+      - "/usr/local/sbin/gcc-ranlib-9.4"
+      - "/usr/local/bin/gcc-ranlib-9.4"
+      - "/usr/sbin/gcc-ranlib-9.4"
+      - "/sbin/gcc-ranlib-9.4"
+      - "/bin/gcc-ranlib-9.4"
+      - "/usr/games/gcc-ranlib-9.4"
+      - "/usr/local/games/gcc-ranlib-9.4"
+      - "/snap/bin/gcc-ranlib-9.4"
+    found: "/usr/bin/gcc-ranlib-9"
+    search_context:
+      ENV{CMAKE_PREFIX_PATH}:
+        - "/opt/ros/foxy"
+      ENV{PATH}:
+        - "/mnt/home/calex/.local/bin"
+        - "/opt/ros/foxy/bin"
+        - "/usr/local/Modules/bin"
+        - "/usr/local/cuda/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+      CMAKE_INSTALL_PREFIX: "/mnt/home/calex/g1_ros_ws/install/g1_description"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake-4.3/Modules/CMakeDetermineCompiler.cmake:54 (find_program)"
+      - "/usr/share/cmake-4.3/Modules/CMakeDetermineCXXCompiler.cmake:69 (_cmake_find_compiler)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_CXX_COMPILER"
+    description: "CXX compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "c++"
+      - "CC"
+      - "g++"
+      - "aCC"
+      - "cl"
+      - "bcc"
+      - "xlC"
+      - "icpx"
+      - "icx"
+      - "clang++"
+    candidate_directories:
+      - "/usr/bin/"
+    found: "/usr/bin/c++"
+    search_context:
+      ENV{CMAKE_PREFIX_PATH}:
+        - "/opt/ros/foxy"
+      ENV{PATH}:
+        - "/mnt/home/calex/.local/bin"
+        - "/opt/ros/foxy/bin"
+        - "/usr/local/Modules/bin"
+        - "/usr/local/cuda/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+      CMAKE_INSTALL_PREFIX: "/mnt/home/calex/g1_ros_ws/install/g1_description"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:468 (find_file)"
+      - "/usr/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:506 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "/usr/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "/usr/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-4.3/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCXXCompilerId.cpp.in"
+    candidate_directories:
+      - "/usr/share/cmake-4.3/Modules/"
+    found: "/usr/share/cmake-4.3/Modules/CMakeCXXCompilerId.cpp.in"
+    search_context:
+      ENV{CMAKE_PREFIX_PATH}:
+        - "/opt/ros/foxy"
+      ENV{PATH}:
+        - "/mnt/home/calex/.local/bin"
+        - "/opt/ros/foxy/bin"
+        - "/usr/local/Modules/bin"
+        - "/usr/local/cuda/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+      CMAKE_INSTALL_PREFIX: "/mnt/home/calex/g1_ros_ws/install/g1_description"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-4.3/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /usr/bin/c++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /mnt/home/calex/g1_ros_ws/build/g1_description/CMakeFiles/4.3.4/CompilerIdCXX/a.out
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake-4.3/Modules/Compiler/GNU-FindBinUtils.cmake:18 (find_program)"
+      - "/usr/share/cmake-4.3/Modules/CMakeDetermineCXXCompiler.cmake:207 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_CXX_COMPILER_AR"
+    description: "A wrapper around 'ar' adding the appropriate '--plugin' option for the GCC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "gcc-ar-9.4"
+      - "gcc-ar-9"
+      - "gcc-ar9"
+      - "gcc-ar"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/mnt/home/calex/.local/bin/"
+      - "/opt/ros/foxy/bin/"
+      - "/usr/local/Modules/bin/"
+      - "/usr/local/cuda/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+    searched_directories:
+      - "/usr/bin/gcc-ar-9.4"
+      - "/mnt/home/calex/.local/bin/gcc-ar-9.4"
+      - "/opt/ros/foxy/bin/gcc-ar-9.4"
+      - "/usr/local/Modules/bin/gcc-ar-9.4"
+      - "/usr/local/cuda/bin/gcc-ar-9.4"
+      - "/usr/local/sbin/gcc-ar-9.4"
+      - "/usr/local/bin/gcc-ar-9.4"
+      - "/usr/sbin/gcc-ar-9.4"
+      - "/sbin/gcc-ar-9.4"
+      - "/bin/gcc-ar-9.4"
+      - "/usr/games/gcc-ar-9.4"
+      - "/usr/local/games/gcc-ar-9.4"
+      - "/snap/bin/gcc-ar-9.4"
+    found: "/usr/bin/gcc-ar-9"
+    search_context:
+      ENV{CMAKE_PREFIX_PATH}:
+        - "/opt/ros/foxy"
+      ENV{PATH}:
+        - "/mnt/home/calex/.local/bin"
+        - "/opt/ros/foxy/bin"
+        - "/usr/local/Modules/bin"
+        - "/usr/local/cuda/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+      CMAKE_INSTALL_PREFIX: "/mnt/home/calex/g1_ros_ws/install/g1_description"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake-4.3/Modules/Compiler/GNU-FindBinUtils.cmake:30 (find_program)"
+      - "/usr/share/cmake-4.3/Modules/CMakeDetermineCXXCompiler.cmake:207 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_CXX_COMPILER_RANLIB"
+    description: "A wrapper around 'ranlib' adding the appropriate '--plugin' option for the GCC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "gcc-ranlib-9.4"
+      - "gcc-ranlib-9"
+      - "gcc-ranlib9"
+      - "gcc-ranlib"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/mnt/home/calex/.local/bin/"
+      - "/opt/ros/foxy/bin/"
+      - "/usr/local/Modules/bin/"
+      - "/usr/local/cuda/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+    searched_directories:
+      - "/usr/bin/gcc-ranlib-9.4"
+      - "/mnt/home/calex/.local/bin/gcc-ranlib-9.4"
+      - "/opt/ros/foxy/bin/gcc-ranlib-9.4"
+      - "/usr/local/Modules/bin/gcc-ranlib-9.4"
+      - "/usr/local/cuda/bin/gcc-ranlib-9.4"
+      - "/usr/local/sbin/gcc-ranlib-9.4"
+      - "/usr/local/bin/gcc-ranlib-9.4"
+      - "/usr/sbin/gcc-ranlib-9.4"
+      - "/sbin/gcc-ranlib-9.4"
+      - "/bin/gcc-ranlib-9.4"
+      - "/usr/games/gcc-ranlib-9.4"
+      - "/usr/local/games/gcc-ranlib-9.4"
+      - "/snap/bin/gcc-ranlib-9.4"
+    found: "/usr/bin/gcc-ranlib-9"
+    search_context:
+      ENV{CMAKE_PREFIX_PATH}:
+        - "/opt/ros/foxy"
+      ENV{PATH}:
+        - "/mnt/home/calex/.local/bin"
+        - "/opt/ros/foxy/bin"
+        - "/usr/local/Modules/bin"
+        - "/usr/local/cuda/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+      CMAKE_INSTALL_PREFIX: "/mnt/home/calex/g1_ros_ws/install/g1_description"
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-4.3/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "/usr/share/cmake-4.3/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/mnt/home/calex/g1_ros_ws/build/g1_description/CMakeFiles/CMakeScratch/TryCompile-VhXn1V"
+      binary: "/mnt/home/calex/g1_ros_ws/build/g1_description/CMakeFiles/CMakeScratch/TryCompile-VhXn1V"
+    cmakeVariables:
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/home/calex/g1_ros_ws/build/g1_description/CMakeFiles/CMakeScratch/TryCompile-VhXn1V'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_433de/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_433de.dir/build.make CMakeFiles/cmTC_433de.dir/build
+        make[1]: Entering directory '/mnt/home/calex/g1_ros_ws/build/g1_description/CMakeFiles/CMakeScratch/TryCompile-VhXn1V'
+        Building C object CMakeFiles/cmTC_433de.dir/CMakeCCompilerABI.c.o
+        /usr/bin/cc   -v -o CMakeFiles/cmTC_433de.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-4.3/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        OFFLOAD_TARGET_NAMES=nvptx-none:hsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr,hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+        Thread model: posix
+        gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_433de.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+         /usr/lib/gcc/x86_64-linux-gnu/9/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/share/cmake-4.3/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_433de.dir/CMakeCCompilerABI.c.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/cctwRVID.s
+        GNU C17 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (x86_64-linux-gnu)
+        	compiled by GNU C version 9.4.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/gcc/x86_64-linux-gnu/9/include
+         /usr/local/include
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        GNU C17 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (x86_64-linux-gnu)
+        	compiled by GNU C version 9.4.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: 01da938ff5dc2163489aa33cb3b747a7
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_433de.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+         as -v --64 -o CMakeFiles/cmTC_433de.dir/CMakeCCompilerABI.c.o /tmp/cctwRVID.s
+        GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34
+        COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_433de.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+        Linking C executable cmTC_433de
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_433de.dir/link.txt --verbose=1
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper
+        OFFLOAD_TARGET_NAMES=nvptx-none:hsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr,hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+        Thread model: posix
+        gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) 
+        COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_433de' '-mtune=generic' '-march=x86-64'
+         /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/cc8spW24.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_433de /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. -v CMakeFiles/cmTC_433de.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
+        collect2 version 9.4.0
+        /usr/bin/ld -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/cc8spW24.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_433de /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. -v CMakeFiles/cmTC_433de.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
+        GNU ld (GNU Binutils for Ubuntu) 2.34
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_433de' '-mtune=generic' '-march=x86-64'
+        /usr/bin/cc  -v -Wl,-v CMakeFiles/cmTC_433de.dir/CMakeCCompilerABI.c.o -o cmTC_433de
+        make[1]: Leaving directory '/mnt/home/calex/g1_ros_ws/build/g1_description/CMakeFiles/CMakeScratch/TryCompile-VhXn1V'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-4.3/Modules/CMakeDetermineCompilerABI.cmake:217 (message)"
+      - "/usr/share/cmake-4.3/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/gcc/x86_64-linux-gnu/9/include]
+          add: [/usr/local/include]
+          add: [/usr/include/x86_64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/9/include] ==> [/usr/lib/gcc/x86_64-linux-gnu/9/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/lib/gcc/x86_64-linux-gnu/9/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-4.3/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
+      - "/usr/share/cmake-4.3/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
+        ignore line: [Change Dir: '/mnt/home/calex/g1_ros_ws/build/g1_description/CMakeFiles/CMakeScratch/TryCompile-VhXn1V']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_433de/fast]
+        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_433de.dir/build.make CMakeFiles/cmTC_433de.dir/build]
+        ignore line: [make[1]: Entering directory '/mnt/home/calex/g1_ros_ws/build/g1_description/CMakeFiles/CMakeScratch/TryCompile-VhXn1V']
+        ignore line: [Building C object CMakeFiles/cmTC_433de.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_433de.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-4.3/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:hsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_433de.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/share/cmake-4.3/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_433de.dir/CMakeCCompilerABI.c.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/cctwRVID.s]
+        ignore line: [GNU C17 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (x86_64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 9.4.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C17 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (x86_64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 9.4.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: 01da938ff5dc2163489aa33cb3b747a7]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_433de.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_433de.dir/CMakeCCompilerABI.c.o /tmp/cctwRVID.s]
+        ignore line: [GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_433de.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+        ignore line: [Linking C executable cmTC_433de]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_433de.dir/link.txt --verbose=1]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:hsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) ]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_433de' '-mtune=generic' '-march=x86-64']
+        link line: [ /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/cc8spW24.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_433de /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. -v CMakeFiles/cmTC_433de.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/9/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/cc8spW24.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-znow] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_433de] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/9] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../..]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_433de.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
+        ignore line: [collect2 version 9.4.0]
+        ignore line: [/usr/bin/ld -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/cc8spW24.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_433de /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. -v CMakeFiles/cmTC_433de.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
+        linker tool for 'C': /usr/bin/ld
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o] ==> [/usr/lib/x86_64-linux-gnu/Scrt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o] ==> [/usr/lib/x86_64-linux-gnu/crtn.o]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9] ==> [/usr/lib/gcc/x86_64-linux-gnu/9]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib] ==> [/usr/lib]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../..] ==> [/usr/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/usr/lib/x86_64-linux-gnu/Scrt1.o;/usr/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o;/usr/lib/x86_64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/9;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-4.3/Modules/Internal/CMakeDetermineLinkerId.cmake:38 (message)"
+      - "/usr/share/cmake-4.3/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
+      - "/usr/share/cmake-4.3/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the C compiler's linker: "/usr/bin/ld" "-v"
+      GNU ld (GNU Binutils for Ubuntu) 2.34
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-4.3/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "/usr/share/cmake-4.3/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/mnt/home/calex/g1_ros_ws/build/g1_description/CMakeFiles/CMakeScratch/TryCompile-X66ATU"
+      binary: "/mnt/home/calex/g1_ros_ws/build/g1_description/CMakeFiles/CMakeScratch/TryCompile-X66ATU"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/home/calex/g1_ros_ws/build/g1_description/CMakeFiles/CMakeScratch/TryCompile-X66ATU'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_92990/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_92990.dir/build.make CMakeFiles/cmTC_92990.dir/build
+        make[1]: Entering directory '/mnt/home/calex/g1_ros_ws/build/g1_description/CMakeFiles/CMakeScratch/TryCompile-X66ATU'
+        Building CXX object CMakeFiles/cmTC_92990.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/c++   -v -o CMakeFiles/cmTC_92990.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-4.3/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        OFFLOAD_TARGET_NAMES=nvptx-none:hsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr,hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+        Thread model: posix
+        gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_92990.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+         /usr/lib/gcc/x86_64-linux-gnu/9/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-4.3/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_92990.dir/CMakeCXXCompilerABI.cpp.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccjigEEZ.s
+        GNU C++14 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (x86_64-linux-gnu)
+        	compiled by GNU C version 9.4.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/9"
+        ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/include/c++/9
+         /usr/include/x86_64-linux-gnu/c++/9
+         /usr/include/c++/9/backward
+         /usr/lib/gcc/x86_64-linux-gnu/9/include
+         /usr/local/include
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        GNU C++14 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (x86_64-linux-gnu)
+        	compiled by GNU C version 9.4.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: 3d1eba838554fa2348dba760e4770469
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_92990.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+         as -v --64 -o CMakeFiles/cmTC_92990.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccjigEEZ.s
+        GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34
+        COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_92990.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+        Linking CXX executable cmTC_92990
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_92990.dir/link.txt --verbose=1
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper
+        OFFLOAD_TARGET_NAMES=nvptx-none:hsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr,hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+        Thread model: posix
+        gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) 
+        COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_92990' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+         /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccvL8gUr.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_92990 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. -v CMakeFiles/cmTC_92990.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
+        collect2 version 9.4.0
+        /usr/bin/ld -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccvL8gUr.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_92990 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. -v CMakeFiles/cmTC_92990.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
+        GNU ld (GNU Binutils for Ubuntu) 2.34
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_92990' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+        /usr/bin/c++  -v -Wl,-v CMakeFiles/cmTC_92990.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_92990
+        make[1]: Leaving directory '/mnt/home/calex/g1_ros_ws/build/g1_description/CMakeFiles/CMakeScratch/TryCompile-X66ATU'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-4.3/Modules/CMakeDetermineCompilerABI.cmake:217 (message)"
+      - "/usr/share/cmake-4.3/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/include/c++/9]
+          add: [/usr/include/x86_64-linux-gnu/c++/9]
+          add: [/usr/include/c++/9/backward]
+          add: [/usr/lib/gcc/x86_64-linux-gnu/9/include]
+          add: [/usr/local/include]
+          add: [/usr/include/x86_64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/include/c++/9] ==> [/usr/include/c++/9]
+        collapse include dir [/usr/include/x86_64-linux-gnu/c++/9] ==> [/usr/include/x86_64-linux-gnu/c++/9]
+        collapse include dir [/usr/include/c++/9/backward] ==> [/usr/include/c++/9/backward]
+        collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/9/include] ==> [/usr/lib/gcc/x86_64-linux-gnu/9/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/include/c++/9;/usr/include/x86_64-linux-gnu/c++/9;/usr/include/c++/9/backward;/usr/lib/gcc/x86_64-linux-gnu/9/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-4.3/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
+      - "/usr/share/cmake-4.3/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
+        ignore line: [Change Dir: '/mnt/home/calex/g1_ros_ws/build/g1_description/CMakeFiles/CMakeScratch/TryCompile-X66ATU']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_92990/fast]
+        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_92990.dir/build.make CMakeFiles/cmTC_92990.dir/build]
+        ignore line: [make[1]: Entering directory '/mnt/home/calex/g1_ros_ws/build/g1_description/CMakeFiles/CMakeScratch/TryCompile-X66ATU']
+        ignore line: [Building CXX object CMakeFiles/cmTC_92990.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_92990.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-4.3/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:hsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_92990.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-4.3/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_92990.dir/CMakeCXXCompilerABI.cpp.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccjigEEZ.s]
+        ignore line: [GNU C++14 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (x86_64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 9.4.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/9"]
+        ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/include/c++/9]
+        ignore line: [ /usr/include/x86_64-linux-gnu/c++/9]
+        ignore line: [ /usr/include/c++/9/backward]
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C++14 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (x86_64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 9.4.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: 3d1eba838554fa2348dba760e4770469]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_92990.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_92990.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccjigEEZ.s]
+        ignore line: [GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_92990.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+        ignore line: [Linking CXX executable cmTC_92990]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_92990.dir/link.txt --verbose=1]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:hsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) ]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_92990' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+        link line: [ /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccvL8gUr.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_92990 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. -v CMakeFiles/cmTC_92990.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/9/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccvL8gUr.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-znow] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_92990] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/9] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../..]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_92990.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
+        ignore line: [collect2 version 9.4.0]
+        ignore line: [/usr/bin/ld -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccvL8gUr.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_92990 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. -v CMakeFiles/cmTC_92990.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
+        linker tool for 'CXX': /usr/bin/ld
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o] ==> [/usr/lib/x86_64-linux-gnu/Scrt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o] ==> [/usr/lib/x86_64-linux-gnu/crtn.o]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9] ==> [/usr/lib/gcc/x86_64-linux-gnu/9]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib] ==> [/usr/lib]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../..] ==> [/usr/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/usr/lib/x86_64-linux-gnu/Scrt1.o;/usr/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o;/usr/lib/x86_64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/9;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-4.3/Modules/Internal/CMakeDetermineLinkerId.cmake:38 (message)"
+      - "/usr/share/cmake-4.3/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
+      - "/usr/share/cmake-4.3/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the CXX compiler's linker: "/usr/bin/ld" "-v"
+      GNU ld (GNU Binutils for Ubuntu) 2.34
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "/opt/ros/foxy/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:5 (find_package)"
+      - "/opt/ros/foxy/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)"
+      - "CMakeLists.txt:4 (find_package)"
+    name: "ament_cmake_libraries"
+    configs:
+      -
+        filename: "ament_cmake_libraries.cps"
+        kind: "cps"
+      -
+        filename: "ament_cmake_librariesConfig.cmake"
+        kind: "cmake"
+      -
+        filename: "ament_cmake_libraries-config.cmake"
+        kind: "cmake"
+    version_request:
+      exact: false
+    settings:
+      required: "required_explicit"
+      quiet: true
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      names:
+        - "ament_cmake_libraries"
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "/mnt/home/calex/g1_ros_ws/build/g1_description/CMakeFiles/pkgRedirects/ament_cmake_librariesConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/home/calex/g1_ros_ws/build/g1_description/CMakeFiles/pkgRedirects/ament_cmake_libraries-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/home/calex/g1_ros_ws/build/g1_description/CMakeFiles/pkgRedirects/lib/x86_64-linux-gnu/cps/ament_cmake_libraries.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/mnt/home/calex/g1_ros_ws/build/g1_description/CMakeFiles/pkgRedirects/lib/cps/ament_cmake_libraries.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/mnt/home/calex/g1_ros_ws/build/g1_description/CMakeFiles/pkgRedirects/share/cps/ament_cmake_libraries.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/ament_cmake_librariesConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/ament_cmake_libraries-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/cmake/ament_cmake_librariesConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/cmake/ament_cmake_libraries-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/lib/x86_64-linux-gnu/cps/ament_cmake_libraries.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/lib/cps/ament_cmake_libraries.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/cps/ament_cmake_libraries.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_libraries/ament_cmake_librariesConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_libraries/ament_cmake_libraries-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+    found:
+      path: "/opt/ros/foxy/share/ament_cmake_libraries/cmake/ament_cmake_librariesConfig.cmake"
+      mode: "config"
+      version: "0.9.12"
+    search_context:
+      ENV{CMAKE_PREFIX_PATH}:
+        - "/opt/ros/foxy"
+      ENV{PATH}:
+        - "/mnt/home/calex/.local/bin"
+        - "/opt/ros/foxy/bin"
+        - "/usr/local/Modules/bin"
+        - "/usr/local/cuda/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+      CMAKE_INSTALL_PREFIX: "/mnt/home/calex/g1_ros_ws/install/g1_description"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/mnt/home/calex/g1_ros_ws/install/g1_description"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake-4.3/Modules/FindPythonInterp.cmake:144 (find_program)"
+      - "/opt/ros/foxy/share/ament_cmake_core/cmake/core/python.cmake:22 (find_package)"
+      - "/opt/ros/foxy/share/ament_cmake_core/cmake/core/all.cmake:53 (include)"
+      - "/opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_core-extras.cmake:17 (include)"
+      - "/opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_coreConfig.cmake:41 (include)"
+      - "/opt/ros/foxy/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:15 (find_package)"
+      - "/opt/ros/foxy/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)"
+      - "CMakeLists.txt:4 (find_package)"
+    mode: "program"
+    variable: "PYTHON_EXECUTABLE"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "python3"
+    candidate_directories:
+      - "/opt/ros/foxy/bin/"
+      - "/opt/ros/foxy/sbin/"
+      - "/opt/ros/foxy/"
+      - "/mnt/home/calex/.local/bin/"
+      - "/opt/ros/foxy/bin/"
+      - "/usr/local/Modules/bin/"
+      - "/usr/local/cuda/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/usr/bin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+      - "/usr/local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/"
+      - "/usr/bin/"
+      - "/usr/sbin/"
+      - "/usr/"
+      - "/bin/"
+      - "/sbin/"
+      - "/mnt/home/calex/g1_ros_ws/install/g1_description/bin/"
+      - "/mnt/home/calex/g1_ros_ws/install/g1_description/sbin/"
+      - "/mnt/home/calex/g1_ros_ws/install/g1_description/"
+      - "/usr/X11R6/bin/"
+      - "/usr/X11R6/sbin/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/bin/"
+      - "/usr/pkg/sbin/"
+      - "/usr/pkg/"
+      - "/opt/bin/"
+      - "/opt/sbin/"
+      - "/opt/"
+    searched_directories:
+      - "/opt/ros/foxy/bin/python3"
+      - "/opt/ros/foxy/sbin/python3"
+      - "/opt/ros/foxy/python3"
+      - "/mnt/home/calex/.local/bin/python3"
+      - "/opt/ros/foxy/bin/python3"
+      - "/usr/local/Modules/bin/python3"
+      - "/usr/local/cuda/bin/python3"
+      - "/usr/local/sbin/python3"
+      - "/usr/local/bin/python3"
+      - "/usr/sbin/python3"
+    found: "/usr/bin/python3"
+    search_context:
+      ENV{CMAKE_PREFIX_PATH}:
+        - "/opt/ros/foxy"
+      ENV{PATH}:
+        - "/mnt/home/calex/.local/bin"
+        - "/opt/ros/foxy/bin"
+        - "/usr/local/Modules/bin"
+        - "/usr/local/cuda/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+      CMAKE_INSTALL_PREFIX: "/mnt/home/calex/g1_ros_ws/install/g1_description"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/mnt/home/calex/g1_ros_ws/install/g1_description"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "/opt/ros/foxy/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:15 (find_package)"
+      - "/opt/ros/foxy/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)"
+      - "CMakeLists.txt:4 (find_package)"
+    name: "ament_cmake_core"
+    configs:
+      -
+        filename: "ament_cmake_core.cps"
+        kind: "cps"
+      -
+        filename: "ament_cmake_coreConfig.cmake"
+        kind: "cmake"
+      -
+        filename: "ament_cmake_core-config.cmake"
+        kind: "cmake"
+    version_request:
+      exact: false
+    settings:
+      required: "required_explicit"
+      quiet: true
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      names:
+        - "ament_cmake_core"
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "/mnt/home/calex/g1_ros_ws/build/g1_description/CMakeFiles/pkgRedirects/ament_cmake_coreConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/home/calex/g1_ros_ws/build/g1_description/CMakeFiles/pkgRedirects/ament_cmake_core-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/home/calex/g1_ros_ws/build/g1_description/CMakeFiles/pkgRedirects/lib/x86_64-linux-gnu/cps/ament_cmake_core.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/mnt/home/calex/g1_ros_ws/build/g1_description/CMakeFiles/pkgRedirects/lib/cps/ament_cmake_core.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/mnt/home/calex/g1_ros_ws/build/g1_description/CMakeFiles/pkgRedirects/share/cps/ament_cmake_core.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/ament_cmake_coreConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/ament_cmake_core-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/cmake/ament_cmake_coreConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/cmake/ament_cmake_core-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/lib/x86_64-linux-gnu/cps/ament_cmake_core.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/lib/cps/ament_cmake_core.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/cps/ament_cmake_core.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_core/ament_cmake_coreConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_core/ament_cmake_core-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+    found:
+      path: "/opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_coreConfig.cmake"
+      mode: "config"
+      version: "0.9.12"
+    search_context:
+      ENV{CMAKE_PREFIX_PATH}:
+        - "/opt/ros/foxy"
+      ENV{PATH}:
+        - "/mnt/home/calex/.local/bin"
+        - "/opt/ros/foxy/bin"
+        - "/usr/local/Modules/bin"
+        - "/usr/local/cuda/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+      CMAKE_INSTALL_PREFIX: "/mnt/home/calex/g1_ros_ws/install/g1_description"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/mnt/home/calex/g1_ros_ws/install/g1_description"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "/opt/ros/foxy/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)"
+      - "/opt/ros/foxy/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)"
+      - "CMakeLists.txt:4 (find_package)"
+    name: "ament_cmake_export_definitions"
+    configs:
+      -
+        filename: "ament_cmake_export_definitions.cps"
+        kind: "cps"
+      -
+        filename: "ament_cmake_export_definitionsConfig.cmake"
+        kind: "cmake"
+      -
+        filename: "ament_cmake_export_definitions-config.cmake"
+        kind: "cmake"
+    version_request:
+      exact: false
+    settings:
+      required: "required_explicit"
+      quiet: true
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      names:
+        - "ament_cmake_export_definitions"
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "/mnt/home/calex/g1_ros_ws/build/g1_description/CMakeFiles/pkgRedirects/ament_cmake_export_definitionsConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/home/calex/g1_ros_ws/build/g1_description/CMakeFiles/pkgRedirects/ament_cmake_export_definitions-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/home/calex/g1_ros_ws/build/g1_description/CMakeFiles/pkgRedirects/lib/x86_64-linux-gnu/cps/ament_cmake_export_definitions.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/mnt/home/calex/g1_ros_ws/build/g1_description/CMakeFiles/pkgRedirects/lib/cps/ament_cmake_export_definitions.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/mnt/home/calex/g1_ros_ws/build/g1_description/CMakeFiles/pkgRedirects/share/cps/ament_cmake_export_definitions.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/ament_cmake_export_definitionsConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/ament_cmake_export_definitions-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/cmake/ament_cmake_export_definitionsConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/cmake/ament_cmake_export_definitions-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/lib/x86_64-linux-gnu/cps/ament_cmake_export_definitions.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/lib/cps/ament_cmake_export_definitions.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/cps/ament_cmake_export_definitions.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_export_definitions/ament_cmake_export_definitionsConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_export_definitions/ament_cmake_export_definitions-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+    found:
+      path: "/opt/ros/foxy/share/ament_cmake_export_definitions/cmake/ament_cmake_export_definitionsConfig.cmake"
+      mode: "config"
+      version: "0.9.12"
+    search_context:
+      ENV{CMAKE_PREFIX_PATH}:
+        - "/opt/ros/foxy"
+      ENV{PATH}:
+        - "/mnt/home/calex/.local/bin"
+        - "/opt/ros/foxy/bin"
+        - "/usr/local/Modules/bin"
+        - "/usr/local/cuda/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+      CMAKE_INSTALL_PREFIX: "/mnt/home/calex/g1_ros_ws/install/g1_description"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/mnt/home/calex/g1_ros_ws/install/g1_description"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "/opt/ros/foxy/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)"
+      - "/opt/ros/foxy/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)"
+      - "CMakeLists.txt:4 (find_package)"
+    name: "ament_cmake_export_dependencies"
+    configs:
+      -
+        filename: "ament_cmake_export_dependencies.cps"
+        kind: "cps"
+      -
+        filename: "ament_cmake_export_dependenciesConfig.cmake"
+        kind: "cmake"
+      -
+        filename: "ament_cmake_export_dependencies-config.cmake"
+        kind: "cmake"
+    version_request:
+      exact: false
+    settings:
+      required: "required_explicit"
+      quiet: true
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      names:
+        - "ament_cmake_export_dependencies"
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "/mnt/home/calex/g1_ros_ws/build/g1_description/CMakeFiles/pkgRedirects/ament_cmake_export_dependenciesConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/home/calex/g1_ros_ws/build/g1_description/CMakeFiles/pkgRedirects/ament_cmake_export_dependencies-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/home/calex/g1_ros_ws/build/g1_description/CMakeFiles/pkgRedirects/lib/x86_64-linux-gnu/cps/ament_cmake_export_dependencies.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/mnt/home/calex/g1_ros_ws/build/g1_description/CMakeFiles/pkgRedirects/lib/cps/ament_cmake_export_dependencies.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/mnt/home/calex/g1_ros_ws/build/g1_description/CMakeFiles/pkgRedirects/share/cps/ament_cmake_export_dependencies.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/ament_cmake_export_dependenciesConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/ament_cmake_export_dependencies-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/cmake/ament_cmake_export_dependenciesConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/cmake/ament_cmake_export_dependencies-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/lib/x86_64-linux-gnu/cps/ament_cmake_export_dependencies.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/lib/cps/ament_cmake_export_dependencies.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/cps/ament_cmake_export_dependencies.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_export_dependencies/ament_cmake_export_dependenciesConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_export_dependencies/ament_cmake_export_dependencies-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+    found:
+      path: "/opt/ros/foxy/share/ament_cmake_export_dependencies/cmake/ament_cmake_export_dependenciesConfig.cmake"
+      mode: "config"
+      version: "0.9.12"
+    search_context:
+      ENV{CMAKE_PREFIX_PATH}:
+        - "/opt/ros/foxy"
+      ENV{PATH}:
+        - "/mnt/home/calex/.local/bin"
+        - "/opt/ros/foxy/bin"
+        - "/usr/local/Modules/bin"
+        - "/usr/local/cuda/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+      CMAKE_INSTALL_PREFIX: "/mnt/home/calex/g1_ros_ws/install/g1_description"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/mnt/home/calex/g1_ros_ws/install/g1_description"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "/opt/ros/foxy/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)"
+      - "/opt/ros/foxy/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)"
+      - "CMakeLists.txt:4 (find_package)"
+    name: "ament_cmake_export_include_directories"
+    configs:
+      -
+        filename: "ament_cmake_export_include_directories.cps"
+        kind: "cps"
+      -
+        filename: "ament_cmake_export_include_directoriesConfig.cmake"
+        kind: "cmake"
+      -
+        filename: "ament_cmake_export_include_directories-config.cmake"
+        kind: "cmake"
+    version_request:
+      exact: false
+    settings:
+      required: "required_explicit"
+      quiet: true
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      names:
+        - "ament_cmake_export_include_directories"
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "/mnt/home/calex/g1_ros_ws/build/g1_description/CMakeFiles/pkgRedirects/ament_cmake_export_include_directoriesConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/home/calex/g1_ros_ws/build/g1_description/CMakeFiles/pkgRedirects/ament_cmake_export_include_directories-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/home/calex/g1_ros_ws/build/g1_description/CMakeFiles/pkgRedirects/lib/x86_64-linux-gnu/cps/ament_cmake_export_include_directories.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/mnt/home/calex/g1_ros_ws/build/g1_description/CMakeFiles/pkgRedirects/lib/cps/ament_cmake_export_include_directories.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/mnt/home/calex/g1_ros_ws/build/g1_description/CMakeFiles/pkgRedirects/share/cps/ament_cmake_export_include_directories.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/ament_cmake_export_include_directoriesConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/ament_cmake_export_include_directories-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/cmake/ament_cmake_export_include_directoriesConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/cmake/ament_cmake_export_include_directories-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/lib/x86_64-linux-gnu/cps/ament_cmake_export_include_directories.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/lib/cps/ament_cmake_export_include_directories.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/cps/ament_cmake_export_include_directories.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_export_include_directories/ament_cmake_export_include_directoriesConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_export_include_directories/ament_cmake_export_include_directories-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+    found:
+      path: "/opt/ros/foxy/share/ament_cmake_export_include_directories/cmake/ament_cmake_export_include_directoriesConfig.cmake"
+      mode: "config"
+      version: "0.9.12"
+    search_context:
+      ENV{CMAKE_PREFIX_PATH}:
+        - "/opt/ros/foxy"
+      ENV{PATH}:
+        - "/mnt/home/calex/.local/bin"
+        - "/opt/ros/foxy/bin"
+        - "/usr/local/Modules/bin"
+        - "/usr/local/cuda/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+      CMAKE_INSTALL_PREFIX: "/mnt/home/calex/g1_ros_ws/install/g1_description"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/mnt/home/calex/g1_ros_ws/install/g1_description"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "/opt/ros/foxy/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)"
+      - "/opt/ros/foxy/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)"
+      - "CMakeLists.txt:4 (find_package)"
+    name: "ament_cmake_export_interfaces"
+    configs:
+      -
+        filename: "ament_cmake_export_interfaces.cps"
+        kind: "cps"
+      -
+        filename: "ament_cmake_export_interfacesConfig.cmake"
+        kind: "cmake"
+      -
+        filename: "ament_cmake_export_interfaces-config.cmake"
+        kind: "cmake"
+    version_request:
+      exact: false
+    settings:
+      required: "required_explicit"
+      quiet: true
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      names:
+        - "ament_cmake_export_interfaces"
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "/mnt/home/calex/g1_ros_ws/build/g1_description/CMakeFiles/pkgRedirects/ament_cmake_export_interfacesConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/home/calex/g1_ros_ws/build/g1_description/CMakeFiles/pkgRedirects/ament_cmake_export_interfaces-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/home/calex/g1_ros_ws/build/g1_description/CMakeFiles/pkgRedirects/lib/x86_64-linux-gnu/cps/ament_cmake_export_interfaces.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/mnt/home/calex/g1_ros_ws/build/g1_description/CMakeFiles/pkgRedirects/lib/cps/ament_cmake_export_interfaces.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/mnt/home/calex/g1_ros_ws/build/g1_description/CMakeFiles/pkgRedirects/share/cps/ament_cmake_export_interfaces.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/ament_cmake_export_interfacesConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/ament_cmake_export_interfaces-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/cmake/ament_cmake_export_interfacesConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/cmake/ament_cmake_export_interfaces-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/lib/x86_64-linux-gnu/cps/ament_cmake_export_interfaces.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/lib/cps/ament_cmake_export_interfaces.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/cps/ament_cmake_export_interfaces.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_export_interfaces/ament_cmake_export_interfacesConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_export_interfaces/ament_cmake_export_interfaces-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+    found:
+      path: "/opt/ros/foxy/share/ament_cmake_export_interfaces/cmake/ament_cmake_export_interfacesConfig.cmake"
+      mode: "config"
+      version: "0.9.12"
+    search_context:
+      ENV{CMAKE_PREFIX_PATH}:
+        - "/opt/ros/foxy"
+      ENV{PATH}:
+        - "/mnt/home/calex/.local/bin"
+        - "/opt/ros/foxy/bin"
+        - "/usr/local/Modules/bin"
+        - "/usr/local/cuda/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+      CMAKE_INSTALL_PREFIX: "/mnt/home/calex/g1_ros_ws/install/g1_description"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/mnt/home/calex/g1_ros_ws/install/g1_description"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "/opt/ros/foxy/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)"
+      - "/opt/ros/foxy/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)"
+      - "CMakeLists.txt:4 (find_package)"
+    name: "ament_cmake_export_libraries"
+    configs:
+      -
+        filename: "ament_cmake_export_libraries.cps"
+        kind: "cps"
+      -
+        filename: "ament_cmake_export_librariesConfig.cmake"
+        kind: "cmake"
+      -
+        filename: "ament_cmake_export_libraries-config.cmake"
+        kind: "cmake"
+    version_request:
+      exact: false
+    settings:
+      required: "required_explicit"
+      quiet: true
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      names:
+        - "ament_cmake_export_libraries"
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "/mnt/home/calex/g1_ros_ws/build/g1_description/CMakeFiles/pkgRedirects/ament_cmake_export_librariesConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/home/calex/g1_ros_ws/build/g1_description/CMakeFiles/pkgRedirects/ament_cmake_export_libraries-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/home/calex/g1_ros_ws/build/g1_description/CMakeFiles/pkgRedirects/lib/x86_64-linux-gnu/cps/ament_cmake_export_libraries.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/mnt/home/calex/g1_ros_ws/build/g1_description/CMakeFiles/pkgRedirects/lib/cps/ament_cmake_export_libraries.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/mnt/home/calex/g1_ros_ws/build/g1_description/CMakeFiles/pkgRedirects/share/cps/ament_cmake_export_libraries.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/ament_cmake_export_librariesConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/ament_cmake_export_libraries-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/cmake/ament_cmake_export_librariesConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/cmake/ament_cmake_export_libraries-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/lib/x86_64-linux-gnu/cps/ament_cmake_export_libraries.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/lib/cps/ament_cmake_export_libraries.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/cps/ament_cmake_export_libraries.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_export_libraries/ament_cmake_export_librariesConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_export_libraries/ament_cmake_export_libraries-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+    found:
+      path: "/opt/ros/foxy/share/ament_cmake_export_libraries/cmake/ament_cmake_export_librariesConfig.cmake"
+      mode: "config"
+      version: "0.9.12"
+    search_context:
+      ENV{CMAKE_PREFIX_PATH}:
+        - "/opt/ros/foxy"
+      ENV{PATH}:
+        - "/mnt/home/calex/.local/bin"
+        - "/opt/ros/foxy/bin"
+        - "/usr/local/Modules/bin"
+        - "/usr/local/cuda/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+      CMAKE_INSTALL_PREFIX: "/mnt/home/calex/g1_ros_ws/install/g1_description"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/mnt/home/calex/g1_ros_ws/install/g1_description"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "/opt/ros/foxy/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)"
+      - "/opt/ros/foxy/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)"
+      - "CMakeLists.txt:4 (find_package)"
+    name: "ament_cmake_export_link_flags"
+    configs:
+      -
+        filename: "ament_cmake_export_link_flags.cps"
+        kind: "cps"
+      -
+        filename: "ament_cmake_export_link_flagsConfig.cmake"
+        kind: "cmake"
+      -
+        filename: "ament_cmake_export_link_flags-config.cmake"
+        kind: "cmake"
+    version_request:
+      exact: false
+    settings:
+      required: "required_explicit"
+      quiet: true
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      names:
+        - "ament_cmake_export_link_flags"
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "/mnt/home/calex/g1_ros_ws/build/g1_description/CMakeFiles/pkgRedirects/ament_cmake_export_link_flagsConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/home/calex/g1_ros_ws/build/g1_description/CMakeFiles/pkgRedirects/ament_cmake_export_link_flags-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/home/calex/g1_ros_ws/build/g1_description/CMakeFiles/pkgRedirects/lib/x86_64-linux-gnu/cps/ament_cmake_export_link_flags.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/mnt/home/calex/g1_ros_ws/build/g1_description/CMakeFiles/pkgRedirects/lib/cps/ament_cmake_export_link_flags.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/mnt/home/calex/g1_ros_ws/build/g1_description/CMakeFiles/pkgRedirects/share/cps/ament_cmake_export_link_flags.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/ament_cmake_export_link_flagsConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/ament_cmake_export_link_flags-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/cmake/ament_cmake_export_link_flagsConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/cmake/ament_cmake_export_link_flags-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/lib/x86_64-linux-gnu/cps/ament_cmake_export_link_flags.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/lib/cps/ament_cmake_export_link_flags.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/cps/ament_cmake_export_link_flags.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_export_link_flags/ament_cmake_export_link_flagsConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_export_link_flags/ament_cmake_export_link_flags-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+    found:
+      path: "/opt/ros/foxy/share/ament_cmake_export_link_flags/cmake/ament_cmake_export_link_flagsConfig.cmake"
+      mode: "config"
+      version: "0.9.12"
+    search_context:
+      ENV{CMAKE_PREFIX_PATH}:
+        - "/opt/ros/foxy"
+      ENV{PATH}:
+        - "/mnt/home/calex/.local/bin"
+        - "/opt/ros/foxy/bin"
+        - "/usr/local/Modules/bin"
+        - "/usr/local/cuda/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+      CMAKE_INSTALL_PREFIX: "/mnt/home/calex/g1_ros_ws/install/g1_description"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/mnt/home/calex/g1_ros_ws/install/g1_description"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "/opt/ros/foxy/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)"
+      - "/opt/ros/foxy/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)"
+      - "CMakeLists.txt:4 (find_package)"
+    name: "ament_cmake_export_targets"
+    configs:
+      -
+        filename: "ament_cmake_export_targets.cps"
+        kind: "cps"
+      -
+        filename: "ament_cmake_export_targetsConfig.cmake"
+        kind: "cmake"
+      -
+        filename: "ament_cmake_export_targets-config.cmake"
+        kind: "cmake"
+    version_request:
+      exact: false
+    settings:
+      required: "required_explicit"
+      quiet: true
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      names:
+        - "ament_cmake_export_targets"
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "/mnt/home/calex/g1_ros_ws/build/g1_description/CMakeFiles/pkgRedirects/ament_cmake_export_targetsConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/home/calex/g1_ros_ws/build/g1_description/CMakeFiles/pkgRedirects/ament_cmake_export_targets-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/home/calex/g1_ros_ws/build/g1_description/CMakeFiles/pkgRedirects/lib/x86_64-linux-gnu/cps/ament_cmake_export_targets.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/mnt/home/calex/g1_ros_ws/build/g1_description/CMakeFiles/pkgRedirects/lib/cps/ament_cmake_export_targets.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/mnt/home/calex/g1_ros_ws/build/g1_description/CMakeFiles/pkgRedirects/share/cps/ament_cmake_export_targets.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/ament_cmake_export_targetsConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/ament_cmake_export_targets-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/cmake/ament_cmake_export_targetsConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/cmake/ament_cmake_export_targets-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/lib/x86_64-linux-gnu/cps/ament_cmake_export_targets.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/lib/cps/ament_cmake_export_targets.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/cps/ament_cmake_export_targets.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_export_targets/ament_cmake_export_targetsConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_export_targets/ament_cmake_export_targets-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+    found:
+      path: "/opt/ros/foxy/share/ament_cmake_export_targets/cmake/ament_cmake_export_targetsConfig.cmake"
+      mode: "config"
+      version: "0.9.12"
+    search_context:
+      ENV{CMAKE_PREFIX_PATH}:
+        - "/opt/ros/foxy"
+      ENV{PATH}:
+        - "/mnt/home/calex/.local/bin"
+        - "/opt/ros/foxy/bin"
+        - "/usr/local/Modules/bin"
+        - "/usr/local/cuda/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+      CMAKE_INSTALL_PREFIX: "/mnt/home/calex/g1_ros_ws/install/g1_description"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/mnt/home/calex/g1_ros_ws/install/g1_description"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "/opt/ros/foxy/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)"
+      - "/opt/ros/foxy/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)"
+      - "CMakeLists.txt:4 (find_package)"
+    name: "ament_cmake_python"
+    configs:
+      -
+        filename: "ament_cmake_python.cps"
+        kind: "cps"
+      -
+        filename: "ament_cmake_pythonConfig.cmake"
+        kind: "cmake"
+      -
+        filename: "ament_cmake_python-config.cmake"
+        kind: "cmake"
+    version_request:
+      exact: false
+    settings:
+      required: "required_explicit"
+      quiet: true
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      names:
+        - "ament_cmake_python"
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "/mnt/home/calex/g1_ros_ws/build/g1_description/CMakeFiles/pkgRedirects/ament_cmake_pythonConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/home/calex/g1_ros_ws/build/g1_description/CMakeFiles/pkgRedirects/ament_cmake_python-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/home/calex/g1_ros_ws/build/g1_description/CMakeFiles/pkgRedirects/lib/x86_64-linux-gnu/cps/ament_cmake_python.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/mnt/home/calex/g1_ros_ws/build/g1_description/CMakeFiles/pkgRedirects/lib/cps/ament_cmake_python.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/mnt/home/calex/g1_ros_ws/build/g1_description/CMakeFiles/pkgRedirects/share/cps/ament_cmake_python.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/ament_cmake_pythonConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/ament_cmake_python-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/cmake/ament_cmake_pythonConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/cmake/ament_cmake_python-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/lib/x86_64-linux-gnu/cps/ament_cmake_python.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/lib/cps/ament_cmake_python.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/cps/ament_cmake_python.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_python/ament_cmake_pythonConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_python/ament_cmake_python-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+    found:
+      path: "/opt/ros/foxy/share/ament_cmake_python/cmake/ament_cmake_pythonConfig.cmake"
+      mode: "config"
+      version: "0.9.12"
+    search_context:
+      ENV{CMAKE_PREFIX_PATH}:
+        - "/opt/ros/foxy"
+      ENV{PATH}:
+        - "/mnt/home/calex/.local/bin"
+        - "/opt/ros/foxy/bin"
+        - "/usr/local/Modules/bin"
+        - "/usr/local/cuda/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+      CMAKE_INSTALL_PREFIX: "/mnt/home/calex/g1_ros_ws/install/g1_description"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/mnt/home/calex/g1_ros_ws/install/g1_description"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "/opt/ros/foxy/share/ament_cmake_target_dependencies/cmake/ament_cmake_target_dependencies-extras.cmake:19 (find_package)"
+      - "/opt/ros/foxy/share/ament_cmake_target_dependencies/cmake/ament_cmake_target_dependenciesConfig.cmake:41 (include)"
+      - "/opt/ros/foxy/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)"
+      - "/opt/ros/foxy/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)"
+      - "CMakeLists.txt:4 (find_package)"
+    name: "ament_cmake_include_directories"
+    configs:
+      -
+        filename: "ament_cmake_include_directories.cps"
+        kind: "cps"
+      -
+        filename: "ament_cmake_include_directoriesConfig.cmake"
+        kind: "cmake"
+      -
+        filename: "ament_cmake_include_directories-config.cmake"
+        kind: "cmake"
+    version_request:
+      exact: false
+    settings:
+      required: "required_explicit"
+      quiet: true
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      names:
+        - "ament_cmake_include_directories"
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "/mnt/home/calex/g1_ros_ws/build/g1_description/CMakeFiles/pkgRedirects/ament_cmake_include_directoriesConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/home/calex/g1_ros_ws/build/g1_description/CMakeFiles/pkgRedirects/ament_cmake_include_directories-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/home/calex/g1_ros_ws/build/g1_description/CMakeFiles/pkgRedirects/lib/x86_64-linux-gnu/cps/ament_cmake_include_directories.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/mnt/home/calex/g1_ros_ws/build/g1_description/CMakeFiles/pkgRedirects/lib/cps/ament_cmake_include_directories.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/mnt/home/calex/g1_ros_ws/build/g1_description/CMakeFiles/pkgRedirects/share/cps/ament_cmake_include_directories.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/ament_cmake_include_directoriesConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/ament_cmake_include_directories-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/cmake/ament_cmake_include_directoriesConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/cmake/ament_cmake_include_directories-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/lib/x86_64-linux-gnu/cps/ament_cmake_include_directories.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/lib/cps/ament_cmake_include_directories.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/cps/ament_cmake_include_directories.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_include_directories/ament_cmake_include_directoriesConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_include_directories/ament_cmake_include_directories-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+    found:
+      path: "/opt/ros/foxy/share/ament_cmake_include_directories/cmake/ament_cmake_include_directoriesConfig.cmake"
+      mode: "config"
+      version: "0.9.12"
+    search_context:
+      ENV{CMAKE_PREFIX_PATH}:
+        - "/opt/ros/foxy"
+      ENV{PATH}:
+        - "/mnt/home/calex/.local/bin"
+        - "/opt/ros/foxy/bin"
+        - "/usr/local/Modules/bin"
+        - "/usr/local/cuda/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+      CMAKE_INSTALL_PREFIX: "/mnt/home/calex/g1_ros_ws/install/g1_description"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/mnt/home/calex/g1_ros_ws/install/g1_description"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "/opt/ros/foxy/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)"
+      - "/opt/ros/foxy/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)"
+      - "CMakeLists.txt:4 (find_package)"
+    name: "ament_cmake_target_dependencies"
+    configs:
+      -
+        filename: "ament_cmake_target_dependencies.cps"
+        kind: "cps"
+      -
+        filename: "ament_cmake_target_dependenciesConfig.cmake"
+        kind: "cmake"
+      -
+        filename: "ament_cmake_target_dependencies-config.cmake"
+        kind: "cmake"
+    version_request:
+      exact: false
+    settings:
+      required: "required_explicit"
+      quiet: true
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      names:
+        - "ament_cmake_target_dependencies"
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "/mnt/home/calex/g1_ros_ws/build/g1_description/CMakeFiles/pkgRedirects/ament_cmake_target_dependenciesConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/home/calex/g1_ros_ws/build/g1_description/CMakeFiles/pkgRedirects/ament_cmake_target_dependencies-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/home/calex/g1_ros_ws/build/g1_description/CMakeFiles/pkgRedirects/lib/x86_64-linux-gnu/cps/ament_cmake_target_dependencies.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/mnt/home/calex/g1_ros_ws/build/g1_description/CMakeFiles/pkgRedirects/lib/cps/ament_cmake_target_dependencies.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/mnt/home/calex/g1_ros_ws/build/g1_description/CMakeFiles/pkgRedirects/share/cps/ament_cmake_target_dependencies.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/ament_cmake_target_dependenciesConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/ament_cmake_target_dependencies-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/cmake/ament_cmake_target_dependenciesConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/cmake/ament_cmake_target_dependencies-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/lib/x86_64-linux-gnu/cps/ament_cmake_target_dependencies.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/lib/cps/ament_cmake_target_dependencies.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/cps/ament_cmake_target_dependencies.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_target_dependencies/ament_cmake_target_dependenciesConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_target_dependencies/ament_cmake_target_dependencies-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+    found:
+      path: "/opt/ros/foxy/share/ament_cmake_target_dependencies/cmake/ament_cmake_target_dependenciesConfig.cmake"
+      mode: "config"
+      version: "0.9.12"
+    search_context:
+      ENV{CMAKE_PREFIX_PATH}:
+        - "/opt/ros/foxy"
+      ENV{PATH}:
+        - "/mnt/home/calex/.local/bin"
+        - "/opt/ros/foxy/bin"
+        - "/usr/local/Modules/bin"
+        - "/usr/local/cuda/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+      CMAKE_INSTALL_PREFIX: "/mnt/home/calex/g1_ros_ws/install/g1_description"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/mnt/home/calex/g1_ros_ws/install/g1_description"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "/opt/ros/foxy/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)"
+      - "/opt/ros/foxy/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)"
+      - "CMakeLists.txt:4 (find_package)"
+    name: "ament_cmake_test"
+    configs:
+      -
+        filename: "ament_cmake_test.cps"
+        kind: "cps"
+      -
+        filename: "ament_cmake_testConfig.cmake"
+        kind: "cmake"
+      -
+        filename: "ament_cmake_test-config.cmake"
+        kind: "cmake"
+    version_request:
+      exact: false
+    settings:
+      required: "required_explicit"
+      quiet: true
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      names:
+        - "ament_cmake_test"
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "/mnt/home/calex/g1_ros_ws/build/g1_description/CMakeFiles/pkgRedirects/ament_cmake_testConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/home/calex/g1_ros_ws/build/g1_description/CMakeFiles/pkgRedirects/ament_cmake_test-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/home/calex/g1_ros_ws/build/g1_description/CMakeFiles/pkgRedirects/lib/x86_64-linux-gnu/cps/ament_cmake_test.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/mnt/home/calex/g1_ros_ws/build/g1_description/CMakeFiles/pkgRedirects/lib/cps/ament_cmake_test.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/mnt/home/calex/g1_ros_ws/build/g1_description/CMakeFiles/pkgRedirects/share/cps/ament_cmake_test.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/ament_cmake_testConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/ament_cmake_test-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/cmake/ament_cmake_testConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/cmake/ament_cmake_test-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/lib/x86_64-linux-gnu/cps/ament_cmake_test.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/lib/cps/ament_cmake_test.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/cps/ament_cmake_test.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_test/ament_cmake_testConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_test/ament_cmake_test-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+    found:
+      path: "/opt/ros/foxy/share/ament_cmake_test/cmake/ament_cmake_testConfig.cmake"
+      mode: "config"
+      version: "0.9.12"
+    search_context:
+      ENV{CMAKE_PREFIX_PATH}:
+        - "/opt/ros/foxy"
+      ENV{PATH}:
+        - "/mnt/home/calex/.local/bin"
+        - "/opt/ros/foxy/bin"
+        - "/usr/local/Modules/bin"
+        - "/usr/local/cuda/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+      CMAKE_INSTALL_PREFIX: "/mnt/home/calex/g1_ros_ws/install/g1_description"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/mnt/home/calex/g1_ros_ws/install/g1_description"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "/opt/ros/foxy/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)"
+      - "/opt/ros/foxy/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)"
+      - "CMakeLists.txt:4 (find_package)"
+    name: "ament_cmake_version"
+    configs:
+      -
+        filename: "ament_cmake_version.cps"
+        kind: "cps"
+      -
+        filename: "ament_cmake_versionConfig.cmake"
+        kind: "cmake"
+      -
+        filename: "ament_cmake_version-config.cmake"
+        kind: "cmake"
+    version_request:
+      exact: false
+    settings:
+      required: "required_explicit"
+      quiet: true
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      names:
+        - "ament_cmake_version"
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "/mnt/home/calex/g1_ros_ws/build/g1_description/CMakeFiles/pkgRedirects/ament_cmake_versionConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/home/calex/g1_ros_ws/build/g1_description/CMakeFiles/pkgRedirects/ament_cmake_version-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/home/calex/g1_ros_ws/build/g1_description/CMakeFiles/pkgRedirects/lib/x86_64-linux-gnu/cps/ament_cmake_version.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/mnt/home/calex/g1_ros_ws/build/g1_description/CMakeFiles/pkgRedirects/lib/cps/ament_cmake_version.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/mnt/home/calex/g1_ros_ws/build/g1_description/CMakeFiles/pkgRedirects/share/cps/ament_cmake_version.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/ament_cmake_versionConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/ament_cmake_version-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/cmake/ament_cmake_versionConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/cmake/ament_cmake_version-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/lib/x86_64-linux-gnu/cps/ament_cmake_version.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/lib/cps/ament_cmake_version.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/cps/ament_cmake_version.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_version/ament_cmake_versionConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_version/ament_cmake_version-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+    found:
+      path: "/opt/ros/foxy/share/ament_cmake_version/cmake/ament_cmake_versionConfig.cmake"
+      mode: "config"
+      version: "0.9.12"
+    search_context:
+      ENV{CMAKE_PREFIX_PATH}:
+        - "/opt/ros/foxy"
+      ENV{PATH}:
+        - "/mnt/home/calex/.local/bin"
+        - "/opt/ros/foxy/bin"
+        - "/usr/local/Modules/bin"
+        - "/usr/local/cuda/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+      CMAKE_INSTALL_PREFIX: "/mnt/home/calex/g1_ros_ws/install/g1_description"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/mnt/home/calex/g1_ros_ws/install/g1_description"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "CMakeLists.txt:4 (find_package)"
+    name: "ament_cmake"
+    configs:
+      -
+        filename: "ament_cmake.cps"
+        kind: "cps"
+      -
+        filename: "ament_cmakeConfig.cmake"
+        kind: "cmake"
+      -
+        filename: "ament_cmake-config.cmake"
+        kind: "cmake"
+    version_request:
+      exact: false
+    settings:
+      required: "required_explicit"
+      quiet: false
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      names:
+        - "ament_cmake"
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "/mnt/home/calex/g1_ros_ws/build/g1_description/CMakeFiles/pkgRedirects/ament_cmakeConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/home/calex/g1_ros_ws/build/g1_description/CMakeFiles/pkgRedirects/ament_cmake-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/home/calex/g1_ros_ws/build/g1_description/CMakeFiles/pkgRedirects/lib/x86_64-linux-gnu/cps/ament_cmake.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/mnt/home/calex/g1_ros_ws/build/g1_description/CMakeFiles/pkgRedirects/lib/cps/ament_cmake.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/mnt/home/calex/g1_ros_ws/build/g1_description/CMakeFiles/pkgRedirects/share/cps/ament_cmake.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/ament_cmakeConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/ament_cmake-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/cmake/ament_cmakeConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/cmake/ament_cmake-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/lib/x86_64-linux-gnu/cps/ament_cmake.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/lib/cps/ament_cmake.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/cps/ament_cmake.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_xmllint/ament_cmakeConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_xmllint/ament_cmake-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_version/ament_cmakeConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_version/ament_cmake-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_uncrustify/ament_cmakeConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_uncrustify/ament_cmake-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_test/ament_cmakeConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_test/ament_cmake-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_target_dependencies/ament_cmakeConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_target_dependencies/ament_cmake-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_ros/ament_cmakeConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_ros/ament_cmake-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_python/ament_cmakeConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_python/ament_cmake-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_pytest/ament_cmakeConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_pytest/ament_cmake-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_pep257/ament_cmakeConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_pep257/ament_cmake-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_lint_cmake/ament_cmakeConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_lint_cmake/ament_cmake-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_libraries/ament_cmakeConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_libraries/ament_cmake-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_include_directories/ament_cmakeConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_include_directories/ament_cmake-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_gtest/ament_cmakeConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_gtest/ament_cmake-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_gmock/ament_cmakeConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_gmock/ament_cmake-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_flake8/ament_cmakeConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_flake8/ament_cmake-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_export_targets/ament_cmakeConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_export_targets/ament_cmake-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_export_link_flags/ament_cmakeConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_export_link_flags/ament_cmake-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_export_libraries/ament_cmakeConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_export_libraries/ament_cmake-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_export_interfaces/ament_cmakeConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_export_interfaces/ament_cmake-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_export_include_directories/ament_cmakeConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_export_include_directories/ament_cmake-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_export_dependencies/ament_cmakeConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_export_dependencies/ament_cmake-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_export_definitions/ament_cmakeConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_export_definitions/ament_cmake-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_cpplint/ament_cmakeConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_cpplint/ament_cmake-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_cppcheck/ament_cmakeConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_cppcheck/ament_cmake-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_core/ament_cmakeConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_core/ament_cmake-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_copyright/ament_cmakeConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_copyright/ament_cmake-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_auto/ament_cmakeConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_auto/ament_cmake-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake/ament_cmakeConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake/ament_cmake-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_xmllint/cmake/ament_cmakeConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_xmllint/cmake/ament_cmake-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_version/cmake/ament_cmakeConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_version/cmake/ament_cmake-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_uncrustify/cmake/ament_cmakeConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_uncrustify/cmake/ament_cmake-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_test/cmake/ament_cmakeConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_test/cmake/ament_cmake-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_target_dependencies/cmake/ament_cmakeConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_target_dependencies/cmake/ament_cmake-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_ros/cmake/ament_cmakeConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_ros/cmake/ament_cmake-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_python/cmake/ament_cmakeConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_python/cmake/ament_cmake-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_pytest/cmake/ament_cmakeConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_pytest/cmake/ament_cmake-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_pep257/cmake/ament_cmakeConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_pep257/cmake/ament_cmake-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_lint_cmake/cmake/ament_cmakeConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_lint_cmake/cmake/ament_cmake-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_libraries/cmake/ament_cmakeConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_libraries/cmake/ament_cmake-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_include_directories/cmake/ament_cmakeConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_include_directories/cmake/ament_cmake-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_gtest/cmake/ament_cmakeConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_gtest/cmake/ament_cmake-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_gmock/cmake/ament_cmakeConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_gmock/cmake/ament_cmake-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_flake8/cmake/ament_cmakeConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_flake8/cmake/ament_cmake-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_export_targets/cmake/ament_cmakeConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_export_targets/cmake/ament_cmake-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_export_link_flags/cmake/ament_cmakeConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_export_link_flags/cmake/ament_cmake-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_export_libraries/cmake/ament_cmakeConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_export_libraries/cmake/ament_cmake-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_export_interfaces/cmake/ament_cmakeConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_export_interfaces/cmake/ament_cmake-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_export_include_directories/cmake/ament_cmakeConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_export_include_directories/cmake/ament_cmake-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_export_dependencies/cmake/ament_cmakeConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_export_dependencies/cmake/ament_cmake-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_export_definitions/cmake/ament_cmakeConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_export_definitions/cmake/ament_cmake-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_cpplint/cmake/ament_cmakeConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_cpplint/cmake/ament_cmake-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_cppcheck/cmake/ament_cmakeConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_cppcheck/cmake/ament_cmake-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmakeConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_copyright/cmake/ament_cmakeConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_copyright/cmake/ament_cmake-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_auto/cmake/ament_cmakeConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/ros/foxy/share/ament_cmake_auto/cmake/ament_cmake-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+    found:
+      path: "/opt/ros/foxy/share/ament_cmake/cmake/ament_cmakeConfig.cmake"
+      mode: "config"
+      version: "0.9.12"
+    search_context:
+      ENV{CMAKE_PREFIX_PATH}:
+        - "/opt/ros/foxy"
+      ENV{PATH}:
+        - "/mnt/home/calex/.local/bin"
+        - "/opt/ros/foxy/bin"
+        - "/usr/local/Modules/bin"
+        - "/usr/local/cuda/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+      CMAKE_INSTALL_PREFIX: "/mnt/home/calex/g1_ros_ws/install/g1_description"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/mnt/home/calex/g1_ros_ws/install/g1_description"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+...

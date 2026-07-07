@@ -1,0 +1,113 @@
+CMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+CMake Warning (dev) at /opt/ros/foxy/share/ament_cmake_core/cmake/core/python.cmake:22 (find_package):
+  Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+  are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+  the cmake_policy command to set the policy and suppress this warning.
+
+Call Stack (most recent call first):
+  /opt/ros/foxy/share/ament_cmake_core/cmake/core/all.cmake:53 (include)
+  /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_core-extras.cmake:17 (include)
+  /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_coreConfig.cmake:41 (include)
+  /opt/ros/foxy/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:15 (find_package)
+  /opt/ros/foxy/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)
+  CMakeLists.txt:4 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Configuring done (0.2s)
+-- Generating done (0.0s)
+-- Build files have been written to: /mnt/home/calex/g1_ros_ws/build/g1_description
+-- Install configuration: ""
+-- Up-to-date: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/urdf
+-- Up-to-date: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/urdf/g1_tether.urdf.xacro
+-- Up-to-date: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/urdf/g1_tether.urdf
+-- Up-to-date: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes
+-- Up-to-date: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/waist_yaw_link_rev_1_0.STL
+-- Up-to-date: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/left_ankle_pitch_link.STL
+-- Up-to-date: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_ring_middle_link.STL
+-- Up-to-date: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_pinky_distal_link.STL
+-- Up-to-date: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_middle_f_link.STL
+-- Up-to-date: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/left_hip_yaw_link.STL
+-- Up-to-date: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_pinky_proximal_link.STL
+-- Up-to-date: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_index_tip_link.STL
+-- Up-to-date: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_index_f_link.STL
+-- Up-to-date: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_hip_yaw_link.STL
+-- Up-to-date: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_middle_middle_link.STL
+-- Up-to-date: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_ring_tip_link.STL
+-- Up-to-date: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_index_middle_link.STL
+-- Up-to-date: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_ring_f_link.STL
+-- Up-to-date: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_wrist_pitch_link.STL
+-- Up-to-date: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_thumb_proximal_link.STL
+-- Up-to-date: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/left_hip_pitch_link.STL
+-- Up-to-date: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_shoulder_pitch_link.STL
+-- Up-to-date: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_knee_link.STL
+-- Up-to-date: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_wrist_roll_link.STL
+-- Up-to-date: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_t_link.STL
+-- Up-to-date: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_pinky_tip_link.STL
+-- Up-to-date: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/left_shoulder_yaw_link.STL
+-- Up-to-date: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/pelvis_contour_link.STL
+-- Up-to-date: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_ankle_pitch_link.STL
+-- Up-to-date: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_index_proximal_link.STL
+-- Up-to-date: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_thumb_tip_link.STL
+-- Up-to-date: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_middle_tip_link.STL
+-- Up-to-date: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_ankle_roll_link.STL
+-- Up-to-date: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/left_wrist_yaw_link.STL
+-- Up-to-date: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/left_wrist_roll_link.STL
+-- Up-to-date: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/left_hip_roll_link.STL
+-- Up-to-date: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/twist2_neck.obj
+-- Up-to-date: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_base_link.STL
+-- Up-to-date: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/left_ankle_roll_link.STL
+-- Up-to-date: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/left_elbow_link.STL
+-- Up-to-date: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/left_shoulder_pitch_link.STL
+-- Up-to-date: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_middle_distal_link.STL
+-- Up-to-date: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_shoulder_yaw_link.STL
+-- Up-to-date: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_middle_proximal_link.STL
+-- Up-to-date: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/left_shoulder_roll_link.STL
+-- Up-to-date: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/waist_roll_link_rev_1_0.STL
+-- Up-to-date: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/pelvis.STL
+-- Up-to-date: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/head_link.STL
+-- Up-to-date: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/left_wrist_pitch_link.STL
+-- Up-to-date: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_wrist_yaw_link.STL
+-- Up-to-date: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_thumb_distal_link.STL
+-- Up-to-date: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_hip_pitch_link.STL
+-- Up-to-date: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_pinky_middle_link.STL
+-- Up-to-date: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_shoulder_roll_link.STL
+-- Up-to-date: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/torso_link_rev_1_0.STL
+-- Up-to-date: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_elbow_link.STL
+-- Up-to-date: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_pinky_f_link.STL
+-- Up-to-date: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_index_distal_link.STL
+-- Up-to-date: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_ring_proximal_link.STL
+-- Up-to-date: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_thumb_mcp_link.STL
+-- Up-to-date: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_hip_roll_link.STL
+-- Up-to-date: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_ring_distal_link.STL
+-- Up-to-date: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/left_knee_link.STL
+-- Up-to-date: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/launch
+-- Installing: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/launch/display.launch.py
+-- Up-to-date: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/scripts
+-- Up-to-date: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/scripts/mjcf_to_urdf.py
+-- Installing: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/rviz
+-- Installing: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/rviz/display.rviz
+-- Up-to-date: /mnt/home/calex/g1_ros_ws/install/g1_description/share/ament_index/resource_index/package_run_dependencies/g1_description
+-- Up-to-date: /mnt/home/calex/g1_ros_ws/install/g1_description/share/ament_index/resource_index/parent_prefix_path/g1_description
+-- Up-to-date: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/environment/ament_prefix_path.sh
+-- Installing: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/environment/ament_prefix_path.dsv
+-- Up-to-date: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/environment/path.sh
+-- Installing: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/environment/path.dsv
+-- Up-to-date: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/local_setup.bash
+-- Up-to-date: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/local_setup.sh
+-- Up-to-date: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/local_setup.zsh
+-- Installing: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/local_setup.dsv
+-- Installing: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/package.dsv
+-- Up-to-date: /mnt/home/calex/g1_ros_ws/install/g1_description/share/ament_index/resource_index/packages/g1_description
+-- Up-to-date: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/cmake/g1_descriptionConfig.cmake
+-- Up-to-date: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/cmake/g1_descriptionConfig-version.cmake
+-- Up-to-date: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/package.xml

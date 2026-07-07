@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/mnt/home/calex/g1_ros_ws/build/g1_description/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

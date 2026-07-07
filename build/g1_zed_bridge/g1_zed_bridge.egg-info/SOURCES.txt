@@ -1,0 +1,14 @@
+package.xml
+setup.cfg
+setup.py
+g1_zed_bridge/__init__.py
+g1_zed_bridge/zed_stream_node.py
+g1_zed_bridge.egg-info/PKG-INFO
+g1_zed_bridge.egg-info/SOURCES.txt
+g1_zed_bridge.egg-info/dependency_links.txt
+g1_zed_bridge.egg-info/entry_points.txt
+g1_zed_bridge.egg-info/requires.txt
+g1_zed_bridge.egg-info/top_level.txt
+g1_zed_bridge.egg-info/zip-safe
+launch/zed_bridge.launch.py
+resource/g1_zed_bridge

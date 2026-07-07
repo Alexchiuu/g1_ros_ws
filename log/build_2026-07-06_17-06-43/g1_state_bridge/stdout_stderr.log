@@ -1,0 +1,16 @@
+running develop
+running egg_info
+writing g1_state_bridge.egg-info/PKG-INFO
+writing dependency_links to g1_state_bridge.egg-info/dependency_links.txt
+writing entry points to g1_state_bridge.egg-info/entry_points.txt
+writing requirements to g1_state_bridge.egg-info/requires.txt
+writing top-level names to g1_state_bridge.egg-info/top_level.txt
+reading manifest file 'g1_state_bridge.egg-info/SOURCES.txt'
+writing manifest file 'g1_state_bridge.egg-info/SOURCES.txt'
+running build_ext
+Creating /mnt/home/calex/g1_ros_ws/install/g1_state_bridge/lib/python3.8/site-packages/g1-state-bridge.egg-link (link to .)
+Installing hand_controller_gui script to /mnt/home/calex/g1_ros_ws/install/g1_state_bridge/lib/g1_state_bridge
+Installing state_bridge_node script to /mnt/home/calex/g1_ros_ws/install/g1_state_bridge/lib/g1_state_bridge
+
+Installed /mnt/home/calex/g1_ros_ws/build/g1_state_bridge
+running symlink_data

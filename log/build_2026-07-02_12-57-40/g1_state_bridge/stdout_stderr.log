@@ -1,0 +1,37 @@
+running egg_info
+creating ../../build/g1_state_bridge/g1_state_bridge.egg-info
+writing ../../build/g1_state_bridge/g1_state_bridge.egg-info/PKG-INFO
+writing dependency_links to ../../build/g1_state_bridge/g1_state_bridge.egg-info/dependency_links.txt
+writing entry points to ../../build/g1_state_bridge/g1_state_bridge.egg-info/entry_points.txt
+writing requirements to ../../build/g1_state_bridge/g1_state_bridge.egg-info/requires.txt
+writing top-level names to ../../build/g1_state_bridge/g1_state_bridge.egg-info/top_level.txt
+writing manifest file '../../build/g1_state_bridge/g1_state_bridge.egg-info/SOURCES.txt'
+reading manifest file '../../build/g1_state_bridge/g1_state_bridge.egg-info/SOURCES.txt'
+writing manifest file '../../build/g1_state_bridge/g1_state_bridge.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /mnt/home/calex/g1_ros_ws/build/g1_state_bridge/build
+creating /mnt/home/calex/g1_ros_ws/build/g1_state_bridge/build/lib
+creating /mnt/home/calex/g1_ros_ws/build/g1_state_bridge/build/lib/g1_state_bridge
+copying g1_state_bridge/state_bridge_node.py -> /mnt/home/calex/g1_ros_ws/build/g1_state_bridge/build/lib/g1_state_bridge
+copying g1_state_bridge/__init__.py -> /mnt/home/calex/g1_ros_ws/build/g1_state_bridge/build/lib/g1_state_bridge
+running install
+running install_lib
+creating /mnt/home/calex/g1_ros_ws/install/g1_state_bridge/lib/python3.8/site-packages/g1_state_bridge
+copying /mnt/home/calex/g1_ros_ws/build/g1_state_bridge/build/lib/g1_state_bridge/state_bridge_node.py -> /mnt/home/calex/g1_ros_ws/install/g1_state_bridge/lib/python3.8/site-packages/g1_state_bridge
+copying /mnt/home/calex/g1_ros_ws/build/g1_state_bridge/build/lib/g1_state_bridge/__init__.py -> /mnt/home/calex/g1_ros_ws/install/g1_state_bridge/lib/python3.8/site-packages/g1_state_bridge
+byte-compiling /mnt/home/calex/g1_ros_ws/install/g1_state_bridge/lib/python3.8/site-packages/g1_state_bridge/state_bridge_node.py to state_bridge_node.cpython-38.pyc
+byte-compiling /mnt/home/calex/g1_ros_ws/install/g1_state_bridge/lib/python3.8/site-packages/g1_state_bridge/__init__.py to __init__.cpython-38.pyc
+running install_data
+creating /mnt/home/calex/g1_ros_ws/install/g1_state_bridge/share/ament_index
+creating /mnt/home/calex/g1_ros_ws/install/g1_state_bridge/share/ament_index/resource_index
+creating /mnt/home/calex/g1_ros_ws/install/g1_state_bridge/share/ament_index/resource_index/packages
+copying resource/g1_state_bridge -> /mnt/home/calex/g1_ros_ws/install/g1_state_bridge/share/ament_index/resource_index/packages
+copying package.xml -> /mnt/home/calex/g1_ros_ws/install/g1_state_bridge/share/g1_state_bridge
+creating /mnt/home/calex/g1_ros_ws/install/g1_state_bridge/share/g1_state_bridge/launch
+copying launch/real_state.launch.py -> /mnt/home/calex/g1_ros_ws/install/g1_state_bridge/share/g1_state_bridge/launch
+running install_egg_info
+Copying ../../build/g1_state_bridge/g1_state_bridge.egg-info to /mnt/home/calex/g1_ros_ws/install/g1_state_bridge/lib/python3.8/site-packages/g1_state_bridge-0.1.0-py3.8.egg-info
+running install_scripts
+Installing state_bridge_node script to /mnt/home/calex/g1_ros_ws/install/g1_state_bridge/lib/g1_state_bridge
+writing list of installed files to '/mnt/home/calex/g1_ros_ws/build/g1_state_bridge/install.log'

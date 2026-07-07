@@ -1,0 +1,140 @@
+[0.000000] (-) TimerEvent: {}
+[0.000122] (-) JobUnselected: {'identifier': 'g1_gazebo'}
+[0.000196] (-) JobUnselected: {'identifier': 'g1_state_bridge'}
+[0.000205] (-) JobUnselected: {'identifier': 'g1_zed_bridge'}
+[0.000317] (g1_description) JobQueued: {'identifier': 'g1_description', 'dependencies': OrderedDict()}
+[0.000326] (g1_description) JobStarted: {'identifier': 'g1_description'}
+[0.068018] (g1_description) JobProgress: {'identifier': 'g1_description', 'progress': 'cmake'}
+[0.070877] (g1_description) JobProgress: {'identifier': 'g1_description', 'progress': 'build'}
+[0.071312] (g1_description) Command: {'cmd': ['/usr/bin/cmake', '--build', '/mnt/home/calex/g1_ros_ws/build/g1_description', '--', '-j20', '-l20'], 'cwd': '/mnt/home/calex/g1_ros_ws/build/g1_description', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('AI_AGENT', 'claude-code_2-1-201_agent'), ('USER', 'calex'), ('CLAUDE_CODE_ENTRYPOINT', 'cli'), ('GIT_EDITOR', 'true'), ('SSH_AGENT_PID', '331075'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/mnt/home/calex'), ('OLDPWD', '/mnt/home/calex'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MODULES_CMD', '/usr/local/Modules/libexec/modulecmd.tcl'), ('CLAUDE_CODE_CHILD_SESSION', '1'), ('MANAGERPID', '330942'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000027/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'calex'), ('JOURNAL_STREAM', '8:2864423'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'calex'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '3'), ('PATH', '/mnt/home/calex/.local/bin:/mnt/home/calex/.local/bin:/opt/ros/foxy/bin:/usr/local/Modules/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/lab544-desktop1:@/tmp/.ICE-unix/331127,unix/lab544-desktop1:/tmp/.ICE-unix/331127'), ('INVOCATION_ID', 'c060fe8e5a094db4ba62917d37f87d6a'), ('COREPACK_ENABLE_AUTO_PIN', '0'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/d11ff939_e978_4efc_86b1_a38c1048d739'), ('XDG_RUNTIME_DIR', '/run/user/1000027'), ('CLAUDE_EFFORT', 'high'), ('DISPLAY', ':2'), ('NoDefaultCurrentDirectoryInExePath', '1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000027/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.80'), ('SSH_AUTH_SOCK', '/run/user/1000027/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('CLAUDE_CODE_SESSION_ID', '4e681a48-3f23-4a22-9bb6-ac1e1cdd1818'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CLAUDECODE', '1'), ('GPG_AGENT_INFO', '/run/user/1000027/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/mnt/home/calex/g1_ros_ws/build/g1_description'), ('LOADEDMODULES', ''), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('__MODULES_LMINIT', 'module use --append /usr/local/Modules/modulefiles'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/mnt/home/calex/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('CLAUDE_CODE_EXECPATH', '/mnt/home/calex/.local/share/claude/versions/2.1.201'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('MODULEPATH', '/usr/local/Modules/modulefiles'), ('MODULESHOME', '/usr/local/Modules'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.394302] (-) TimerEvent: {}
+[0.494427] (-) TimerEvent: {}
+[0.594660] (-) TimerEvent: {}
+[0.694999] (-) TimerEvent: {}
+[0.795138] (-) TimerEvent: {}
+[0.895318] (-) TimerEvent: {}
+[0.995528] (-) TimerEvent: {}
+[1.095726] (-) TimerEvent: {}
+[1.195924] (-) TimerEvent: {}
+[1.296140] (-) TimerEvent: {}
+[1.396358] (-) TimerEvent: {}
+[1.496552] (-) TimerEvent: {}
+[1.596708] (-) TimerEvent: {}
+[1.696890] (-) TimerEvent: {}
+[1.778270] (g1_description) CommandEnded: {'returncode': 0}
+[1.797028] (-) TimerEvent: {}
+[1.871682] (g1_description) JobProgress: {'identifier': 'g1_description', 'progress': 'install'}
+[1.897328] (-) TimerEvent: {}
+[1.902563] (g1_description) Command: {'cmd': ['/usr/bin/cmake', '--install', '/mnt/home/calex/g1_ros_ws/build/g1_description'], 'cwd': '/mnt/home/calex/g1_ros_ws/build/g1_description', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('AI_AGENT', 'claude-code_2-1-201_agent'), ('USER', 'calex'), ('CLAUDE_CODE_ENTRYPOINT', 'cli'), ('GIT_EDITOR', 'true'), ('SSH_AGENT_PID', '331075'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/mnt/home/calex'), ('OLDPWD', '/mnt/home/calex'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MODULES_CMD', '/usr/local/Modules/libexec/modulecmd.tcl'), ('CLAUDE_CODE_CHILD_SESSION', '1'), ('MANAGERPID', '330942'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000027/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'calex'), ('JOURNAL_STREAM', '8:2864423'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'calex'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '3'), ('PATH', '/mnt/home/calex/.local/bin:/mnt/home/calex/.local/bin:/opt/ros/foxy/bin:/usr/local/Modules/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/lab544-desktop1:@/tmp/.ICE-unix/331127,unix/lab544-desktop1:/tmp/.ICE-unix/331127'), ('INVOCATION_ID', 'c060fe8e5a094db4ba62917d37f87d6a'), ('COREPACK_ENABLE_AUTO_PIN', '0'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/d11ff939_e978_4efc_86b1_a38c1048d739'), ('XDG_RUNTIME_DIR', '/run/user/1000027'), ('CLAUDE_EFFORT', 'high'), ('DISPLAY', ':2'), ('NoDefaultCurrentDirectoryInExePath', '1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000027/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.80'), ('SSH_AUTH_SOCK', '/run/user/1000027/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('CLAUDE_CODE_SESSION_ID', '4e681a48-3f23-4a22-9bb6-ac1e1cdd1818'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CLAUDECODE', '1'), ('GPG_AGENT_INFO', '/run/user/1000027/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/mnt/home/calex/g1_ros_ws/build/g1_description'), ('LOADEDMODULES', ''), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('__MODULES_LMINIT', 'module use --append /usr/local/Modules/modulefiles'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/mnt/home/calex/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('CLAUDE_CODE_EXECPATH', '/mnt/home/calex/.local/share/claude/versions/2.1.201'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('MODULEPATH', '/usr/local/Modules/modulefiles'), ('MODULESHOME', '/usr/local/Modules'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[1.935059] (g1_description) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.997509] (-) TimerEvent: {}
+[2.097800] (-) TimerEvent: {}
+[2.141890] (g1_description) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[2.197915] (-) TimerEvent: {}
+[2.298204] (-) TimerEvent: {}
+[2.372708] (g1_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/urdf/g1_tether.gazebo.xacro\n'}
+[2.398399] (-) TimerEvent: {}
+[2.450837] (g1_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/urdf/g1_tether.urdf\n'}
+[2.458203] (g1_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/urdf/g1_tether.urdf.xacro\n'}
+[2.498506] (-) TimerEvent: {}
+[2.598875] (-) TimerEvent: {}
+[2.630077] (g1_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/head_link.STL\n'}
+[2.660199] (g1_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/left_ankle_pitch_link.STL\n'}
+[2.661458] (g1_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/left_ankle_roll_link.STL\n'}
+[2.695313] (g1_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/left_elbow_link.STL\n'}
+[2.698998] (-) TimerEvent: {}
+[2.731466] (g1_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/left_hip_pitch_link.STL\n'}
+[2.739163] (g1_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/left_hip_roll_link.STL\n'}
+[2.755306] (g1_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/left_hip_yaw_link.STL\n'}
+[2.799146] (-) TimerEvent: {}
+[2.899426] (-) TimerEvent: {}
+[2.999706] (-) TimerEvent: {}
+[3.100002] (-) TimerEvent: {}
+[3.167401] (g1_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/left_knee_link.STL\n'}
+[3.170788] (g1_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/left_shoulder_pitch_link.STL\n'}
+[3.179912] (g1_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/left_shoulder_roll_link.STL\n'}
+[3.189273] (g1_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/left_shoulder_yaw_link.STL\n'}
+[3.191147] (g1_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/left_wrist_pitch_link.STL\n'}
+[3.193072] (g1_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/left_wrist_roll_link.STL\n'}
+[3.200070] (-) TimerEvent: {}
+[3.222583] (g1_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/left_wrist_yaw_link.STL\n'}
+[3.271041] (g1_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/pelvis.STL\n'}
+[3.272885] (g1_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/pelvis_contour_link.STL\n'}
+[3.277615] (g1_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_ankle_pitch_link.STL\n'}
+[3.290814] (g1_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_ankle_roll_link.STL\n'}
+[3.300173] (-) TimerEvent: {}
+[3.328810] (g1_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_base_link.STL\n'}
+[3.350505] (g1_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_elbow_link.STL\n'}
+[3.352222] (g1_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_hip_pitch_link.STL\n'}
+[3.353555] (g1_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_hip_roll_link.STL\n'}
+[3.355118] (g1_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_hip_yaw_link.STL\n'}
+[3.357986] (g1_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_index_distal_link.STL\n'}
+[3.364964] (g1_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_index_f_link.STL\n'}
+[3.366273] (g1_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_index_middle_link.STL\n'}
+[3.367696] (g1_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_index_proximal_link.STL\n'}
+[3.369642] (g1_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_index_tip_link.STL\n'}
+[3.378755] (g1_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_knee_link.STL\n'}
+[3.383021] (g1_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_middle_distal_link.STL\n'}
+[3.400285] (-) TimerEvent: {}
+[3.421210] (g1_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_middle_f_link.STL\n'}
+[3.467749] (g1_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_middle_middle_link.STL\n'}
+[3.500405] (-) TimerEvent: {}
+[3.508714] (g1_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_middle_proximal_link.STL\n'}
+[3.512637] (g1_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_middle_tip_link.STL\n'}
+[3.513759] (g1_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_pinky_distal_link.STL\n'}
+[3.515151] (g1_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_pinky_f_link.STL\n'}
+[3.517058] (g1_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_pinky_middle_link.STL\n'}
+[3.524690] (g1_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_pinky_proximal_link.STL\n'}
+[3.549069] (g1_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_pinky_tip_link.STL\n'}
+[3.551219] (g1_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_ring_distal_link.STL\n'}
+[3.600633] (-) TimerEvent: {}
+[3.607685] (g1_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_ring_f_link.STL\n'}
+[3.616324] (g1_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_ring_middle_link.STL\n'}
+[3.631150] (g1_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_ring_proximal_link.STL\n'}
+[3.642181] (g1_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_ring_tip_link.STL\n'}
+[3.649963] (g1_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_shoulder_pitch_link.STL\n'}
+[3.657933] (g1_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_shoulder_roll_link.STL\n'}
+[3.679703] (g1_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_shoulder_yaw_link.STL\n'}
+[3.685274] (g1_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_t_link.STL\n'}
+[3.690784] (g1_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_thumb_distal_link.STL\n'}
+[3.700752] (-) TimerEvent: {}
+[3.725853] (g1_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_thumb_mcp_link.STL\n'}
+[3.730842] (g1_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_thumb_proximal_link.STL\n'}
+[3.763612] (g1_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_thumb_tip_link.STL\n'}
+[3.772962] (g1_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_wrist_pitch_link.STL\n'}
+[3.800861] (-) TimerEvent: {}
+[3.822400] (g1_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_wrist_roll_link.STL\n'}
+[3.855312] (g1_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_wrist_yaw_link.STL\n'}
+[3.871528] (g1_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/torso_link_rev_1_0.STL\n'}
+[3.872997] (g1_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/twist2_neck.obj\n'}
+[3.873677] (g1_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/waist_roll_link_rev_1_0.STL\n'}
+[3.881155] (g1_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/waist_yaw_link_rev_1_0.STL\n'}
+[3.900926] (-) TimerEvent: {}
+[3.958460] (g1_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/launch/display.launch.py\n'}
+[3.960470] (g1_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/scripts/mjcf_to_urdf.py\n'}
+[3.963568] (g1_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/rviz/display.rviz\n'}
+[3.968294] (g1_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/home/calex/g1_ros_ws/install/g1_description/share/ament_index/resource_index/package_run_dependencies/g1_description\n'}
+[3.969770] (g1_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/home/calex/g1_ros_ws/install/g1_description/share/ament_index/resource_index/parent_prefix_path/g1_description\n'}
+[3.971131] (g1_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/environment/ament_prefix_path.sh\n'}
+[3.982332] (g1_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/environment/ament_prefix_path.dsv\n'}
+[4.001000] (-) TimerEvent: {}
+[4.005448] (g1_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/environment/path.sh\n'}
+[4.035511] (g1_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/environment/path.dsv\n'}
+[4.048122] (g1_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/local_setup.bash\n'}
+[4.048920] (g1_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/local_setup.sh\n'}
+[4.049892] (g1_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/local_setup.zsh\n'}
+[4.050663] (g1_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/local_setup.dsv\n'}
+[4.051515] (g1_description) StdoutLine: {'line': b'-- Symlinking: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/package.dsv\n'}
+[4.101083] (-) TimerEvent: {}
+[4.104222] (g1_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/home/calex/g1_ros_ws/install/g1_description/share/ament_index/resource_index/packages/g1_description\n'}
+[4.141560] (g1_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/cmake/g1_descriptionConfig.cmake\n'}
+[4.156428] (g1_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/cmake/g1_descriptionConfig-version.cmake\n'}
+[4.162362] (g1_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/package.xml\n'}
+[4.164086] (g1_description) CommandEnded: {'returncode': 0}
+[4.201152] (-) TimerEvent: {}
+[4.301262] (-) TimerEvent: {}
+[4.401420] (-) TimerEvent: {}
+[4.501548] (-) TimerEvent: {}
+[4.601666] (-) TimerEvent: {}
+[4.694211] (g1_description) JobEnded: {'identifier': 'g1_description', 'rc': 0}
+[4.700662] (-) EventReactorShutdown: {}

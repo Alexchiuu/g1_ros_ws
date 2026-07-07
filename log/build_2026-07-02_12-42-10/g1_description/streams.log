@@ -1,0 +1,130 @@
+[0.013s] Invoking command in '/mnt/home/calex/g1_ros_ws/build/g1_description': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /mnt/home/calex/g1_ros_ws/src/g1_description -DCMAKE_INSTALL_PREFIX=/mnt/home/calex/g1_ros_ws/install/g1_description
+[0.048s] CMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+[0.048s]   Compatibility with CMake < 3.10 will be removed from a future version of
+[0.048s]   CMake.
+[0.048s] 
+[0.048s]   Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+[0.048s]   to tell CMake that the project requires at least <min> but has been updated
+[0.049s]   to work with policies introduced by <max> or earlier.
+[0.049s] 
+[0.049s] 
+[0.159s] -- The C compiler identification is GNU 9.4.0
+[0.248s] -- The CXX compiler identification is GNU 9.4.0
+[0.262s] -- Detecting C compiler ABI info
+[0.425s] -- Detecting C compiler ABI info - done
+[0.456s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.457s] -- Detecting C compile features
+[0.457s] -- Detecting C compile features - done
+[0.471s] -- Detecting CXX compiler ABI info
+[0.642s] -- Detecting CXX compiler ABI info - done
+[0.671s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.671s] -- Detecting CXX compile features
+[0.672s] -- Detecting CXX compile features - done
+[0.688s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.700s] CMake Warning (dev) at /opt/ros/foxy/share/ament_cmake_core/cmake/core/python.cmake:22 (find_package):
+[0.700s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[0.700s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[0.700s]   the cmake_policy command to set the policy and suppress this warning.
+[0.701s] 
+[0.701s] Call Stack (most recent call first):
+[0.701s]   /opt/ros/foxy/share/ament_cmake_core/cmake/core/all.cmake:53 (include)
+[0.701s]   /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_core-extras.cmake:17 (include)
+[0.701s]   /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_coreConfig.cmake:41 (include)
+[0.702s]   /opt/ros/foxy/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:15 (find_package)
+[0.702s]   /opt/ros/foxy/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)
+[0.702s]   CMakeLists.txt:4 (find_package)
+[0.702s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.702s] 
+[0.716s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3")
+[0.716s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.946s] -- Configuring done (0.9s)
+[1.003s] -- Generating done (0.1s)
+[1.019s] -- Build files have been written to: /mnt/home/calex/g1_ros_ws/build/g1_description
+[1.029s] Invoked command in '/mnt/home/calex/g1_ros_ws/build/g1_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /mnt/home/calex/g1_ros_ws/src/g1_description -DCMAKE_INSTALL_PREFIX=/mnt/home/calex/g1_ros_ws/install/g1_description
+[1.037s] Invoking command in '/mnt/home/calex/g1_ros_ws/build/g1_description': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /mnt/home/calex/g1_ros_ws/build/g1_description -- -j20 -l20
+[1.083s] Invoked command in '/mnt/home/calex/g1_ros_ws/build/g1_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /mnt/home/calex/g1_ros_ws/build/g1_description -- -j20 -l20
+[1.098s] Invoking command in '/mnt/home/calex/g1_ros_ws/build/g1_description': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /mnt/home/calex/g1_ros_ws/build/g1_description
+[1.114s] -- Install configuration: ""
+[1.114s] -- Installing: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/urdf
+[1.116s] -- Installing: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/urdf/g1_tether.urdf.xacro
+[1.120s] -- Installing: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/urdf/g1_tether.urdf
+[1.123s] -- Installing: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes
+[1.126s] -- Installing: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/waist_yaw_link_rev_1_0.STL
+[1.136s] -- Installing: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/left_ankle_pitch_link.STL
+[1.141s] -- Installing: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_ring_middle_link.STL
+[1.146s] -- Installing: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_pinky_distal_link.STL
+[1.152s] -- Installing: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_middle_f_link.STL
+[1.156s] -- Installing: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/left_hip_yaw_link.STL
+[1.163s] -- Installing: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_pinky_proximal_link.STL
+[1.168s] -- Installing: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_index_tip_link.STL
+[1.173s] -- Installing: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_index_f_link.STL
+[1.176s] -- Installing: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_hip_yaw_link.STL
+[1.183s] -- Installing: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_middle_middle_link.STL
+[1.187s] -- Installing: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_ring_tip_link.STL
+[1.192s] -- Installing: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_index_middle_link.STL
+[1.196s] -- Installing: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_ring_f_link.STL
+[1.200s] -- Installing: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_wrist_pitch_link.STL
+[1.204s] -- Installing: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_thumb_proximal_link.STL
+[1.209s] -- Installing: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/left_hip_pitch_link.STL
+[1.214s] -- Installing: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_shoulder_pitch_link.STL
+[1.220s] -- Installing: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_knee_link.STL
+[1.233s] -- Installing: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_wrist_roll_link.STL
+[1.241s] -- Installing: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_t_link.STL
+[1.246s] -- Installing: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_pinky_tip_link.STL
+[1.250s] -- Installing: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/left_shoulder_yaw_link.STL
+[1.257s] -- Installing: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/pelvis_contour_link.STL
+[1.280s] -- Installing: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_ankle_pitch_link.STL
+[1.284s] -- Installing: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_index_proximal_link.STL
+[1.289s] -- Installing: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_thumb_tip_link.STL
+[1.294s] -- Installing: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_middle_tip_link.STL
+[1.298s] -- Installing: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_ankle_roll_link.STL
+[1.309s] -- Installing: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/left_wrist_yaw_link.STL
+[1.317s] -- Installing: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/left_wrist_roll_link.STL
+[1.324s] -- Installing: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/left_hip_roll_link.STL
+[1.330s] -- Installing: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/twist2_neck.obj
+[2.131s] -- Installing: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_base_link.STL
+[2.150s] -- Installing: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/left_ankle_roll_link.STL
+[2.161s] -- Installing: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/left_elbow_link.STL
+[2.166s] -- Installing: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/left_shoulder_pitch_link.STL
+[2.171s] -- Installing: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_middle_distal_link.STL
+[2.177s] -- Installing: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_shoulder_yaw_link.STL
+[2.184s] -- Installing: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_middle_proximal_link.STL
+[2.190s] -- Installing: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/left_shoulder_roll_link.STL
+[2.198s] -- Installing: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/waist_roll_link_rev_1_0.STL
+[2.203s] -- Installing: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/pelvis.STL
+[2.218s] -- Installing: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/head_link.STL
+[2.231s] -- Installing: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/left_wrist_pitch_link.STL
+[2.236s] -- Installing: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_wrist_yaw_link.STL
+[2.243s] -- Installing: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_thumb_distal_link.STL
+[2.249s] -- Installing: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_hip_pitch_link.STL
+[2.255s] -- Installing: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_pinky_middle_link.STL
+[2.260s] -- Installing: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_shoulder_roll_link.STL
+[2.268s] -- Installing: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/torso_link_rev_1_0.STL
+[2.299s] -- Installing: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_elbow_link.STL
+[2.303s] -- Installing: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_pinky_f_link.STL
+[2.307s] -- Installing: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_index_distal_link.STL
+[2.312s] -- Installing: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_ring_proximal_link.STL
+[2.317s] -- Installing: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_thumb_mcp_link.STL
+[2.323s] -- Installing: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_hip_roll_link.STL
+[2.329s] -- Installing: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/right_ring_distal_link.STL
+[2.334s] -- Installing: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/meshes/left_knee_link.STL
+[2.346s] -- Installing: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/launch
+[2.349s] -- Installing: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/launch/display.launch.py
+[2.352s] -- Installing: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/scripts
+[2.356s] -- Installing: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/scripts/mjcf_to_urdf.py
+[2.362s] -- Installing: /mnt/home/calex/g1_ros_ws/install/g1_description/share/ament_index/resource_index/package_run_dependencies/g1_description
+[2.368s] -- Installing: /mnt/home/calex/g1_ros_ws/install/g1_description/share/ament_index/resource_index/parent_prefix_path/g1_description
+[2.373s] -- Installing: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/environment/ament_prefix_path.sh
+[2.376s] -- Installing: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/environment/ament_prefix_path.dsv
+[2.380s] -- Installing: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/environment/path.sh
+[2.382s] -- Installing: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/environment/path.dsv
+[2.385s] -- Installing: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/local_setup.bash
+[2.388s] -- Installing: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/local_setup.sh
+[2.391s] -- Installing: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/local_setup.zsh
+[2.394s] -- Installing: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/local_setup.dsv
+[2.396s] -- Installing: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/package.dsv
+[2.401s] -- Installing: /mnt/home/calex/g1_ros_ws/install/g1_description/share/ament_index/resource_index/packages/g1_description
+[2.405s] -- Installing: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/cmake/g1_descriptionConfig.cmake
+[2.408s] -- Installing: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/cmake/g1_descriptionConfig-version.cmake
+[2.411s] -- Installing: /mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/package.xml
+[2.419s] Invoked command in '/mnt/home/calex/g1_ros_ws/build/g1_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /mnt/home/calex/g1_ros_ws/build/g1_description

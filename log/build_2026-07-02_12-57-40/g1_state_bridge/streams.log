@@ -1,0 +1,39 @@
+[0.369s] Invoking command in '/mnt/home/calex/g1_ros_ws/src/g1_state_bridge': PYTHONPATH=/mnt/home/calex/g1_ros_ws/build/g1_state_bridge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/mnt/home/calex/g1_ros_ws/install/g1_state_bridge/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/g1_state_bridge build --build-base /mnt/home/calex/g1_ros_ws/build/g1_state_bridge/build install --record /mnt/home/calex/g1_ros_ws/build/g1_state_bridge/install.log --install-scripts $base/lib/g1_state_bridge --single-version-externally-managed install_data
+[0.471s] running egg_info
+[0.471s] creating ../../build/g1_state_bridge/g1_state_bridge.egg-info
+[0.472s] writing ../../build/g1_state_bridge/g1_state_bridge.egg-info/PKG-INFO
+[0.474s] writing dependency_links to ../../build/g1_state_bridge/g1_state_bridge.egg-info/dependency_links.txt
+[0.475s] writing entry points to ../../build/g1_state_bridge/g1_state_bridge.egg-info/entry_points.txt
+[0.475s] writing requirements to ../../build/g1_state_bridge/g1_state_bridge.egg-info/requires.txt
+[0.476s] writing top-level names to ../../build/g1_state_bridge/g1_state_bridge.egg-info/top_level.txt
+[0.477s] writing manifest file '../../build/g1_state_bridge/g1_state_bridge.egg-info/SOURCES.txt'
+[0.497s] reading manifest file '../../build/g1_state_bridge/g1_state_bridge.egg-info/SOURCES.txt'
+[0.499s] writing manifest file '../../build/g1_state_bridge/g1_state_bridge.egg-info/SOURCES.txt'
+[0.500s] running build
+[0.500s] running build_py
+[0.500s] creating /mnt/home/calex/g1_ros_ws/build/g1_state_bridge/build
+[0.501s] creating /mnt/home/calex/g1_ros_ws/build/g1_state_bridge/build/lib
+[0.501s] creating /mnt/home/calex/g1_ros_ws/build/g1_state_bridge/build/lib/g1_state_bridge
+[0.502s] copying g1_state_bridge/state_bridge_node.py -> /mnt/home/calex/g1_ros_ws/build/g1_state_bridge/build/lib/g1_state_bridge
+[0.504s] copying g1_state_bridge/__init__.py -> /mnt/home/calex/g1_ros_ws/build/g1_state_bridge/build/lib/g1_state_bridge
+[0.506s] running install
+[0.507s] running install_lib
+[0.509s] creating /mnt/home/calex/g1_ros_ws/install/g1_state_bridge/lib/python3.8/site-packages/g1_state_bridge
+[0.510s] copying /mnt/home/calex/g1_ros_ws/build/g1_state_bridge/build/lib/g1_state_bridge/state_bridge_node.py -> /mnt/home/calex/g1_ros_ws/install/g1_state_bridge/lib/python3.8/site-packages/g1_state_bridge
+[0.514s] copying /mnt/home/calex/g1_ros_ws/build/g1_state_bridge/build/lib/g1_state_bridge/__init__.py -> /mnt/home/calex/g1_ros_ws/install/g1_state_bridge/lib/python3.8/site-packages/g1_state_bridge
+[0.518s] byte-compiling /mnt/home/calex/g1_ros_ws/install/g1_state_bridge/lib/python3.8/site-packages/g1_state_bridge/state_bridge_node.py to state_bridge_node.cpython-38.pyc
+[0.524s] byte-compiling /mnt/home/calex/g1_ros_ws/install/g1_state_bridge/lib/python3.8/site-packages/g1_state_bridge/__init__.py to __init__.cpython-38.pyc
+[0.528s] running install_data
+[0.529s] creating /mnt/home/calex/g1_ros_ws/install/g1_state_bridge/share/ament_index
+[0.529s] creating /mnt/home/calex/g1_ros_ws/install/g1_state_bridge/share/ament_index/resource_index
+[0.530s] creating /mnt/home/calex/g1_ros_ws/install/g1_state_bridge/share/ament_index/resource_index/packages
+[0.532s] copying resource/g1_state_bridge -> /mnt/home/calex/g1_ros_ws/install/g1_state_bridge/share/ament_index/resource_index/packages
+[0.535s] copying package.xml -> /mnt/home/calex/g1_ros_ws/install/g1_state_bridge/share/g1_state_bridge
+[0.539s] creating /mnt/home/calex/g1_ros_ws/install/g1_state_bridge/share/g1_state_bridge/launch
+[0.541s] copying launch/real_state.launch.py -> /mnt/home/calex/g1_ros_ws/install/g1_state_bridge/share/g1_state_bridge/launch
+[0.545s] running install_egg_info
+[0.549s] Copying ../../build/g1_state_bridge/g1_state_bridge.egg-info to /mnt/home/calex/g1_ros_ws/install/g1_state_bridge/lib/python3.8/site-packages/g1_state_bridge-0.1.0-py3.8.egg-info
+[0.585s] running install_scripts
+[0.602s] Installing state_bridge_node script to /mnt/home/calex/g1_ros_ws/install/g1_state_bridge/lib/g1_state_bridge
+[0.606s] writing list of installed files to '/mnt/home/calex/g1_ros_ws/build/g1_state_bridge/install.log'
+[0.620s] Invoked command in '/mnt/home/calex/g1_ros_ws/src/g1_state_bridge' returned '0': PYTHONPATH=/mnt/home/calex/g1_ros_ws/build/g1_state_bridge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/mnt/home/calex/g1_ros_ws/install/g1_state_bridge/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/g1_state_bridge build --build-base /mnt/home/calex/g1_ros_ws/build/g1_state_bridge/build install --record /mnt/home/calex/g1_ros_ws/build/g1_state_bridge/install.log --install-scripts $base/lib/g1_state_bridge --single-version-externally-managed install_data

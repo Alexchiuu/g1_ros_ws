@@ -1,0 +1,168 @@
+[0.210s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'g1_state_bridge', '--symlink-install']
+[0.210s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7fcdd0769cd0>>, merge_install=False, metas=['./colcon.meta'], mixin=None, mixin_files=None, mixin_verb=('build',), packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=['g1_state_bridge'], packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=20, paths=None, symlink_install=True, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7fcdd0769cd0>, verb_name='build', verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7fcdd07771f0>)
+[0.335s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.335s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.338s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.338s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.338s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.338s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.338s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/mnt/home/calex/g1_ros_ws'
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.351s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.351s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.351s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.351s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.351s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.371s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.371s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.375s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.376s] Level 1:colcon.colcon_core.package_identification:_identify(script) by extensions ['ignore', 'ignore_ament_install']
+[0.376s] Level 1:colcon.colcon_core.package_identification:_identify(script) by extension 'ignore'
+[0.376s] Level 1:colcon.colcon_core.package_identification:_identify(script) by extension 'ignore_ament_install'
+[0.376s] Level 1:colcon.colcon_core.package_identification:_identify(script) by extensions ['colcon_pkg']
+[0.376s] Level 1:colcon.colcon_core.package_identification:_identify(script) by extension 'colcon_pkg'
+[0.376s] Level 1:colcon.colcon_core.package_identification:_identify(script) by extensions ['colcon_meta']
+[0.376s] Level 1:colcon.colcon_core.package_identification:_identify(script) by extension 'colcon_meta'
+[0.376s] Level 1:colcon.colcon_core.package_identification:_identify(script) by extensions ['ros']
+[0.376s] Level 1:colcon.colcon_core.package_identification:_identify(script) by extension 'ros'
+[0.376s] Level 1:colcon.colcon_core.package_identification:_identify(script) by extensions ['cmake', 'python']
+[0.376s] Level 1:colcon.colcon_core.package_identification:_identify(script) by extension 'cmake'
+[0.376s] Level 1:colcon.colcon_core.package_identification:_identify(script) by extension 'python'
+[0.376s] Level 1:colcon.colcon_core.package_identification:_identify(script) by extensions ['python_setup_py']
+[0.376s] Level 1:colcon.colcon_core.package_identification:_identify(script) by extension 'python_setup_py'
+[0.379s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.382s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.389s] Level 1:colcon.colcon_core.package_identification:_identify(src/g1_description) by extensions ['ignore', 'ignore_ament_install']
+[0.391s] Level 1:colcon.colcon_core.package_identification:_identify(src/g1_description) by extension 'ignore'
+[0.391s] Level 1:colcon.colcon_core.package_identification:_identify(src/g1_description) by extension 'ignore_ament_install'
+[0.391s] Level 1:colcon.colcon_core.package_identification:_identify(src/g1_description) by extensions ['colcon_pkg']
+[0.391s] Level 1:colcon.colcon_core.package_identification:_identify(src/g1_description) by extension 'colcon_pkg'
+[0.391s] Level 1:colcon.colcon_core.package_identification:_identify(src/g1_description) by extensions ['colcon_meta']
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(src/g1_description) by extension 'colcon_meta'
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(src/g1_description) by extensions ['ros']
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(src/g1_description) by extension 'ros'
+[0.404s] DEBUG:colcon.colcon_core.package_identification:Package 'src/g1_description' with type 'ros.ament_cmake' and name 'g1_description'
+[0.406s] Level 1:colcon.colcon_core.package_identification:_identify(src/g1_state_bridge) by extensions ['ignore', 'ignore_ament_install']
+[0.408s] Level 1:colcon.colcon_core.package_identification:_identify(src/g1_state_bridge) by extension 'ignore'
+[0.408s] Level 1:colcon.colcon_core.package_identification:_identify(src/g1_state_bridge) by extension 'ignore_ament_install'
+[0.408s] Level 1:colcon.colcon_core.package_identification:_identify(src/g1_state_bridge) by extensions ['colcon_pkg']
+[0.408s] Level 1:colcon.colcon_core.package_identification:_identify(src/g1_state_bridge) by extension 'colcon_pkg'
+[0.408s] Level 1:colcon.colcon_core.package_identification:_identify(src/g1_state_bridge) by extensions ['colcon_meta']
+[0.408s] Level 1:colcon.colcon_core.package_identification:_identify(src/g1_state_bridge) by extension 'colcon_meta'
+[0.408s] Level 1:colcon.colcon_core.package_identification:_identify(src/g1_state_bridge) by extensions ['ros']
+[0.408s] Level 1:colcon.colcon_core.package_identification:_identify(src/g1_state_bridge) by extension 'ros'
+[0.424s] DEBUG:colcon.colcon_core.package_identification:Package 'src/g1_state_bridge' with type 'ros.ament_python' and name 'g1_state_bridge'
+[0.424s] Level 1:colcon.colcon_core.package_identification:_identify(src/g1_zed_bridge) by extensions ['ignore', 'ignore_ament_install']
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(src/g1_zed_bridge) by extension 'ignore'
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(src/g1_zed_bridge) by extension 'ignore_ament_install'
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(src/g1_zed_bridge) by extensions ['colcon_pkg']
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(src/g1_zed_bridge) by extension 'colcon_pkg'
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(src/g1_zed_bridge) by extensions ['colcon_meta']
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(src/g1_zed_bridge) by extension 'colcon_meta'
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(src/g1_zed_bridge) by extensions ['ros']
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(src/g1_zed_bridge) by extension 'ros'
+[0.438s] DEBUG:colcon.colcon_core.package_identification:Package 'src/g1_zed_bridge' with type 'ros.ament_python' and name 'g1_zed_bridge'
+[0.438s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.441s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.441s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.441s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.441s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.464s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'g1_description' in 'src/g1_description'
+[0.464s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'g1_zed_bridge' in 'src/g1_zed_bridge'
+[0.464s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.465s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.467s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 302 installed packages in /opt/ros/foxy
+[0.473s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.502s] Level 5:colcon.colcon_core.verb:set package 'g1_state_bridge' build argument 'cmake_args' from command line to 'None'
+[0.502s] Level 5:colcon.colcon_core.verb:set package 'g1_state_bridge' build argument 'cmake_target' from command line to 'None'
+[0.502s] Level 5:colcon.colcon_core.verb:set package 'g1_state_bridge' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.502s] Level 5:colcon.colcon_core.verb:set package 'g1_state_bridge' build argument 'cmake_clean_cache' from command line to 'False'
+[0.504s] Level 5:colcon.colcon_core.verb:set package 'g1_state_bridge' build argument 'cmake_clean_first' from command line to 'False'
+[0.504s] Level 5:colcon.colcon_core.verb:set package 'g1_state_bridge' build argument 'cmake_force_configure' from command line to 'False'
+[0.504s] Level 5:colcon.colcon_core.verb:set package 'g1_state_bridge' build argument 'ament_cmake_args' from command line to 'None'
+[0.504s] Level 5:colcon.colcon_core.verb:set package 'g1_state_bridge' build argument 'catkin_cmake_args' from command line to 'None'
+[0.504s] Level 5:colcon.colcon_core.verb:set package 'g1_state_bridge' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.504s] DEBUG:colcon.colcon_core.verb:Building package 'g1_state_bridge' with the following arguments: {'ament_cmake_args': None, 'build_base': '/mnt/home/calex/g1_ros_ws/build/g1_state_bridge', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/mnt/home/calex/g1_ros_ws/install/g1_state_bridge', 'merge_install': False, 'path': '/mnt/home/calex/g1_ros_ws/src/g1_state_bridge', 'symlink_install': True, 'test_result_base': None}
+[0.504s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.504s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.505s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/mnt/home/calex/g1_ros_ws/src/g1_state_bridge' with build type 'ament_python'
+[0.505s] Level 1:colcon.colcon_core.shell:create_environment_hook('g1_state_bridge', 'ament_prefix_path')
+[0.505s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.506s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/home/calex/g1_ros_ws/install/g1_state_bridge/share/g1_state_bridge/hook/ament_prefix_path.ps1'
+[0.543s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/home/calex/g1_ros_ws/install/g1_state_bridge/share/g1_state_bridge/hook/ament_prefix_path.dsv'
+[0.560s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/home/calex/g1_ros_ws/install/g1_state_bridge/share/g1_state_bridge/hook/ament_prefix_path.sh'
+[0.562s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.562s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.931s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/mnt/home/calex/g1_ros_ws/src/g1_state_bridge'
+[0.931s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.932s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.486s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools commands: bdist_egg, develop, install_data, rotate, alias, install_scripts, bdist, clean, install, build_py, egg_info, test, upload_docs, dist_info, bdist_dumb, check, symlink_data, build_clib, upload, easy_install, register, setopt, build, install_lib, bdist_rpm, install_headers, bdist_wininst, saveopts, flake8, build_ext, install_egg_info, sdist, bdist_wheel, build_scripts
+[1.714s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools 'develop' options: --prefix, --dry-run, --no-user-cfg, --user, --record, --verbose, --exclude-scripts, --build-directory, --local-snapshots-ok, --optimize, --egg-path, --find-links, --index-url, --no-find-links, --no-deps, --allow-hosts, --zip-ok, --quiet, --install-dir, --script-dir, --force-installation-into-system-dir, --uninstall, --always-unzip, --install-layout, --multi-version, --help, --upgrade, --editable, --site-dirs, --version, --always-copy
+[1.753s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/mnt/home/calex/g1_ros_ws/build/g1_state_bridge': AMENT_PREFIX_PATH=/mnt/home/calex/g1_ros_ws/install/g1_zed_bridge:${AMENT_PREFIX_PATH} PYTHONPATH=/mnt/home/calex/g1_ros_ws/build/g1_state_bridge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/mnt/home/calex/g1_ros_ws/install/g1_state_bridge/lib/python3.8/site-packages:/mnt/home/calex/g1_ros_ws/build/g1_zed_bridge:/mnt/home/calex/g1_ros_ws/install/g1_zed_bridge/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /mnt/home/calex/g1_ros_ws/build/g1_state_bridge/build --no-deps symlink_data
+[2.323s] Level 1:colcon.colcon_core.shell:create_environment_hook('g1_state_bridge', 'pythonpath_develop')
+[2.323s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/home/calex/g1_ros_ws/build/g1_state_bridge/share/g1_state_bridge/hook/pythonpath_develop.ps1'
+[2.323s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/mnt/home/calex/g1_ros_ws/build/g1_state_bridge' returned '0': AMENT_PREFIX_PATH=/mnt/home/calex/g1_ros_ws/install/g1_zed_bridge:${AMENT_PREFIX_PATH} PYTHONPATH=/mnt/home/calex/g1_ros_ws/build/g1_state_bridge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/mnt/home/calex/g1_ros_ws/install/g1_state_bridge/lib/python3.8/site-packages:/mnt/home/calex/g1_ros_ws/build/g1_zed_bridge:/mnt/home/calex/g1_ros_ws/install/g1_zed_bridge/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /mnt/home/calex/g1_ros_ws/build/g1_state_bridge/build --no-deps symlink_data
+[2.361s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/home/calex/g1_ros_ws/build/g1_state_bridge/share/g1_state_bridge/hook/pythonpath_develop.dsv'
+[2.363s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/home/calex/g1_ros_ws/build/g1_state_bridge/share/g1_state_bridge/hook/pythonpath_develop.sh'
+[2.369s] Level 1:colcon.colcon_core.environment:checking '/mnt/home/calex/g1_ros_ws/install/g1_state_bridge' for CMake module files
+[2.386s] Level 1:colcon.colcon_core.environment:checking '/mnt/home/calex/g1_ros_ws/install/g1_state_bridge' for CMake config files
+[2.406s] Level 1:colcon.colcon_core.environment:checking '/mnt/home/calex/g1_ros_ws/install/g1_state_bridge/lib'
+[2.407s] Level 1:colcon.colcon_core.environment:checking '/mnt/home/calex/g1_ros_ws/install/g1_state_bridge/bin'
+[2.407s] Level 1:colcon.colcon_core.environment:checking '/mnt/home/calex/g1_ros_ws/install/g1_state_bridge/lib/pkgconfig/g1_state_bridge.pc'
+[2.407s] Level 1:colcon.colcon_core.environment:checking '/mnt/home/calex/g1_ros_ws/install/g1_state_bridge/lib/python3.8/site-packages'
+[2.407s] Level 1:colcon.colcon_core.shell:create_environment_hook('g1_state_bridge', 'pythonpath')
+[2.407s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/home/calex/g1_ros_ws/install/g1_state_bridge/share/g1_state_bridge/hook/pythonpath.ps1'
+[2.413s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/home/calex/g1_ros_ws/install/g1_state_bridge/share/g1_state_bridge/hook/pythonpath.dsv'
+[2.436s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/home/calex/g1_ros_ws/install/g1_state_bridge/share/g1_state_bridge/hook/pythonpath.sh'
+[2.440s] Level 1:colcon.colcon_core.environment:checking '/mnt/home/calex/g1_ros_ws/install/g1_state_bridge/bin'
+[2.440s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(g1_state_bridge)
+[2.441s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/home/calex/g1_ros_ws/install/g1_state_bridge/share/g1_state_bridge/package.ps1'
+[2.447s] INFO:colcon.colcon_core.shell:Creating package descriptor '/mnt/home/calex/g1_ros_ws/install/g1_state_bridge/share/g1_state_bridge/package.dsv'
+[2.457s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/home/calex/g1_ros_ws/install/g1_state_bridge/share/g1_state_bridge/package.sh'
+[2.459s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/home/calex/g1_ros_ws/install/g1_state_bridge/share/g1_state_bridge/package.bash'
+[2.477s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/home/calex/g1_ros_ws/install/g1_state_bridge/share/g1_state_bridge/package.zsh'
+[2.480s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/mnt/home/calex/g1_ros_ws/install/g1_state_bridge/share/colcon-core/packages/g1_state_bridge)
+[2.482s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[2.482s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[2.482s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[2.482s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[2.490s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[2.490s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[2.490s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[2.499s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[2.499s] INFO:colcon.colcon_core.shell:Creating prefix script '/mnt/home/calex/g1_ros_ws/install/local_setup.ps1'
+[2.519s] INFO:colcon.colcon_core.shell:Creating prefix util module '/mnt/home/calex/g1_ros_ws/install/_local_setup_util_ps1.py'
+[2.543s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/mnt/home/calex/g1_ros_ws/install/setup.ps1'
+[2.563s] INFO:colcon.colcon_core.shell:Creating prefix script '/mnt/home/calex/g1_ros_ws/install/local_setup.sh'
+[2.572s] INFO:colcon.colcon_core.shell:Creating prefix util module '/mnt/home/calex/g1_ros_ws/install/_local_setup_util_sh.py'
+[2.577s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/mnt/home/calex/g1_ros_ws/install/setup.sh'
+[2.583s] INFO:colcon.colcon_core.shell:Creating prefix script '/mnt/home/calex/g1_ros_ws/install/local_setup.bash'
+[2.594s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/mnt/home/calex/g1_ros_ws/install/setup.bash'
+[2.596s] INFO:colcon.colcon_core.shell:Creating prefix script '/mnt/home/calex/g1_ros_ws/install/local_setup.zsh'
+[2.603s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/mnt/home/calex/g1_ros_ws/install/setup.zsh'

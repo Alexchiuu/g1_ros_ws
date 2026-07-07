@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>g1_state_bridge</name>
+  <version>0.1.0</version>
+  <description>
+    Bridges Unitree G1 low-level DDS state (unitree_hg/LowState) to
+    sensor_msgs/JointState for robot_state_publisher and RViz.
+  </description>
+  <maintainer email="alexchiu0108@gmail.com">Alex Chiu</maintainer>
+  <license>Apache-2.0</license>
+
+  <buildtool_depend>ament_python</buildtool_depend>
+
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>unitree_hg</exec_depend>
+  <exec_depend>python3-zmq</exec_depend>
+  <exec_depend>python3-tk</exec_depend>
+  <exec_depend>g1_zed_bridge</exec_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>

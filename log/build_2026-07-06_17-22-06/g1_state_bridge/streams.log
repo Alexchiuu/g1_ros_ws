@@ -1,0 +1,19 @@
+[1.238s] Invoking command in '/mnt/home/calex/g1_ros_ws/build/g1_state_bridge': AMENT_PREFIX_PATH=/mnt/home/calex/g1_ros_ws/install/g1_zed_bridge:${AMENT_PREFIX_PATH} PYTHONPATH=/mnt/home/calex/g1_ros_ws/build/g1_state_bridge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/mnt/home/calex/g1_ros_ws/install/g1_state_bridge/lib/python3.8/site-packages:/mnt/home/calex/g1_ros_ws/build/g1_zed_bridge:/mnt/home/calex/g1_ros_ws/install/g1_zed_bridge/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /mnt/home/calex/g1_ros_ws/build/g1_state_bridge/build --no-deps symlink_data
+[1.421s] running develop
+[1.564s] running egg_info
+[1.570s] writing g1_state_bridge.egg-info/PKG-INFO
+[1.587s] writing dependency_links to g1_state_bridge.egg-info/dependency_links.txt
+[1.596s] writing entry points to g1_state_bridge.egg-info/entry_points.txt
+[1.597s] writing requirements to g1_state_bridge.egg-info/requires.txt
+[1.620s] writing top-level names to g1_state_bridge.egg-info/top_level.txt
+[1.672s] reading manifest file 'g1_state_bridge.egg-info/SOURCES.txt'
+[1.676s] writing manifest file 'g1_state_bridge.egg-info/SOURCES.txt'
+[1.729s] running build_ext
+[1.742s] Creating /mnt/home/calex/g1_ros_ws/install/g1_state_bridge/lib/python3.8/site-packages/g1-state-bridge.egg-link (link to .)
+[1.764s] Installing hand_controller_gui script to /mnt/home/calex/g1_ros_ws/install/g1_state_bridge/lib/g1_state_bridge
+[1.773s] Installing neck_controller_gui script to /mnt/home/calex/g1_ros_ws/install/g1_state_bridge/lib/g1_state_bridge
+[1.774s] Installing state_bridge_node script to /mnt/home/calex/g1_ros_ws/install/g1_state_bridge/lib/g1_state_bridge
+[1.777s] 
+[1.777s] Installed /mnt/home/calex/g1_ros_ws/build/g1_state_bridge
+[1.777s] running symlink_data
+[1.808s] Invoked command in '/mnt/home/calex/g1_ros_ws/build/g1_state_bridge' returned '0': AMENT_PREFIX_PATH=/mnt/home/calex/g1_ros_ws/install/g1_zed_bridge:${AMENT_PREFIX_PATH} PYTHONPATH=/mnt/home/calex/g1_ros_ws/build/g1_state_bridge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/mnt/home/calex/g1_ros_ws/install/g1_state_bridge/lib/python3.8/site-packages:/mnt/home/calex/g1_ros_ws/build/g1_zed_bridge:/mnt/home/calex/g1_ros_ws/install/g1_zed_bridge/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /mnt/home/calex/g1_ros_ws/build/g1_state_bridge/build --no-deps symlink_data

@@ -1,0 +1,238 @@
+[0.206s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install', '--packages-select', 'g1_description', 'g1_gazebo']
+[0.206s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f1b7484bcd0>>, merge_install=False, metas=['./colcon.meta'], mixin=None, mixin_files=None, mixin_verb=('build',), packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=['g1_description', 'g1_gazebo'], packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=20, paths=None, symlink_install=True, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f1b7484bcd0>, verb_name='build', verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7f1b74859160>)
+[0.295s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.295s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.296s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.296s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.296s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.296s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.296s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/mnt/home/calex/g1_ros_ws'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.351s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.351s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(script) by extensions ['ignore', 'ignore_ament_install']
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(script) by extension 'ignore'
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(script) by extension 'ignore_ament_install'
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(script) by extensions ['colcon_pkg']
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(script) by extension 'colcon_pkg'
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(script) by extensions ['colcon_meta']
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(script) by extension 'colcon_meta'
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(script) by extensions ['ros']
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(script) by extension 'ros'
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(script) by extensions ['cmake', 'python']
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(script) by extension 'cmake'
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(script) by extension 'python'
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(script) by extensions ['python_setup_py']
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(script) by extension 'python_setup_py'
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src/g1_description) by extensions ['ignore', 'ignore_ament_install']
+[0.355s] Level 1:colcon.colcon_core.package_identification:_identify(src/g1_description) by extension 'ignore'
+[0.355s] Level 1:colcon.colcon_core.package_identification:_identify(src/g1_description) by extension 'ignore_ament_install'
+[0.355s] Level 1:colcon.colcon_core.package_identification:_identify(src/g1_description) by extensions ['colcon_pkg']
+[0.355s] Level 1:colcon.colcon_core.package_identification:_identify(src/g1_description) by extension 'colcon_pkg'
+[0.355s] Level 1:colcon.colcon_core.package_identification:_identify(src/g1_description) by extensions ['colcon_meta']
+[0.355s] Level 1:colcon.colcon_core.package_identification:_identify(src/g1_description) by extension 'colcon_meta'
+[0.355s] Level 1:colcon.colcon_core.package_identification:_identify(src/g1_description) by extensions ['ros']
+[0.355s] Level 1:colcon.colcon_core.package_identification:_identify(src/g1_description) by extension 'ros'
+[0.357s] DEBUG:colcon.colcon_core.package_identification:Package 'src/g1_description' with type 'ros.ament_cmake' and name 'g1_description'
+[0.358s] Level 1:colcon.colcon_core.package_identification:_identify(src/g1_gazebo) by extensions ['ignore', 'ignore_ament_install']
+[0.358s] Level 1:colcon.colcon_core.package_identification:_identify(src/g1_gazebo) by extension 'ignore'
+[0.358s] Level 1:colcon.colcon_core.package_identification:_identify(src/g1_gazebo) by extension 'ignore_ament_install'
+[0.358s] Level 1:colcon.colcon_core.package_identification:_identify(src/g1_gazebo) by extensions ['colcon_pkg']
+[0.358s] Level 1:colcon.colcon_core.package_identification:_identify(src/g1_gazebo) by extension 'colcon_pkg'
+[0.358s] Level 1:colcon.colcon_core.package_identification:_identify(src/g1_gazebo) by extensions ['colcon_meta']
+[0.358s] Level 1:colcon.colcon_core.package_identification:_identify(src/g1_gazebo) by extension 'colcon_meta'
+[0.358s] Level 1:colcon.colcon_core.package_identification:_identify(src/g1_gazebo) by extensions ['ros']
+[0.358s] Level 1:colcon.colcon_core.package_identification:_identify(src/g1_gazebo) by extension 'ros'
+[0.360s] DEBUG:colcon.colcon_core.package_identification:Package 'src/g1_gazebo' with type 'ros.ament_cmake' and name 'g1_gazebo'
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(src/g1_state_bridge) by extensions ['ignore', 'ignore_ament_install']
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(src/g1_state_bridge) by extension 'ignore'
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(src/g1_state_bridge) by extension 'ignore_ament_install'
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(src/g1_state_bridge) by extensions ['colcon_pkg']
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(src/g1_state_bridge) by extension 'colcon_pkg'
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(src/g1_state_bridge) by extensions ['colcon_meta']
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(src/g1_state_bridge) by extension 'colcon_meta'
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(src/g1_state_bridge) by extensions ['ros']
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(src/g1_state_bridge) by extension 'ros'
+[0.379s] DEBUG:colcon.colcon_core.package_identification:Package 'src/g1_state_bridge' with type 'ros.ament_python' and name 'g1_state_bridge'
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(src/g1_zed_bridge) by extensions ['ignore', 'ignore_ament_install']
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(src/g1_zed_bridge) by extension 'ignore'
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(src/g1_zed_bridge) by extension 'ignore_ament_install'
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(src/g1_zed_bridge) by extensions ['colcon_pkg']
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(src/g1_zed_bridge) by extension 'colcon_pkg'
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(src/g1_zed_bridge) by extensions ['colcon_meta']
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(src/g1_zed_bridge) by extension 'colcon_meta'
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(src/g1_zed_bridge) by extensions ['ros']
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(src/g1_zed_bridge) by extension 'ros'
+[0.383s] DEBUG:colcon.colcon_core.package_identification:Package 'src/g1_zed_bridge' with type 'ros.ament_python' and name 'g1_zed_bridge'
+[0.383s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.383s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.383s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.383s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.383s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.406s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'g1_zed_bridge' in 'src/g1_zed_bridge'
+[0.406s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'g1_state_bridge' in 'src/g1_state_bridge'
+[0.406s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.407s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.409s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 302 installed packages in /opt/ros/foxy
+[0.416s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.447s] Level 5:colcon.colcon_core.verb:set package 'g1_description' build argument 'cmake_args' from command line to 'None'
+[0.447s] Level 5:colcon.colcon_core.verb:set package 'g1_description' build argument 'cmake_target' from command line to 'None'
+[0.447s] Level 5:colcon.colcon_core.verb:set package 'g1_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.447s] Level 5:colcon.colcon_core.verb:set package 'g1_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.448s] Level 5:colcon.colcon_core.verb:set package 'g1_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.448s] Level 5:colcon.colcon_core.verb:set package 'g1_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.448s] Level 5:colcon.colcon_core.verb:set package 'g1_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.448s] Level 5:colcon.colcon_core.verb:set package 'g1_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.448s] Level 5:colcon.colcon_core.verb:set package 'g1_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.448s] DEBUG:colcon.colcon_core.verb:Building package 'g1_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/mnt/home/calex/g1_ros_ws/build/g1_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/mnt/home/calex/g1_ros_ws/install/g1_description', 'merge_install': False, 'path': '/mnt/home/calex/g1_ros_ws/src/g1_description', 'symlink_install': True, 'test_result_base': None}
+[0.448s] Level 5:colcon.colcon_core.verb:set package 'g1_gazebo' build argument 'cmake_args' from command line to 'None'
+[0.448s] Level 5:colcon.colcon_core.verb:set package 'g1_gazebo' build argument 'cmake_target' from command line to 'None'
+[0.448s] Level 5:colcon.colcon_core.verb:set package 'g1_gazebo' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.448s] Level 5:colcon.colcon_core.verb:set package 'g1_gazebo' build argument 'cmake_clean_cache' from command line to 'False'
+[0.448s] Level 5:colcon.colcon_core.verb:set package 'g1_gazebo' build argument 'cmake_clean_first' from command line to 'False'
+[0.448s] Level 5:colcon.colcon_core.verb:set package 'g1_gazebo' build argument 'cmake_force_configure' from command line to 'False'
+[0.448s] Level 5:colcon.colcon_core.verb:set package 'g1_gazebo' build argument 'ament_cmake_args' from command line to 'None'
+[0.448s] Level 5:colcon.colcon_core.verb:set package 'g1_gazebo' build argument 'catkin_cmake_args' from command line to 'None'
+[0.448s] Level 5:colcon.colcon_core.verb:set package 'g1_gazebo' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.448s] DEBUG:colcon.colcon_core.verb:Building package 'g1_gazebo' with the following arguments: {'ament_cmake_args': None, 'build_base': '/mnt/home/calex/g1_ros_ws/build/g1_gazebo', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/mnt/home/calex/g1_ros_ws/install/g1_gazebo', 'merge_install': False, 'path': '/mnt/home/calex/g1_ros_ws/src/g1_gazebo', 'symlink_install': True, 'test_result_base': None}
+[0.448s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.449s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.449s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/mnt/home/calex/g1_ros_ws/src/g1_description' with build type 'ament_cmake'
+[0.450s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/mnt/home/calex/g1_ros_ws/src/g1_description'
+[0.451s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.451s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.451s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.554s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/mnt/home/calex/g1_ros_ws/build/g1_description': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /mnt/home/calex/g1_ros_ws/build/g1_description -- -j20 -l20
+[0.581s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/mnt/home/calex/g1_ros_ws/build/g1_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /mnt/home/calex/g1_ros_ws/build/g1_description -- -j20 -l20
+[0.591s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/mnt/home/calex/g1_ros_ws/build/g1_description': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /mnt/home/calex/g1_ros_ws/build/g1_description
+[0.755s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(g1_description)
+[0.755s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/mnt/home/calex/g1_ros_ws/build/g1_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /mnt/home/calex/g1_ros_ws/build/g1_description
+[0.757s] Level 1:colcon.colcon_core.environment:checking '/mnt/home/calex/g1_ros_ws/install/g1_description' for CMake module files
+[0.758s] Level 1:colcon.colcon_core.environment:checking '/mnt/home/calex/g1_ros_ws/install/g1_description' for CMake config files
+[0.759s] Level 1:colcon.colcon_core.shell:create_environment_hook('g1_description', 'cmake_prefix_path')
+[0.759s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/hook/cmake_prefix_path.ps1'
+[0.761s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/hook/cmake_prefix_path.dsv'
+[0.762s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/hook/cmake_prefix_path.sh'
+[0.764s] Level 1:colcon.colcon_core.environment:checking '/mnt/home/calex/g1_ros_ws/install/g1_description/bin'
+[0.764s] Level 1:colcon.colcon_core.environment:checking '/mnt/home/calex/g1_ros_ws/install/g1_description/lib/pkgconfig/g1_description.pc'
+[0.764s] Level 1:colcon.colcon_core.environment:checking '/mnt/home/calex/g1_ros_ws/install/g1_description/lib/python3.8/site-packages'
+[0.764s] Level 1:colcon.colcon_core.environment:checking '/mnt/home/calex/g1_ros_ws/install/g1_description/bin'
+[0.765s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/package.ps1'
+[0.767s] INFO:colcon.colcon_core.shell:Creating package descriptor '/mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/package.dsv'
+[0.768s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/package.sh'
+[0.769s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/package.bash'
+[0.770s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/package.zsh'
+[0.772s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/mnt/home/calex/g1_ros_ws/install/g1_description/share/colcon-core/packages/g1_description)
+[0.832s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(g1_description)
+[0.832s] Level 1:colcon.colcon_core.environment:checking '/mnt/home/calex/g1_ros_ws/install/g1_description' for CMake module files
+[0.833s] Level 1:colcon.colcon_core.environment:checking '/mnt/home/calex/g1_ros_ws/install/g1_description' for CMake config files
+[0.834s] Level 1:colcon.colcon_core.shell:create_environment_hook('g1_description', 'cmake_prefix_path')
+[0.834s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/hook/cmake_prefix_path.ps1'
+[0.856s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/hook/cmake_prefix_path.dsv'
+[0.857s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/hook/cmake_prefix_path.sh'
+[0.858s] Level 1:colcon.colcon_core.environment:checking '/mnt/home/calex/g1_ros_ws/install/g1_description/bin'
+[0.858s] Level 1:colcon.colcon_core.environment:checking '/mnt/home/calex/g1_ros_ws/install/g1_description/lib/pkgconfig/g1_description.pc'
+[0.859s] Level 1:colcon.colcon_core.environment:checking '/mnt/home/calex/g1_ros_ws/install/g1_description/lib/python3.8/site-packages'
+[0.859s] Level 1:colcon.colcon_core.environment:checking '/mnt/home/calex/g1_ros_ws/install/g1_description/bin'
+[0.859s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/package.ps1'
+[0.861s] INFO:colcon.colcon_core.shell:Creating package descriptor '/mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/package.dsv'
+[0.862s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/package.sh'
+[0.863s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/package.bash'
+[0.864s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/home/calex/g1_ros_ws/install/g1_description/share/g1_description/package.zsh'
+[0.866s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/mnt/home/calex/g1_ros_ws/install/g1_description/share/colcon-core/packages/g1_description)
+[0.867s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/mnt/home/calex/g1_ros_ws/src/g1_gazebo' with build type 'ament_cmake'
+[0.867s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/mnt/home/calex/g1_ros_ws/src/g1_gazebo'
+[0.867s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.867s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.881s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/mnt/home/calex/g1_ros_ws/build/g1_gazebo': AMENT_PREFIX_PATH=/mnt/home/calex/g1_ros_ws/install/g1_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/mnt/home/calex/g1_ros_ws/install/g1_description:/opt/ros/foxy /usr/bin/cmake --build /mnt/home/calex/g1_ros_ws/build/g1_gazebo -- -j20 -l20
+[0.933s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/mnt/home/calex/g1_ros_ws/build/g1_gazebo' returned '0': AMENT_PREFIX_PATH=/mnt/home/calex/g1_ros_ws/install/g1_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/mnt/home/calex/g1_ros_ws/install/g1_description:/opt/ros/foxy /usr/bin/cmake --build /mnt/home/calex/g1_ros_ws/build/g1_gazebo -- -j20 -l20
+[0.936s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/mnt/home/calex/g1_ros_ws/build/g1_gazebo': AMENT_PREFIX_PATH=/mnt/home/calex/g1_ros_ws/install/g1_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/mnt/home/calex/g1_ros_ws/install/g1_description:/opt/ros/foxy /usr/bin/cmake --install /mnt/home/calex/g1_ros_ws/build/g1_gazebo
+[0.984s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(g1_gazebo)
+[0.984s] Level 1:colcon.colcon_core.environment:checking '/mnt/home/calex/g1_ros_ws/install/g1_gazebo' for CMake module files
+[0.984s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/mnt/home/calex/g1_ros_ws/build/g1_gazebo' returned '0': AMENT_PREFIX_PATH=/mnt/home/calex/g1_ros_ws/install/g1_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/mnt/home/calex/g1_ros_ws/install/g1_description:/opt/ros/foxy /usr/bin/cmake --install /mnt/home/calex/g1_ros_ws/build/g1_gazebo
+[0.986s] Level 1:colcon.colcon_core.environment:checking '/mnt/home/calex/g1_ros_ws/install/g1_gazebo' for CMake config files
+[0.987s] Level 1:colcon.colcon_core.shell:create_environment_hook('g1_gazebo', 'cmake_prefix_path')
+[0.987s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/home/calex/g1_ros_ws/install/g1_gazebo/share/g1_gazebo/hook/cmake_prefix_path.ps1'
+[0.989s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/home/calex/g1_ros_ws/install/g1_gazebo/share/g1_gazebo/hook/cmake_prefix_path.dsv'
+[0.990s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/home/calex/g1_ros_ws/install/g1_gazebo/share/g1_gazebo/hook/cmake_prefix_path.sh'
+[0.992s] Level 1:colcon.colcon_core.environment:checking '/mnt/home/calex/g1_ros_ws/install/g1_gazebo/lib'
+[0.992s] Level 1:colcon.colcon_core.environment:checking '/mnt/home/calex/g1_ros_ws/install/g1_gazebo/bin'
+[0.992s] Level 1:colcon.colcon_core.environment:checking '/mnt/home/calex/g1_ros_ws/install/g1_gazebo/lib/pkgconfig/g1_gazebo.pc'
+[0.992s] Level 1:colcon.colcon_core.environment:checking '/mnt/home/calex/g1_ros_ws/install/g1_gazebo/lib/python3.8/site-packages'
+[0.992s] Level 1:colcon.colcon_core.environment:checking '/mnt/home/calex/g1_ros_ws/install/g1_gazebo/bin'
+[0.993s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/home/calex/g1_ros_ws/install/g1_gazebo/share/g1_gazebo/package.ps1'
+[0.994s] INFO:colcon.colcon_core.shell:Creating package descriptor '/mnt/home/calex/g1_ros_ws/install/g1_gazebo/share/g1_gazebo/package.dsv'
+[0.995s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/home/calex/g1_ros_ws/install/g1_gazebo/share/g1_gazebo/package.sh'
+[0.996s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/home/calex/g1_ros_ws/install/g1_gazebo/share/g1_gazebo/package.bash'
+[0.997s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/home/calex/g1_ros_ws/install/g1_gazebo/share/g1_gazebo/package.zsh'
+[0.998s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/mnt/home/calex/g1_ros_ws/install/g1_gazebo/share/colcon-core/packages/g1_gazebo)
+[1.000s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(g1_gazebo)
+[1.000s] Level 1:colcon.colcon_core.environment:checking '/mnt/home/calex/g1_ros_ws/install/g1_gazebo' for CMake module files
+[1.001s] Level 1:colcon.colcon_core.environment:checking '/mnt/home/calex/g1_ros_ws/install/g1_gazebo' for CMake config files
+[1.003s] Level 1:colcon.colcon_core.shell:create_environment_hook('g1_gazebo', 'cmake_prefix_path')
+[1.003s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/home/calex/g1_ros_ws/install/g1_gazebo/share/g1_gazebo/hook/cmake_prefix_path.ps1'
+[1.004s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/home/calex/g1_ros_ws/install/g1_gazebo/share/g1_gazebo/hook/cmake_prefix_path.dsv'
+[1.005s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/home/calex/g1_ros_ws/install/g1_gazebo/share/g1_gazebo/hook/cmake_prefix_path.sh'
+[1.006s] Level 1:colcon.colcon_core.environment:checking '/mnt/home/calex/g1_ros_ws/install/g1_gazebo/lib'
+[1.007s] Level 1:colcon.colcon_core.environment:checking '/mnt/home/calex/g1_ros_ws/install/g1_gazebo/bin'
+[1.007s] Level 1:colcon.colcon_core.environment:checking '/mnt/home/calex/g1_ros_ws/install/g1_gazebo/lib/pkgconfig/g1_gazebo.pc'
+[1.007s] Level 1:colcon.colcon_core.environment:checking '/mnt/home/calex/g1_ros_ws/install/g1_gazebo/lib/python3.8/site-packages'
+[1.007s] Level 1:colcon.colcon_core.environment:checking '/mnt/home/calex/g1_ros_ws/install/g1_gazebo/bin'
+[1.007s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/home/calex/g1_ros_ws/install/g1_gazebo/share/g1_gazebo/package.ps1'
+[1.009s] INFO:colcon.colcon_core.shell:Creating package descriptor '/mnt/home/calex/g1_ros_ws/install/g1_gazebo/share/g1_gazebo/package.dsv'
+[1.010s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/home/calex/g1_ros_ws/install/g1_gazebo/share/g1_gazebo/package.sh'
+[1.011s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/home/calex/g1_ros_ws/install/g1_gazebo/share/g1_gazebo/package.bash'
+[1.121s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/home/calex/g1_ros_ws/install/g1_gazebo/share/g1_gazebo/package.zsh'
+[1.292s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/mnt/home/calex/g1_ros_ws/install/g1_gazebo/share/colcon-core/packages/g1_gazebo)
+[1.500s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[1.501s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[1.501s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[1.501s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[2.164s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[2.164s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[2.193s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[2.204s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[2.205s] INFO:colcon.colcon_core.shell:Creating prefix script '/mnt/home/calex/g1_ros_ws/install/local_setup.ps1'
+[2.412s] INFO:colcon.colcon_core.shell:Creating prefix util module '/mnt/home/calex/g1_ros_ws/install/_local_setup_util_ps1.py'
+[2.583s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/mnt/home/calex/g1_ros_ws/install/setup.ps1'
+[2.752s] INFO:colcon.colcon_core.shell:Creating prefix script '/mnt/home/calex/g1_ros_ws/install/local_setup.sh'
+[2.936s] INFO:colcon.colcon_core.shell:Creating prefix util module '/mnt/home/calex/g1_ros_ws/install/_local_setup_util_sh.py'
+[3.143s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/mnt/home/calex/g1_ros_ws/install/setup.sh'
+[3.302s] INFO:colcon.colcon_core.shell:Creating prefix script '/mnt/home/calex/g1_ros_ws/install/local_setup.bash'
+[3.461s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/mnt/home/calex/g1_ros_ws/install/setup.bash'
+[3.559s] INFO:colcon.colcon_core.shell:Creating prefix script '/mnt/home/calex/g1_ros_ws/install/local_setup.zsh'
+[3.561s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/mnt/home/calex/g1_ros_ws/install/setup.zsh'

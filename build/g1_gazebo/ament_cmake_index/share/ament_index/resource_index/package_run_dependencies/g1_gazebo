@@ -1,0 +1,1 @@
+g1_description;gazebo_ros;gazebo_ros2_control;controller_manager;joint_state_broadcaster;position_controllers;robot_state_publisher;joint_state_publisher_gui;rviz2;xacro;rclpy;sensor_msgs;std_msgs;nav_msgs;tf2_ros;gazebo_plugins

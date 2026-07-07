@@ -1,0 +1,26 @@
+[0.677s] Invoking command in '/mnt/home/calex/g1_ros_ws/src/g1_state_bridge': PYTHONPATH=/mnt/home/calex/g1_ros_ws/build/g1_state_bridge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/mnt/home/calex/g1_ros_ws/install/g1_state_bridge/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/g1_state_bridge build --build-base /mnt/home/calex/g1_ros_ws/build/g1_state_bridge/build install --record /mnt/home/calex/g1_ros_ws/build/g1_state_bridge/install.log --install-scripts $base/lib/g1_state_bridge --single-version-externally-managed install_data
+[0.798s] running egg_info
+[0.799s] writing ../../build/g1_state_bridge/g1_state_bridge.egg-info/PKG-INFO
+[0.801s] writing dependency_links to ../../build/g1_state_bridge/g1_state_bridge.egg-info/dependency_links.txt
+[0.803s] writing entry points to ../../build/g1_state_bridge/g1_state_bridge.egg-info/entry_points.txt
+[0.805s] writing requirements to ../../build/g1_state_bridge/g1_state_bridge.egg-info/requires.txt
+[0.808s] writing top-level names to ../../build/g1_state_bridge/g1_state_bridge.egg-info/top_level.txt
+[0.833s] reading manifest file '../../build/g1_state_bridge/g1_state_bridge.egg-info/SOURCES.txt'
+[0.836s] writing manifest file '../../build/g1_state_bridge/g1_state_bridge.egg-info/SOURCES.txt'
+[0.837s] running build
+[0.838s] running build_py
+[0.841s] copying g1_state_bridge/hand_controller_gui.py -> /mnt/home/calex/g1_ros_ws/build/g1_state_bridge/build/lib/g1_state_bridge
+[0.845s] running install
+[0.846s] running install_lib
+[0.849s] copying /mnt/home/calex/g1_ros_ws/build/g1_state_bridge/build/lib/g1_state_bridge/hand_controller_gui.py -> /mnt/home/calex/g1_ros_ws/install/g1_state_bridge/lib/python3.8/site-packages/g1_state_bridge
+[0.856s] byte-compiling /mnt/home/calex/g1_ros_ws/install/g1_state_bridge/lib/python3.8/site-packages/g1_state_bridge/hand_controller_gui.py to hand_controller_gui.cpython-38.pyc
+[0.864s] running install_data
+[0.865s] copying package.xml -> /mnt/home/calex/g1_ros_ws/install/g1_state_bridge/share/g1_state_bridge
+[0.878s] running install_egg_info
+[0.879s] removing '/mnt/home/calex/g1_ros_ws/install/g1_state_bridge/lib/python3.8/site-packages/g1_state_bridge-0.1.0-py3.8.egg-info' (and everything under it)
+[0.913s] Copying ../../build/g1_state_bridge/g1_state_bridge.egg-info to /mnt/home/calex/g1_ros_ws/install/g1_state_bridge/lib/python3.8/site-packages/g1_state_bridge-0.1.0-py3.8.egg-info
+[0.933s] running install_scripts
+[0.945s] Installing hand_controller_gui script to /mnt/home/calex/g1_ros_ws/install/g1_state_bridge/lib/g1_state_bridge
+[0.947s] Installing state_bridge_node script to /mnt/home/calex/g1_ros_ws/install/g1_state_bridge/lib/g1_state_bridge
+[0.949s] writing list of installed files to '/mnt/home/calex/g1_ros_ws/build/g1_state_bridge/install.log'
+[0.961s] Invoked command in '/mnt/home/calex/g1_ros_ws/src/g1_state_bridge' returned '0': PYTHONPATH=/mnt/home/calex/g1_ros_ws/build/g1_state_bridge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/mnt/home/calex/g1_ros_ws/install/g1_state_bridge/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/g1_state_bridge build --build-base /mnt/home/calex/g1_ros_ws/build/g1_state_bridge/build install --record /mnt/home/calex/g1_ros_ws/build/g1_state_bridge/install.log --install-scripts $base/lib/g1_state_bridge --single-version-externally-managed install_data

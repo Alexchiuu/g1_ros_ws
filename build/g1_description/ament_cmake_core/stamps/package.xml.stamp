@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>g1_description</name>
+  <version>0.1.0</version>
+  <description>
+    URDF/xacro description of the Unitree G1 humanoid with Tetheria dexterous hands.
+    Converted from MuJoCo MJCF: g1_tether_neck_tendon_rename.xml
+  </description>
+  <maintainer email="alexchiu0108@gmail.com">Alex Chiu</maintainer>
+  <license>Apache-2.0</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <exec_depend>robot_state_publisher</exec_depend>
+  <exec_depend>joint_state_publisher_gui</exec_depend>
+  <exec_depend>xacro</exec_depend>
+  <exec_depend>rviz2</exec_depend>
+  <exec_depend>gazebo_ros2_control</exec_depend>
+  <exec_depend>ros2_control</exec_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

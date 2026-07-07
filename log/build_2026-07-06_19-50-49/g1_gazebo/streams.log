@@ -1,0 +1,68 @@
+[0.013s] Invoking command in '/mnt/home/calex/g1_ros_ws/build/g1_gazebo': AMENT_PREFIX_PATH=/mnt/home/calex/g1_ros_ws/install/g1_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/mnt/home/calex/g1_ros_ws/install/g1_description:/opt/ros/foxy /usr/bin/cmake /mnt/home/calex/g1_ros_ws/src/g1_gazebo -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/mnt/home/calex/g1_ros_ws/install/g1_gazebo
+[0.051s] CMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+[0.051s]   Compatibility with CMake < 3.10 will be removed from a future version of
+[0.052s]   CMake.
+[0.052s] 
+[0.052s]   Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+[0.053s]   to tell CMake that the project requires at least <min> but has been updated
+[0.053s]   to work with policies introduced by <max> or earlier.
+[0.054s] 
+[0.054s] 
+[0.112s] -- The C compiler identification is GNU 9.4.0
+[0.221s] -- The CXX compiler identification is GNU 9.4.0
+[0.233s] -- Detecting C compiler ABI info
+[0.379s] -- Detecting C compiler ABI info - done
+[0.393s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.394s] -- Detecting C compile features
+[0.394s] -- Detecting C compile features - done
+[0.407s] -- Detecting CXX compiler ABI info
+[0.537s] -- Detecting CXX compiler ABI info - done
+[0.550s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.550s] -- Detecting CXX compile features
+[0.551s] -- Detecting CXX compile features - done
+[0.566s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.576s] CMake Warning (dev) at /opt/ros/foxy/share/ament_cmake_core/cmake/core/python.cmake:22 (find_package):
+[0.576s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[0.576s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[0.576s]   the cmake_policy command to set the policy and suppress this warning.
+[0.576s] 
+[0.576s] Call Stack (most recent call first):
+[0.576s]   /opt/ros/foxy/share/ament_cmake_core/cmake/core/all.cmake:53 (include)
+[0.576s]   /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_core-extras.cmake:17 (include)
+[0.576s]   /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_coreConfig.cmake:41 (include)
+[0.577s]   /opt/ros/foxy/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:15 (find_package)
+[0.577s]   /opt/ros/foxy/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)
+[0.577s]   CMakeLists.txt:4 (find_package)
+[0.577s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.577s] 
+[0.589s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3")
+[0.589s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.687s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.924s] -- Configuring done (0.9s)
+[0.964s] -- Generating done (0.0s)
+[0.979s] -- Build files have been written to: /mnt/home/calex/g1_ros_ws/build/g1_gazebo
+[0.988s] Invoked command in '/mnt/home/calex/g1_ros_ws/build/g1_gazebo' returned '0': AMENT_PREFIX_PATH=/mnt/home/calex/g1_ros_ws/install/g1_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/mnt/home/calex/g1_ros_ws/install/g1_description:/opt/ros/foxy /usr/bin/cmake /mnt/home/calex/g1_ros_ws/src/g1_gazebo -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/mnt/home/calex/g1_ros_ws/install/g1_gazebo
+[0.991s] Invoking command in '/mnt/home/calex/g1_ros_ws/build/g1_gazebo': AMENT_PREFIX_PATH=/mnt/home/calex/g1_ros_ws/install/g1_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/mnt/home/calex/g1_ros_ws/install/g1_description:/opt/ros/foxy /usr/bin/cmake --build /mnt/home/calex/g1_ros_ws/build/g1_gazebo -- -j20 -l20
+[1.024s] Invoked command in '/mnt/home/calex/g1_ros_ws/build/g1_gazebo' returned '0': AMENT_PREFIX_PATH=/mnt/home/calex/g1_ros_ws/install/g1_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/mnt/home/calex/g1_ros_ws/install/g1_description:/opt/ros/foxy /usr/bin/cmake --build /mnt/home/calex/g1_ros_ws/build/g1_gazebo -- -j20 -l20
+[1.029s] Invoking command in '/mnt/home/calex/g1_ros_ws/build/g1_gazebo': AMENT_PREFIX_PATH=/mnt/home/calex/g1_ros_ws/install/g1_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/mnt/home/calex/g1_ros_ws/install/g1_description:/opt/ros/foxy /usr/bin/cmake --install /mnt/home/calex/g1_ros_ws/build/g1_gazebo
+[1.035s] -- Install configuration: ""
+[1.036s] -- Execute custom install script
+[1.041s] -- Symlinking: /mnt/home/calex/g1_ros_ws/install/g1_gazebo/share/g1_gazebo/launch/g1_gazebo.launch.py
+[1.050s] -- Symlinking: /mnt/home/calex/g1_ros_ws/install/g1_gazebo/share/g1_gazebo/config/g1_controllers.yaml
+[1.065s] -- Symlinking: /mnt/home/calex/g1_ros_ws/install/g1_gazebo/share/g1_gazebo/worlds/g1_world.world
+[1.076s] -- Symlinking: /mnt/home/calex/g1_ros_ws/install/g1_gazebo/share/ament_index/resource_index/package_run_dependencies/g1_gazebo
+[1.085s] -- Symlinking: /mnt/home/calex/g1_ros_ws/install/g1_gazebo/share/ament_index/resource_index/parent_prefix_path/g1_gazebo
+[1.092s] -- Symlinking: /mnt/home/calex/g1_ros_ws/install/g1_gazebo/share/g1_gazebo/environment/ament_prefix_path.sh
+[1.101s] -- Symlinking: /mnt/home/calex/g1_ros_ws/install/g1_gazebo/share/g1_gazebo/environment/ament_prefix_path.dsv
+[1.108s] -- Symlinking: /mnt/home/calex/g1_ros_ws/install/g1_gazebo/share/g1_gazebo/environment/path.sh
+[1.116s] -- Symlinking: /mnt/home/calex/g1_ros_ws/install/g1_gazebo/share/g1_gazebo/environment/path.dsv
+[1.124s] -- Symlinking: /mnt/home/calex/g1_ros_ws/install/g1_gazebo/share/g1_gazebo/local_setup.bash
+[1.132s] -- Symlinking: /mnt/home/calex/g1_ros_ws/install/g1_gazebo/share/g1_gazebo/local_setup.sh
+[1.143s] -- Symlinking: /mnt/home/calex/g1_ros_ws/install/g1_gazebo/share/g1_gazebo/local_setup.zsh
+[1.154s] -- Symlinking: /mnt/home/calex/g1_ros_ws/install/g1_gazebo/share/g1_gazebo/local_setup.dsv
+[1.164s] -- Symlinking: /mnt/home/calex/g1_ros_ws/install/g1_gazebo/share/g1_gazebo/package.dsv
+[1.171s] -- Symlinking: /mnt/home/calex/g1_ros_ws/install/g1_gazebo/share/ament_index/resource_index/packages/g1_gazebo
+[1.180s] -- Symlinking: /mnt/home/calex/g1_ros_ws/install/g1_gazebo/share/g1_gazebo/cmake/g1_gazeboConfig.cmake
+[1.185s] -- Symlinking: /mnt/home/calex/g1_ros_ws/install/g1_gazebo/share/g1_gazebo/cmake/g1_gazeboConfig-version.cmake
+[1.190s] -- Symlinking: /mnt/home/calex/g1_ros_ws/install/g1_gazebo/share/g1_gazebo/package.xml
+[1.197s] Invoked command in '/mnt/home/calex/g1_ros_ws/build/g1_gazebo' returned '0': AMENT_PREFIX_PATH=/mnt/home/calex/g1_ros_ws/install/g1_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/mnt/home/calex/g1_ros_ws/install/g1_description:/opt/ros/foxy /usr/bin/cmake --install /mnt/home/calex/g1_ros_ws/build/g1_gazebo
