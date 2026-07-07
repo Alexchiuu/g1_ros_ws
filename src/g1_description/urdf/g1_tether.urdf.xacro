@@ -352,9 +352,22 @@
       </material>
     </visual>
   </link>
+  <!-- head_mocap has a dummy inertial (ignored by robot_state_publisher/RViz)
+       purely so Gazebo's fixed-joint reducer doesn't lump it into head_link:
+       it's the parent of neck_yaw_joint (revolute), and gazebo silently
+       drops the whole neck chain if it lumps away a revolute joint's
+       parent link. Same reasoning for neck_yaw_link below. -->
   <link name="head_mocap">
+    <inertial>
+      <mass value="0.05"/>
+      <inertia ixx="5e-05" iyy="5e-05" izz="5e-05" ixy="0" ixz="0" iyz="0"/>
+    </inertial>
   </link>
   <link name="neck_link">
+    <inertial>
+      <mass value="0.05"/>
+      <inertia ixx="5e-05" iyy="5e-05" izz="5e-05" ixy="0" ixz="0" iyz="0"/>
+    </inertial>
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
@@ -1883,10 +1896,31 @@
     <child link="head_mocap"/>
     <origin xyz="0 0 0.4" rpy="0 0 0"/>
   </joint>
-  <joint name="fixed_neck_link" type="fixed">
+  <!-- Real hardware: 2x Dynamixel gimbal (ID1 yaw/pan, ID2 pitch/tilt), read
+       over serial by calex/deploy/neck.py and relayed to g1_state_bridge.
+       neck_yaw_link is a lightweight intermediate frame (dummy inertial, see
+       head_mocap above, same Gazebo lumping reason); the twist2_neck mesh
+       stays on neck_link (the pitch joint's child) same as before, so at
+       yaw=pitch=0 this reproduces the old fixed-joint pose exactly. -->
+  <link name="neck_yaw_link">
+    <inertial>
+      <mass value="0.05"/>
+      <inertia ixx="5e-05" iyy="5e-05" izz="5e-05" ixy="0" ixz="0" iyz="0"/>
+    </inertial>
+  </link>
+  <joint name="neck_yaw_joint" type="revolute">
     <parent link="head_mocap"/>
-    <child link="neck_link"/>
+    <child link="neck_yaw_link"/>
     <origin xyz="0.05 0.02 0.075" rpy="1.5707969 -0 0"/>
+    <axis xyz="0 1 0"/>
+    <limit lower="-3.14159" upper="3.14159" effort="5" velocity="5"/>
+  </joint>
+  <joint name="neck_pitch_joint" type="revolute">
+    <parent link="neck_yaw_link"/>
+    <child link="neck_link"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="-3.14159" upper="3.14159" effort="5" velocity="5"/>
   </joint>
   <joint name="fixed_imu_in_torso" type="fixed">
     <parent link="torso_link"/>
