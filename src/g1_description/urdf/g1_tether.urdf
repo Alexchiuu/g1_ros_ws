@@ -141,16 +141,12 @@
         <color rgba="0.200 0.200 0.200 1.000"/>
       </material>
     </visual>
+    <!-- Flat sole box in place of two thin cylindrical rails, see
+         g1_tether.urdf.xacro's left_ankle_roll_link collision comment. -->
     <collision>
-      <origin xyz="0.05 0.02 -0.02" rpy="3.1415927 1.5695351 3.1415927"/>
+      <origin xyz="0.05 0 -0.02" rpy="0 0 0"/>
       <geometry>
-        <cylinder radius="0.02" length="0.15"/>
-      </geometry>
-    </collision>
-    <collision>
-      <origin xyz="0.05 -0.02 -0.02" rpy="3.1415927 1.5695351 3.1415927"/>
-      <geometry>
-        <cylinder radius="0.02" length="0.15"/>
+        <box size="0.15 0.08 0.03"/>
       </geometry>
     </collision>
   </link>
@@ -263,16 +259,12 @@
         <color rgba="0.200 0.200 0.200 1.000"/>
       </material>
     </visual>
+    <!-- Flat sole box in place of two thin cylindrical rails, see
+         g1_tether.urdf.xacro's left_ankle_roll_link collision comment. -->
     <collision>
-      <origin xyz="0.05 0.02 -0.02" rpy="3.1415927 1.5695351 3.1415927"/>
+      <origin xyz="0.05 0 -0.02" rpy="0 0 0"/>
       <geometry>
-        <cylinder radius="0.02" length="0.15"/>
-      </geometry>
-    </collision>
-    <collision>
-      <origin xyz="0.05 -0.02 -0.02" rpy="3.1415927 1.5695351 3.1415927"/>
-      <geometry>
-        <cylinder radius="0.02" length="0.15"/>
+        <box size="0.15 0.08 0.03"/>
       </geometry>
     </collision>
   </link>

@@ -145,16 +145,17 @@
         <color rgba="0.200 0.200 0.200 1.000"/>
       </material>
     </visual>
+    <!-- A single flat sole box, not the two thin 2cm-radius cylindrical
+         "rails" this replaced: cylinder-on-ground-plane contact only
+         generates a couple of point/line contacts, which is a narrow,
+         easily-rocked support base for the ~34kg total robot weight and was
+         a major contributor to the whole model exploding/sliding on landing
+         (see g1_world.world's contact_max_correcting_vel comment). A flat
+         box gives a stable 4-corner contact patch instead. -->
     <collision>
-      <origin xyz="0.05 0.02 -0.02" rpy="3.1415927 1.5695351 3.1415927"/>
+      <origin xyz="0.05 0 -0.02" rpy="0 0 0"/>
       <geometry>
-        <cylinder radius="0.02" length="0.15"/>
-      </geometry>
-    </collision>
-    <collision>
-      <origin xyz="0.05 -0.02 -0.02" rpy="3.1415927 1.5695351 3.1415927"/>
-      <geometry>
-        <cylinder radius="0.02" length="0.15"/>
+        <box size="0.15 0.08 0.03"/>
       </geometry>
     </collision>
   </link>
@@ -267,16 +268,11 @@
         <color rgba="0.200 0.200 0.200 1.000"/>
       </material>
     </visual>
+    <!-- Flat sole box, see left_ankle_roll_link's collision comment. -->
     <collision>
-      <origin xyz="0.05 0.02 -0.02" rpy="3.1415927 1.5695351 3.1415927"/>
+      <origin xyz="0.05 0 -0.02" rpy="0 0 0"/>
       <geometry>
-        <cylinder radius="0.02" length="0.15"/>
-      </geometry>
-    </collision>
-    <collision>
-      <origin xyz="0.05 -0.02 -0.02" rpy="3.1415927 1.5695351 3.1415927"/>
-      <geometry>
-        <cylinder radius="0.02" length="0.15"/>
+        <box size="0.15 0.08 0.03"/>
       </geometry>
     </collision>
   </link>

@@ -1,1 +1,0 @@
-/mnt/home/calex/g1_ros_ws/src/g1_gazebo/scripts/overlap_monitor.py

@@ -1,1 +1,0 @@
-/mnt/home/calex/g1_ros_ws/build/g1_gazebo/ament_cmake_environment_hooks/local_setup.bash

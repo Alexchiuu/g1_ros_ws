@@ -1,23 +1,23 @@
 # g1_ros_ws
 
 ROS 2 (Foxy) workspace for the Unitree G1 humanoid with Tetheria/Aero dexterous
-hands: URDF description, Gazebo Classic simulation, and bridges for viewing
-and commanding the real robot.
+hands: URDF description, an IsaacGym-based simulation, and bridges for
+viewing and commanding the real robot.
 
 ## Packages
 
 | Package | Purpose |
 |---|---|
 | [`g1_description`](src/g1_description) | URDF/xacro model (converted from a MuJoCo MJCF source via `mjcf_to_urdf.py`), meshes, RViz config. |
-| [`g1_gazebo`](src/g1_gazebo) | Gazebo Classic bringup: world, `ros2_control` position controllers, spawn launch file. |
+| [`g1_isaacgym`](src/g1_isaacgym) | Standalone IsaacGym simulation: loads this package's URDF and runs Unitree's pretrained leg policy to stand the robot up. Not a ROS node -- run with the `dexman_isaacgym` conda env, not colcon. |
 | [`g1_state_bridge`](src/g1_state_bridge) | Bridges the real robot's DDS `LowState` + Aero hand ZMQ relay + neck ZMQ server to `sensor_msgs/JointState`, and ships the hand/neck slider GUIs. |
 | [`g1_zed_bridge`](src/g1_zed_bridge) | Decodes the G1's ZED Mini H.264 network stream and republishes `Image`/`PointCloud2`. |
 
 ## Prerequisites
 
 - Ubuntu 20.04 + ROS 2 Foxy (`/opt/ros/foxy`)
-- Gazebo Classic 11 + `gazebo_ros2_control`, `controller_manager`, `position_controllers`, `joint_state_broadcaster`
 - `xacro`, `robot_state_publisher`, `joint_state_publisher_gui`, `rviz2`
+- For simulation: an IsaacGym install + PyTorch (this machine already has one in the `dexman_isaacgym` conda env -- see [Simulation](#simulation) below)
 - For the real robot: `unitree_hg` message package and a sourced `unitree_ros2` CycloneDDS workspace (`/opt/unitree_ros2/cyclonedds_ws`), plus `python3-zmq` and `python3-tk`
 - For the ZED bridge: ZED SDK Python bindings (`pyzed`) and `cv_bridge`
 
@@ -41,33 +41,39 @@ ros2 launch g1_description display.launch.py
 Opens RViz2 + `joint_state_publisher_gui` so you can drag sliders and see the
 model move. No physics, no controllers.
 
-## Gazebo simulation
+## Simulation
+
+IsaacGym, not Gazebo. `g1_isaacgym` is a plain Python script (not a colcon
+package -- it runs against the `dexman_isaacgym` conda env's Python 3.8 /
+CUDA IsaacGym install, which lives outside this workspace):
 
 ```bash
-ros2 launch g1_gazebo g1_gazebo.launch.py
+conda activate dexman_isaacgym
+cd ~/g1_ros_ws
+python src/g1_isaacgym/scripts/stand_g1.py --headless --video /tmp/g1_stand.mp4
+python src/g1_isaacgym/scripts/stand_g1.py --viewer          # interactive window instead
 ```
 
-Spawns the robot in Gazebo Classic with `ros2_control` position controllers
-(`body_controller`, `left_hand_controller`, `right_hand_controller`), a
-position-command bridge, an overlap monitor, and a sim-fed RViz. Command the
-robot by dragging sliders in the "command_gui" `joint_state_publisher_gui`
-window — they publish to `/g1/position_command`, which gets re-sorted into
-each controller's `commands` topic.
-
-Launch arguments (all optional):
+Loads `g1_description`'s URDF straight from `src/` (mesh `package://` URIs
+resolve against `asset_root=src/`, same convention IsaacGym's own bundled
+assets use), strips the URDF's `world` link/`floating_base_joint` so `pelvis`
+becomes a free-floating root (see `stand_g1.py`'s docstring -- same fix
+`g1_gazebo.launch.py` used to use for Gazebo's SDF pose graph), then holds
+the robot standing with Unitree's own pretrained leg policy
+(`src/g1_isaacgym/policies/g1_legs_stand_walk_policy.pt`, see
+`policies/NOTICE.md` for provenance) run closed-loop with a zero velocity
+command. A fixed-pose PD hold with no policy reliably topples the robot
+forward within about a second in this sim -- a static leg pose alone isn't
+enough to balance a floating-base biped, hence the policy. Everything the
+policy doesn't drive (waist/arms/neck/hands) is PD-held at a fixed default
+pose.
 
 | Argument | Default | Meaning |
 |---|---|---|
-| `world` | `g1_gazebo/worlds/g1_world.world` | Gazebo world file to load |
-| `spawn_z` | `0.85` | Spawn height in meters |
-| `rviz` | `true` | Start the sim-fed RViz window |
-| `command_gui` | `true` | Start the joint slider GUI |
-
-Example: run headless, no RViz, no sliders:
-
-```bash
-ros2 launch g1_gazebo g1_gazebo.launch.py rviz:=false command_gui:=false
-```
+| `--duration` | `12.0` | Sim seconds to run |
+| `--spawn_z` | `0.80` | Spawn height in meters |
+| `--headless` / `--viewer` | headless | Open an interactive viewer window instead of running headless |
+| `--video PATH` | none | Record an mp4 via a headless camera sensor (needs `pip install imageio-ffmpeg` in the conda env) |
 
 ## Real robot
 
@@ -140,14 +146,13 @@ normal use.
 
 ## Troubleshooting
 
-- **Gazebo GUI never finishes loading / "No mesh specified" spam**: the
-  launch file sets `GAZEBO_MODEL_PATH` for you; if you're launching Gazebo
-  some other way, set it manually one directory above `g1_description`.
-- **RViz shows "No transform from [X]" for most of the robot in sim**: make
-  sure nothing has `use_sim_time:=true` — Gazebo's `/clock` isn't reliable in
-  this setup, so every node in `g1_gazebo.launch.py` deliberately runs on the
-  wall clock.
-- **Robot falls over / links visibly interpenetrate in sim**: expected —
-  simulated joints are position-controlled with no torque limit, so nothing
-  stops one commanded pose from driving links into each other.
-  `overlap_monitor.py` logs a warning when this happens; it doesn't prevent it.
+- **`stand_g1.py` falls over / topples forward**: check `--spawn_z` is close
+  to `0.80` (matches the leg default pose's natural standing height) and
+  that `src/g1_isaacgym/policies/g1_legs_stand_walk_policy.pt` actually
+  loaded (a missing/corrupt policy file would fail at `torch.jit.load`, not
+  silently no-op).
+- **`ImportError`/`ExpatError` from `stand_g1.py`**: it parses
+  `g1_tether.urdf` with Python's strict `xml.dom.minidom` to strip the
+  `world`/`floating_base_joint` before handing it to IsaacGym -- any
+  hand-edit to that file that introduces non-well-formed XML (e.g. `--`
+  inside an XML comment, which is invalid) will break this step.
