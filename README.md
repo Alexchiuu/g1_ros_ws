@@ -48,11 +48,13 @@ package -- it runs against the `dexman_isaacgym` conda env's Python 3.8 /
 CUDA IsaacGym install, which lives outside this workspace):
 
 ```bash
-conda activate dexman_isaacgym
-cd ~/g1_ros_ws
-python src/g1_isaacgym/scripts/stand_g1.py --headless --video /tmp/g1_stand.mp4
-python src/g1_isaacgym/scripts/stand_g1.py --viewer          # interactive window instead
+./script/run_isaacgym.sh --headless --video /tmp/g1_stand.mp4
+./script/run_isaacgym.sh --viewer          # interactive window instead
 ```
+
+(`script/run_isaacgym.sh` just activates `dexman_isaacgym` and forwards args
+to `src/g1_isaacgym/scripts/stand_g1.py` -- run that directly if you'd rather
+manage the conda env yourself.)
 
 Loads `g1_description`'s URDF straight from `src/` (mesh `package://` URIs
 resolve against `asset_root=src/`, same convention IsaacGym's own bundled
@@ -67,6 +69,33 @@ forward within about a second in this sim -- a static leg pose alone isn't
 enough to balance a floating-base biped, hence the policy. Everything the
 policy doesn't drive (waist/arms/neck/hands) is PD-held at a fixed default
 pose.
+
+### Watching it in RViz too
+
+The IsaacGym viewer window (`--viewer`) is the sim itself; RViz can mirror
+the same motion alongside it, fed over localhost UDP (kept separate from the
+conda env to avoid its CUDA/libstdc++ colliding with system ROS). Two
+terminals:
+
+```bash
+# Terminal A -- the sim, streaming to UDP port 5555
+./script/run_isaacgym.sh --viewer --ros_bridge_port 5555
+
+# Terminal B -- RViz (system ROS, not the conda env)
+./script/view.sh sim
+```
+
+`view.sh` also covers the [real robot](#real-robot) below (`./script/view.sh
+real`) -- one script, one launch file (`g1_description`'s `view.launch.py`),
+since both cases ultimately just need `robot_state_publisher` + rviz2 pointed
+at whatever's currently publishing `/joint_states`. `source:=sim`
+brings up `rviz_bridge.py` + rviz2 on `isaacgym_live.rviz` (Fixed Frame
+`world`, since IsaacGym has ground-truth pelvis pose); `source:=real`
+delegates entirely to `g1_state_bridge`'s `real_state.launch.py` (see
+[Real robot](#real-robot) below) with its own rviz2 on `display.rviz` (Fixed
+Frame `pelvis`, since the real robot has no global-pose source). Start
+either order -- RViz just shows nothing until the sim/robot side starts
+streaming.
 
 | Argument | Default | Meaning |
 |---|---|---|
@@ -86,13 +115,13 @@ The `script/` directory has ready-to-run wrappers that source ROS, the
 CycloneDDS workspace, and this workspace's `install/setup.bash` for you:
 
 ```bash
-./script/view_robot.sh           # RViz fed by the real robot's live state
+./script/view.sh real            # RViz fed by the real robot's live state
 ./script/aero_hand_controller.sh # Hand slider GUI (7 sliders/hand)
 ./script/neck_controller.sh      # Neck slider GUI (yaw/pitch)
 ```
 
-`view_robot.sh` also sets `RMW_IMPLEMENTATION=rmw_cyclonedds_cpp` and a
-`CYCLONEDDS_URI` pinned to a specific network interface
+`./script/view.sh real` also sets `RMW_IMPLEMENTATION=rmw_cyclonedds_cpp` and
+a `CYCLONEDDS_URI` pinned to a specific network interface
 (`enx001122683161`) — edit that interface name in the script if your machine's
 Ethernet adapter to the robot is named differently.
 
