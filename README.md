@@ -78,12 +78,23 @@ conda env to avoid its CUDA/libstdc++ colliding with system ROS). Two
 terminals:
 
 ```bash
-# Terminal A -- the sim, streaming to UDP port 5555
-./script/run_isaacgym.sh --viewer --ros_bridge_port 5555
+# Terminal A -- the sim, streaming joint states (5555) + a simulated depth
+# camera (5556) mounted on neck_link, matching where the real ZED rides
+./script/run_isaacgym.sh --viewer --ros_bridge_port 5555 --camera_port 5556
 
 # Terminal B -- RViz (system ROS, not the conda env)
 ./script/view.sh sim
 ```
+
+The camera is optional -- drop `--camera_port` if you just want joint
+states. When it's on, it publishes to `/zed/rgb/image_raw` and `/zed/points`,
+the exact topics + frame (`zed_camera_frame`) the real robot's ZED bridge
+uses, so RViz's existing Image/PointCloud2 displays (already in
+`isaacgym_live.rviz`, carried over from the real robot's `display.rviz`)
+light up with no config changes. It's a coarse 128x96 render (kept small
+enough that one frame fits in a single UDP datagram) at 10 Hz, not a
+photorealistic sensor -- good enough to sanity-check what the robot "sees",
+not for training anything.
 
 `view.sh` also covers the [real robot](#real-robot) below (`./script/view.sh
 real`) -- one script, one launch file (`g1_description`'s `view.launch.py`),
@@ -103,6 +114,9 @@ streaming.
 | `--spawn_z` | `0.80` | Spawn height in meters |
 | `--headless` / `--viewer` | headless | Open an interactive viewer window instead of running headless |
 | `--video PATH` | none | Record an mp4 via a headless camera sensor (needs `pip install imageio-ffmpeg` in the conda env) |
+| `--ros_bridge_port` | `0` (off) | UDP port to stream joint states + pelvis pose to (see above) |
+| `--camera_port` | `0` (off) | UDP port to stream the simulated depth camera to (see above) |
+| `--camera_hz` | `10.0` | Simulated camera capture rate |
 
 ## Real robot
 

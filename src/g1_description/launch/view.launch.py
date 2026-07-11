@@ -16,7 +16,9 @@ source to put in `world`).
 source:=sim brings up robot_state_publisher + rviz_bridge.py (UDP JSON from
 stand_g1.py's IsaacGym process -> JointState + a world->pelvis TF, see that
 script's docstring for why it's UDP rather than an in-process rclpy import)
-+ rviz2 on isaacgym_live.rviz, Fixed Frame `world` (IsaacGym gives
++ a static neck_link->zed_camera_frame TF (matching stand_g1.py's simulated
+camera mount, so /zed/points resolves if --camera_port is streaming) +
+rviz2 on isaacgym_live.rviz, Fixed Frame `world` (IsaacGym gives
 ground-truth pelvis pose, unlike the real robot).
 """
 
@@ -46,8 +48,16 @@ def generate_launch_description():
     source = LaunchConfiguration("source")
     ws_root = LaunchConfiguration("ws_root")
     port = LaunchConfiguration("port")
+    camera_port = LaunchConfiguration("camera_port")
     is_real = PythonExpression(["'", source, "' == 'real'"])
     is_sim = PythonExpression(["'", source, "' == 'sim'"])
+
+    # Matches stand_g1.py's CAMERA_MOUNT_OFFSET (forward, up, right) in
+    # neck_link's own (X-fwd, Y-up, Z-right) axes -- the simulated camera's
+    # pixel->3D formula already outputs points in that same convention, so
+    # this TF is translation-only, no rotation needed (see stand_g1.py's
+    # CAMERA_* comment).
+    camera_mount_xyz = ["0.18", "0.08", "0.0"]
 
     robot_description = (Path(pkg) / "urdf" / "g1_tether.urdf").read_text()
 
@@ -58,6 +68,9 @@ def generate_launch_description():
         DeclareLaunchArgument(
             "port", default_value="5555",
             description="UDP port stand_g1.py --ros_bridge_port streams to (source:=sim only)"),
+        DeclareLaunchArgument(
+            "camera_port", default_value="5556",
+            description="UDP port stand_g1.py --camera_port streams to (source:=sim only, 0 to skip)"),
         DeclareLaunchArgument(
             "ws_root", default_value=default_ws_root,
             description="workspace root, to locate g1_isaacgym (source:=sim only, not a colcon package)"),
@@ -91,8 +104,15 @@ def generate_launch_description():
         ExecuteProcess(
             cmd=["python3",
                  PathJoinSubstitution([ws_root, "src", "g1_isaacgym", "scripts", "rviz_bridge.py"]),
-                 "--port", port],
+                 "--port", port, "--camera_port", camera_port],
             output="screen",
+            condition=IfCondition(is_sim),
+        ),
+        Node(
+            package="tf2_ros",
+            executable="static_transform_publisher",
+            name="zed_camera_mount_tf",
+            arguments=camera_mount_xyz + ["0", "0", "0", "neck_link", "zed_camera_frame"],
             condition=IfCondition(is_sim),
         ),
         Node(

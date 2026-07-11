@@ -30,6 +30,14 @@ not this conda env -- see that script's docstring) to republish as
 sensor_msgs/JointState + a world->pelvis TF so RViz can show the same motion.
 UDP keeps IsaacGym's conda env (its own libstdc++/CUDA/etc.) fully out of the
 ROS process's address space instead of importing rclpy in-process here.
+
+Pass --camera_port to also stream a simulated depth camera (mounted on
+neck_link, matching where the real ZED rides) as raw-binary UDP packets, for
+rviz_bridge.py to republish as sensor_msgs/Image + PointCloud2 on the same
+topics (/zed/rgb/image_raw, /zed/points) the real robot's g1_zed_bridge
+uses -- RViz's existing displays for those topics just light up, no config
+changes needed. See CAMERA_* constants below for the mount geometry and the
+pixel->3D formula's derivation (empirically verified, not guessed).
 """
 
 from __future__ import annotations
@@ -38,6 +46,7 @@ import argparse
 import json
 import os
 import socket
+import struct
 import tempfile
 import xml.dom.minidom as minidom
 from pathlib import Path
@@ -91,6 +100,39 @@ CMD_SCALE = np.array([2.0, 2.0, 0.25], dtype=np.float32)
 PHASE_PERIOD = 0.8
 SIM_DT = 0.002
 CONTROL_DECIMATION = 10  # -> 50 Hz control, matching real hardware control_dt
+
+# ---------------------------------------------------------------------------
+# Simulated depth camera, mounted on neck_link (same parent link the real
+# ZED's static TF uses). Kept small (128x96) so one frame's raw bytes fit in
+# a single UDP datagram (color: 4+8+128*96*3 = 36,876 B; depth:
+# 4+16+128*96*4 = 49,172 B; both well under the ~65,507 B loopback limit) --
+# no chunking/reassembly needed.
+#
+# neck_link's own local axes are X-forward, Y-up, Z-right (see
+# g1_zed_bridge/launch/zed_bridge.launch.py's docstring -- it's rotated +90
+# deg about X from the "usual" X-forward/Y-left/Z-up convention). Mounting
+# the IsaacGym camera with local_transform.r = -90 deg about local X exactly
+# cancels that (empirically verified: this is the same -90 deg roll that
+# file's own comment independently derived for the real camera), so the
+# camera's rendered pixels land directly in neck_link's own axis convention
+# with no further rotation needed. Confirmed by test: with an identity-
+# rotation camera, a world-frame marker at +Y appeared on the image's LEFT
+# side, i.e. image-right <-> -Y in the camera's own local frame; the
+# formula below is derived from that (and matching IMAGE_DEPTH's documented
+# sign: it returns *negative* distance).
+CAMERA_WIDTH = 128
+CAMERA_HEIGHT = 96
+CAMERA_HFOV_DEG = 87.0
+CAMERA_FAR_PLANE = 5.0  # meters; matches typical indoor depth camera range
+# Forward/up offset from neck_link's origin -- a rough "forehead" position,
+# not measured (same placeholder status as zed_bridge.launch.py's own
+# camera_xyz defaults). Needs to clear the head mesh itself (a too-small
+# forward offset puts the camera inside/behind the head, occluding most of
+# the frame -- confirmed by rendering a test frame).
+CAMERA_MOUNT_OFFSET = (0.18, 0.08, 0.0)  # (forward, up, right) in neck_link's own axes
+
+CAM_MAGIC_COLOR = b"COLR"
+CAM_MAGIC_DEPTH = b"DPTH"
 
 
 def build_target_maps() -> tuple[dict[str, float], dict[str, float], dict[str, float]]:
@@ -163,6 +205,10 @@ def parse_args() -> argparse.Namespace:
     p.add_argument("--ros_bridge_port", type=int, default=0,
                     help="if set, stream joint states + pelvis pose as UDP JSON to 127.0.0.1:PORT "
                          "for rviz_bridge.py to pick up (0 = disabled)")
+    p.add_argument("--camera_port", type=int, default=0,
+                    help="if set, stream a simulated depth camera (neck_link-mounted) as UDP binary "
+                         "to 127.0.0.1:PORT for rviz_bridge.py to pick up (0 = disabled)")
+    p.add_argument("--camera_hz", type=float, default=10.0, help="camera capture rate")
     return p.parse_args()
 
 
@@ -235,6 +281,32 @@ def main() -> None:
 
     pelvis_handle = gym.find_actor_rigid_body_handle(env, actor, "pelvis")
 
+    depth_cam_handle = None
+    depth_cam_fx = depth_cam_fy = depth_cam_cx = depth_cam_cy = None
+    depth_cam_pixel_u = depth_cam_pixel_v = None
+    if args.camera_port:
+        neck_body_handle = gym.find_actor_rigid_body_handle(env, actor, "neck_link")
+        cam_props = gymapi.CameraProperties()
+        cam_props.width = CAMERA_WIDTH
+        cam_props.height = CAMERA_HEIGHT
+        cam_props.horizontal_fov = CAMERA_HFOV_DEG
+        cam_props.far_plane = CAMERA_FAR_PLANE
+        depth_cam_handle = gym.create_camera_sensor(env, cam_props)
+        local_transform = gymapi.Transform()
+        fwd, up, right = CAMERA_MOUNT_OFFSET
+        local_transform.p = gymapi.Vec3(fwd, up, right)
+        local_transform.r = gymapi.Quat.from_axis_angle(gymapi.Vec3(1.0, 0.0, 0.0), -np.pi / 2.0)
+        gym.attach_camera_to_body(depth_cam_handle, env, neck_body_handle, local_transform,
+                                   gymapi.FOLLOW_TRANSFORM)
+
+        proj = np.array(gym.get_camera_proj_matrix(sim, env, depth_cam_handle))
+        depth_cam_fx = float(proj[0, 0]) * CAMERA_WIDTH / 2.0
+        depth_cam_fy = float(proj[1, 1]) * CAMERA_HEIGHT / 2.0
+        depth_cam_cx = CAMERA_WIDTH / 2.0
+        depth_cam_cy = CAMERA_HEIGHT / 2.0
+        print(f"[stand_g1] streaming depth camera to udp://127.0.0.1:{args.camera_port} "
+              f"({CAMERA_WIDTH}x{CAMERA_HEIGHT} @ {args.camera_hz} Hz)")
+
     policy = torch.jit.load(str(POLICY_PATH))
     policy.eval()
     cmd = np.array([0.0, 0.0, 0.0], dtype=np.float32)  # zero velocity command = stand in place
@@ -246,6 +318,12 @@ def main() -> None:
         ros_sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
         ros_addr = ("127.0.0.1", args.ros_bridge_port)
         print(f"[stand_g1] streaming to rviz_bridge.py at udp://127.0.0.1:{args.ros_bridge_port}")
+
+    cam_sock = None
+    cam_addr = None
+    if args.camera_port:
+        cam_sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+        cam_addr = ("127.0.0.1", args.camera_port)
 
     viewer = None
     if use_viewer:
@@ -262,6 +340,8 @@ def main() -> None:
         cam_handle = gym.create_camera_sensor(env, cam_props)
         gym.set_camera_location(cam_handle, env, gymapi.Vec3(2.0, 2.0, 1.5), gymapi.Vec3(0.0, 0.0, 0.8))
         video_writer = imageio.get_writer(args.video, fps=30)
+
+    camera_decimation = max(1, round(1.0 / (args.camera_hz * SIM_DT))) if depth_cam_handle is not None else None
 
     num_steps = int(args.duration / SIM_DT)
     counter = 0
@@ -328,11 +408,33 @@ def main() -> None:
             if pelvis_z < 0.4:
                 fell_over = True
 
-            if video_writer is not None and step % 10 == 0:
+            want_video_frame = video_writer is not None and step % 10 == 0
+            want_depth_frame = depth_cam_handle is not None and step % camera_decimation == 0
+            if want_video_frame or want_depth_frame:
                 gym.render_all_camera_sensors(sim)
+
+            if want_video_frame:
                 img = gym.get_camera_image(sim, env, cam_handle, gymapi.IMAGE_COLOR)
                 img = img.reshape(cam_props.height, cam_props.width, 4)[:, :, :3]
                 video_writer.append_data(img)
+
+            if want_depth_frame:
+                color = gym.get_camera_image(sim, env, depth_cam_handle, gymapi.IMAGE_COLOR)
+                color = color.reshape(CAMERA_HEIGHT, CAMERA_WIDTH, 4)[:, :, :3]
+                raw_depth = gym.get_camera_image(sim, env, depth_cam_handle, gymapi.IMAGE_DEPTH)
+                depth = -raw_depth.astype(np.float32)  # IMAGE_DEPTH is negative distance
+                depth[~np.isfinite(depth)] = 0.0  # no-hit pixels -> invalid marker (0 = never a real depth)
+                depth[depth > CAMERA_FAR_PLANE] = 0.0
+
+                color_header = CAM_MAGIC_COLOR + struct.pack("<II", CAMERA_WIDTH, CAMERA_HEIGHT)
+                depth_header = CAM_MAGIC_DEPTH + struct.pack(
+                    "<IIffff", CAMERA_WIDTH, CAMERA_HEIGHT,
+                    depth_cam_fx, depth_cam_fy, depth_cam_cx, depth_cam_cy)
+                try:
+                    cam_sock.sendto(color_header + np.ascontiguousarray(color, dtype=np.uint8).tobytes(), cam_addr)
+                    cam_sock.sendto(depth_header + np.ascontiguousarray(depth, dtype=np.float32).tobytes(), cam_addr)
+                except OSError:
+                    pass
 
             if viewer is not None:
                 gym.draw_viewer(viewer, sim, True)
