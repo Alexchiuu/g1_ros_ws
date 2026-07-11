@@ -117,6 +117,27 @@ streaming.
 | `--ros_bridge_port` | `0` (off) | UDP port to stream joint states + pelvis pose to (see above) |
 | `--camera_port` | `0` (off) | UDP port to stream the simulated depth camera to (see above) |
 | `--camera_hz` | `10.0` | Simulated camera capture rate |
+| `--teleop_gui` | off | Listen for the hand/neck controller GUIs below |
+
+### Hand + neck controller GUIs
+
+The real robot's hand/neck slider GUIs ([below](#real-robot)) work against
+the sim unmodified -- just point them at localhost instead of the robot,
+since they talk to a documented ZMQ wire protocol rather than to the robot
+specifically, and `stand_g1.py --teleop_gui` implements that same protocol
+(`ZmqTeleopLink` in that script):
+
+```bash
+./script/run_isaacgym.sh --viewer --teleop_gui   # sim, with the servers listening
+./script/aero_hand_controller_sim.sh              # 7 sliders/hand
+./script/neck_controller_sim.sh                   # yaw/pitch sliders
+```
+
+Note: the 32 tendon-driven hand joints carry `effort="0"` in the URDF (fine
+for Gazebo's old kinematic `SetPosition()`, which ignores effort limits, but
+IsaacGym's PD drive is real torque-based dynamics and *does* enforce it --
+`stand_g1.py` gives them a small nonzero torque budget for exactly this
+reason, see its `dof_props["effort"]` override).
 
 ## Real robot
 

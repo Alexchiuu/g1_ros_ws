@@ -38,6 +38,24 @@ topics (/zed/rgb/image_raw, /zed/points) the real robot's g1_zed_bridge
 uses -- RViz's existing displays for those topics just light up, no config
 changes needed. See CAMERA_* constants below for the mount geometry and the
 pixel->3D formula's derivation (empirically verified, not guessed).
+
+Pass --teleop_gui to drive the hands + neck live from g1_state_bridge's
+*existing* hand_controller_gui / neck_controller_gui (the same Tkinter
+sliders used for the real robot) with zero code changes to those scripts --
+just point them at this process instead of the robot:
+
+    ros2 run g1_state_bridge hand_controller_gui --host 127.0.0.1
+    ros2 run g1_state_bridge neck_controller_gui --host 127.0.0.1 \
+        --yaw-zero-ticks 0 --pitch-zero-ticks 0 --yaw-sign 1 --pitch-sign 1
+
+This works because those GUIs talk to whatever's listening on a documented
+ZMQ REQ/PUB wire protocol (see hand_controller_gui.py's HandLink /
+neck_controller_gui.py's NeckLink) rather than to the robot specifically --
+ZmqTeleopLink below implements that same protocol as a REP+PUB server, so
+the real GUI can't tell the difference. The neck GUI's zero-ticks/sign args
+are just its own real-hardware calibration constants; pass 0/0/1/1 so the
+"ticks" ZmqTeleopLink invents for its state PUB round-trip cleanly back to
+degrees (there's no real encoder here to calibrate against).
 """
 
 from __future__ import annotations
@@ -48,6 +66,8 @@ import os
 import socket
 import struct
 import tempfile
+import threading
+import time
 import xml.dom.minidom as minidom
 from pathlib import Path
 
@@ -134,6 +154,80 @@ CAMERA_MOUNT_OFFSET = (0.18, 0.08, 0.0)  # (forward, up, right) in neck_link's o
 CAM_MAGIC_COLOR = b"COLR"
 CAM_MAGIC_DEPTH = b"DPTH"
 
+# ---------------------------------------------------------------------------
+# Teleop GUI wire protocol, matching g1_state_bridge/hand_controller_gui.py
+# and neck_controller_gui.py exactly (ports, struct formats, joint order)
+# so those scripts work against this process unmodified. See ZmqTeleopLink.
+# ---------------------------------------------------------------------------
+
+HAND_JOINT_SUFFIXES_FULL16 = [
+    "thumb_cmc_abd", "thumb_cmc_flex", "thumb_mcp", "thumb_ip",
+    "index_mcp_flex", "index_pip", "index_dip",
+    "middle_mcp_flex", "middle_pip", "middle_dip",
+    "ring_mcp_flex", "ring_pip", "ring_dip",
+    "pinky_mcp_flex", "pinky_pip", "pinky_dip",
+]
+HAND_CMD_PORT, HAND_STATE_PORT = 5555, 5556  # hand_controller_gui.py's own defaults
+HAND_CMD_FMT = "<32d"  # left16 + right16, radians, full-16 order -- no conversion needed
+HAND_STATE_FMT = "<BQd64d"  # matches HandLink.STATE_FMT; only fields[3:35] (left16+right16) are read
+
+NECK_CMD_PORT, NECK_STATE_PORT = 5558, 5557  # neck_controller_gui.py's own defaults
+NECK_CMD_FMT = "<dd"  # yaw_deg, pitch_deg
+NECK_STATE_FMT = "<Bdii"  # matches NeckLink.STATE_FMT: (locked, t, yaw_ticks, pitch_ticks)
+NECK_TICKS_PER_DEG = 4096.0 / 360.0  # arbitrary but must match --yaw-sign/--pitch-sign 1, --*-zero-ticks 0
+
+
+class ZmqTeleopLink:
+    """REP command socket + PUB state socket, matching the real hand/neck
+    controller GUIs' wire protocol. Background threads only touch plain
+    Python/numpy state (never call into IsaacGym) so this is safe to run
+    alongside the main sim loop without locking gym.* calls."""
+
+    def __init__(self, cmd_port: int, state_port: int, cmd_fmt: str, state_fmt: str, num_targets: int):
+        import zmq
+        self._cmd_fmt = cmd_fmt
+        self._state_fmt = state_fmt
+        self._lock = threading.Lock()
+        self._targets = np.zeros(num_targets, dtype=np.float64)
+        self._state_args: tuple | None = None
+
+        ctx = zmq.Context.instance()
+        self._rep_sock = ctx.socket(zmq.REP)
+        self._rep_sock.bind(f"tcp://127.0.0.1:{cmd_port}")
+        threading.Thread(target=self._rep_loop, daemon=True).start()
+
+        self._pub_sock = ctx.socket(zmq.PUB)
+        self._pub_sock.bind(f"tcp://127.0.0.1:{state_port}")
+        threading.Thread(target=self._pub_loop, daemon=True).start()
+
+    def _rep_loop(self) -> None:
+        while True:
+            payload = self._rep_sock.recv()
+            try:
+                vals = struct.unpack(self._cmd_fmt, payload)
+            except struct.error:
+                self._rep_sock.send(b"\x00")
+                continue
+            with self._lock:
+                self._targets[:] = vals
+            self._rep_sock.send(b"\x01")
+
+    def _pub_loop(self) -> None:
+        while True:
+            with self._lock:
+                args = self._state_args
+            if args is not None:
+                self._pub_sock.send(struct.pack(self._state_fmt, *args))
+            time.sleep(0.1)
+
+    def get_targets(self) -> np.ndarray:
+        with self._lock:
+            return self._targets.copy()
+
+    def set_state_args(self, args: tuple) -> None:
+        with self._lock:
+            self._state_args = args
+
 
 def build_target_maps() -> tuple[dict[str, float], dict[str, float], dict[str, float]]:
     target, kp, kd = {}, {}, {}
@@ -209,6 +303,9 @@ def parse_args() -> argparse.Namespace:
                     help="if set, stream a simulated depth camera (neck_link-mounted) as UDP binary "
                          "to 127.0.0.1:PORT for rviz_bridge.py to pick up (0 = disabled)")
     p.add_argument("--camera_hz", type=float, default=10.0, help="camera capture rate")
+    p.add_argument("--teleop_gui", action="store_true",
+                    help="listen for g1_state_bridge's hand_controller_gui / neck_controller_gui "
+                         "(pointed at --host 127.0.0.1) on their own default ports")
     return p.parse_args()
 
 
@@ -263,7 +360,34 @@ def main() -> None:
         dof_props["stiffness"][i] = kp_map.get(name, SOFT_KP)
         dof_props["damping"][i] = kd_map.get(name, SOFT_KD)
         default_targets[i] = target_map.get(name, 0.0)
+        # The 32 tendon-driven hand joints carry effort="0" in the URDF --
+        # correct for Gazebo's kinematic SetPosition() (which ignores effort
+        # limits entirely, see the old g1_gazebo.launch.py's comment on this
+        # exact quirk), but IsaacGym's DOF_MODE_POS is a real torque-based PD
+        # drive that DOES enforce it: effort=0 means zero max torque, so
+        # these joints are actually free-floating under gravity, silently
+        # ignoring every position target. Give them a small nonzero torque
+        # budget (matches neck_yaw/pitch_joint's own effort=5 in the URDF).
+        if dof_props["effort"][i] <= 0.0:
+            dof_props["effort"][i] = 5.0
     leg_idx = [name_to_idx[n] for n in LEG_JOINT_NAMES]
+
+    hand_link = neck_link = None
+    hand_idx = neck_yaw_idx = neck_pitch_idx = None
+    if args.teleop_gui:
+        hand_idx = ([name_to_idx[f"left_{s}"] for s in HAND_JOINT_SUFFIXES_FULL16] +
+                     [name_to_idx[f"right_{s}"] for s in HAND_JOINT_SUFFIXES_FULL16])
+        neck_yaw_idx = name_to_idx["neck_yaw_joint"]
+        neck_pitch_idx = name_to_idx["neck_pitch_joint"]
+        hand_link = ZmqTeleopLink(HAND_CMD_PORT, HAND_STATE_PORT, HAND_CMD_FMT, HAND_STATE_FMT, 32)
+        neck_link = ZmqTeleopLink(NECK_CMD_PORT, NECK_STATE_PORT, NECK_CMD_FMT, NECK_STATE_FMT, 2)
+        print(f"[stand_g1] teleop GUI ready -- "
+              f"ros2 run g1_state_bridge hand_controller_gui --host 127.0.0.1 "
+              f"(cmd :{HAND_CMD_PORT}, state :{HAND_STATE_PORT})")
+        print(f"[stand_g1] teleop GUI ready -- "
+              f"ros2 run g1_state_bridge neck_controller_gui --host 127.0.0.1 "
+              f"--yaw-zero-ticks 0 --pitch-zero-ticks 0 --yaw-sign 1 --pitch-sign 1 "
+              f"(cmd :{NECK_CMD_PORT}, state :{NECK_STATE_PORT})")
 
     env = gym.create_env(sim, gymapi.Vec3(-2, -2, 0), gymapi.Vec3(2, 2, 2), 1)
     pose = gymapi.Transform()
@@ -386,6 +510,22 @@ def main() -> None:
                 full_targets = default_targets.copy()
                 for j, li in enumerate(leg_idx):
                     full_targets[li] = leg_targets[j]
+
+                if hand_link is not None:
+                    hand_vals = hand_link.get_targets()  # 32 float64, left16+right16, radians
+                    for j, hi in enumerate(hand_idx):
+                        full_targets[hi] = hand_vals[j]
+                    hand_link.set_state_args((0, 0, 0.0, *hand_vals.tolist(), *([0.0] * 32)))
+
+                if neck_link is not None:
+                    neck_deg = neck_link.get_targets()  # yaw_deg, pitch_deg
+                    yaw_rad, pitch_rad = np.radians(neck_deg[0]), np.radians(neck_deg[1])
+                    full_targets[neck_yaw_idx] = yaw_rad
+                    full_targets[neck_pitch_idx] = pitch_rad
+                    yaw_ticks = int(round(neck_deg[0] * NECK_TICKS_PER_DEG))
+                    pitch_ticks = int(round(neck_deg[1] * NECK_TICKS_PER_DEG))
+                    neck_link.set_state_args((0, 0.0, yaw_ticks, pitch_ticks))
+
                 gym.set_actor_dof_position_targets(env, actor, full_targets)
 
                 if ros_sock is not None:
